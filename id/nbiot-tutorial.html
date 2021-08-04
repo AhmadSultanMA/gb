@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+    <!-- Topbar -->
+    <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+      <!-- <nav class="topbar topbar-sticky"> -->
+    </nav>
+        <!-- END Topbar -->
+        <!-- END Topbar -->
+
+
+
+        <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <h1>NB-IoT</h1>
+                        <p class="fs-18 opacity-70">Dokumentasi ini menjelaskan cara menggunakan NB-IoT Shield agar bisa terhubung dengan ANTARES. Jika anda membutuhkan informasi lebih lanjut, jangan ragu hubungi kami melalui <a href="mailto:support@antares.id">support@antares.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+        <!-- Main container -->
+        <main class="main-content">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <section class="section bb-3" style="padding-top: 45px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                            <label><a class="nav-link" href="#pendahuluan" data-scrollto="pendahuluan">Pendahuluan</a></label>
+                                    </ul> <!-- cd-accordion-menu -->
+
+									                  <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                    <li class="has-children">
+										                <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#terhubungantares" data-scrollto="terhubungantares">Menghubungkan ke ANTARES</a></label>
+											                          <ul>
+                                                  <li><a class="nav-link" href="#arduinoide" data-scrollto="arduinoide">Arduino IDE</a></li>
+                                                  <li><a class="nav-link" href="#postdata" data-scrollto="postdata">AT-Command POST Data</a></li>
+                                                  <li><a class="nav-link" href="#getdata" data-scrollto="getdata">AT-Command GET Data</a></li>
+                                                </ul>
+										                </li>
+                                  </ul>
+                                    <!-- cd-accordion-menu -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                    <li class="has-children">
+										                <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#get-data" data-scrollto="get-data">Mengambil data dari ANTARES</a></label>
+											                          <ul>
+                                                  <li><a class="nav-link" href="#prerequisites" data-scrollto="prerequisites">Prasyarat</a></li>
+                                                  <li><a class="nav-link" href="#create-project" data-scrollto="create-project">Create Application</a></li>
+                                                  <li><a class="nav-link" href="#source-code" data-scrollto="source-code">Source Code</a></li>
+                                                </ul>
+										                </li>
+                                  </ul>
+                                  <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                          <label><a class="nav-link" href="#output" data-scrollto="output">Output</a></label>
+                                  </ul>
+								</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 pt-25">
+
+                            <!-- <h4 id="iot-platform-architecture">IoT Platform Architecture</h4>
+                            <img class="img-esp" src="../assets/img/iot-platform-architecture.png">
+
+                            <hr>
+
+                            <h4 id="iot-platform-standardization">IoT Platform Standardization</h4>
+                            <p>The Horizontal IoT Platform deployed by Telkom DDS is based on <b>oneM2M</b> IoT and M2M standardization.</p>
+
+                            <hr> -->
+
+							<h4 id="pendahuluan" align="center">Pendahuluan</h4>
+
+							<p align="justify">NB-IoT merupakan teknologi telekomunikasi terbaru yang dirancang secara khusus agar komunikasi antar mesin yang semakin masif dengan coverage jaringan telekomunikasi yang semakin luas dapat dilakukan secara efisien,
+							serta penggunaan daya pada perangkat pengguna semakin hemat. Teknologi radio akses NB-IoT, yang merupakan salah satu jenis teknologi
+							jaringan Low Power Wide Area (LPWA), memungkinkan perangkat beroperasi hingga bertahun-tahun tanpa pengisian daya ulang baterai sehingga sangat menghemat biaya.
+							Teknologi ini juga mampu menghasilkan kapasitas koneksi yang masif untuk solusi dan aplikasi berbasis IoT.
+							</p>
+
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/nbiotshieldjpg.jpeg">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar NB-IOT Shield SIM7000C</p>
+							<br>
+
+							<h4 id="terhubungantares" align="center">Menghubungkan ke ANTARES</h4>
+							<p align="justify">NB-IOT Shield menggunakan komunikasi serial untuk mengirim dan menerima data dari cloud melalui jaringan telekomunikasi, sehingga kita menggunakan AT-Command sebagai perintah untuk menghubungkan device dengan jaringan telekomunikasi dari suatu provider yang sudah support NB-IOT.
+							Berikut ini source code untuk menghubungkan NB-IOT Shield ke ANTARES menggunakan Arduino IDE dan AT-Command.</p>
+
+							<h5 id="arduinoide" align="justify">A. Arduino IDE</h5>
+						<pre class="line-numbers"><code class="language-c">#include "Wire.h"
+#include "Adafruit_Sensor.h"
+#include "Adafruit_BME280.h"
+#include "SoftwareSerial.h"
+
+#define PIN_TX     7
+#define PIN_RX     8
+#define PWRKEY    12
+SoftwareSerial     SIM7000(PIN_RX,PIN_TX);
+Adafruit_BME280 bme; // I2C
+
+char bufferRX[200];
+int indexBufferRX;
+bool statusKoneksi = false;
+String accessKey = "YOUR-ACCESS-KEY";
+float temperature,humidity,pressure;
+
+void getSensor() {
+    temperature = bme.readTemperature();
+    pressure = bme.readPressure() / 100.0F;
+    humidity = bme.readHumidity();
+
+    Serial.print("Temperature = ");
+    Serial.print((String)temperature);
+    Serial.println(" *C");
+    Serial.print("Humidity = ");
+    Serial.print((String)humidity);
+    Serial.println(" %");
+
+    Serial.println();
+}
+void setup() {
+    Serial.begin(9600);
+    bool status = bme.begin(0x76);
+    if (!status) {
+        Serial.println("Could not find a valid BME280 sensor, check wiring!");
+        while (1);
+    }
+    initSIM7000();
+}
+
+void sendCommand(String AtCommand)
+{
+  SIM7000.print(AtCommand+ "\r\n");
+  delay(500);
+  SIM7000.listen();
+  indexBufferRX =0;
+  while(SIM7000.available()){
+    bufferRX[indexBufferRX] = SIM7000.read();
+    indexBufferRX++;
+  }
+  SIM7000.flush();
+}
+
+void cleanBuffer(char *buffer,int count)
+{
+    for(int i=0; i < count; i++){
+        buffer[i] = '\0';
+    }
+}
+
+int readBuffer(char *buffer, int count, unsigned int timeout=0, unsigned int chartimeout=0)
+{
+    int i = 0;
+    unsigned long timerStart, prevChar;
+    timerStart = millis();
+    prevChar = 0;
+    while(1){
+        while(SIM7000.available()){
+            buffer[i++] = SIM7000.read();
+            prevChar = millis();
+            if(i >= count)
+                return i;
+        }
+        if(timeout){
+            if((unsigned long) (millis() - timerStart) > timeout*1000){
+                break;
+            }
+        }
+        if(((unsigned long) (millis() - prevChar) > chartimeout*10) && (prevChar != 0)){
+            break;
+        }
+    }
+    SIM7000.flush();
+    return i;
+}
+
+bool sendCommand(const char* cmd, const char* resp)
+{
+    char SIMbuffer[100];
+    cleanBuffer(SIMbuffer,100);
+    SIM7000.write(cmd);
+    readBuffer(SIMbuffer,100,1,1);
+    Serial.println("====> " + (String)cmd);
+//    Serial.println("Response Want : " + (String)resp);
+    Serial.println("<====" + (String)SIMbuffer);
+    if(NULL != strstr(SIMbuffer,resp)){
+//        Serial.println("Masuk");
+        return  true;
+    }else{
+        return  false;
+    }
+}
+
+void loop() {
+   checkStatusConnection();
+   delay(5000);
+   getSensor();
+   if (statusKoneksi)
+   {
+    sendToAntares("\\\"t\\\":\\\""+(String)temperature+"\\\",\\\"h\\\":\\\""+(String)humidity+"\\\"");//,\\\"p\\\":\\\""+(String)pressure+"\\\"");
+   }
+}
+
+void turnONSim7000()
+{
+  digitalWrite(PWRKEY, HIGH);
+  delay(2000);
+  digitalWrite(PWRKEY, LOW);
+}
+
+boolean checkSIM7000()
+{
+  if (sendCommand("AT\r\n","OK")) Serial.println("SIM7000 Sudah ON");
+  else
+  {
+    turnONSim7000();
+    Serial.println("Tunggu 5 Detik");
+    for (int i=0;i<5;i++)
+    {
+      delay(1000);
+      if (sendCommand("AT\r\n","OK"))
+      {
+        sendCommand("ATE0\r\n","OK");
+        Serial.println("SIM7000 Berhasil ON");
+        i=10;
+      }
+    }
+  }
+
+}
+
+void setNBIOT()
+{
+  if (sendCommand("AT+CNMP=38\r\n","OK")) Serial.println("Setting LTE OK!");
+  delay(500);
+  if (sendCommand("AT+CMNB=2\r\n","OK")) Serial.println("Setting NBIOT OK!");
+}
+
+void setGSM()
+{
+  if (sendCommand("AT+CNMP=13\r\n","OK")) Serial.println("Setting GSM OK!");
+  delay(500);
+  if (sendCommand("AT+CMNB=3\r\n","OK")) Serial.println("Setting GPRS OK!");
+}
+
+void checkStatusConnection()
+{
+    char SIMbuffer[100];
+    cleanBuffer(SIMbuffer,100);
+    SIM7000.write("AT+CIPSTATUS\r\n");
+    readBuffer(SIMbuffer,100,1,1);
+//    Serial.println("Response : " + (String)SIMbuffer);
+    if(NULL != strstr(SIMbuffer,"PDP DEACT")) SIM7000.write("AT+CIPSHUT\r\n");
+    if(NULL != strstr(SIMbuffer,"IP START")) SIM7000.write("AT+CIICR\r\n");
+    if(NULL != strstr(SIMbuffer,"IP INITIAL")) SIM7000.write("AT+CSTT=\"nb1internet\"\r\n");
+    if(NULL != strstr(SIMbuffer,"IP GPRSACT")) SIM7000.write("AT+CIFSR\r\n");
+    if(NULL != strstr(SIMbuffer,"TCP CLOSED")) SIM7000.write("AT+CIPSHUT\r\n");
+    if(NULL != strstr(SIMbuffer,"IP STATUS")) SIM7000.write("AT+CIPSTART=\"TCP\",\"platform.antares.id\",\"8080\"\r\n");
+    if(NULL != strstr(SIMbuffer,"CONNECT OK"))
+    {
+      statusKoneksi=true;
+      Serial.println("CONNECT OK!!");//SIM7000.write("AT+CIPSEND\r\n");
+    }
+
+}
+
+void sendToAntares(String dataSend)
+{
+  //180.250.117.125
+    String dataXSend = "{\"m2m:cin\": {\"con\": \"{"+dataSend+"}\"}}";
+//    Serial.println(dataXSend);
+    delay(1000);
+    SIM7000.write("AT+CIPSEND\r\n");
+    delay(1000);
+    SIM7000.print("POST /~/antares-cse/cnt-569059221 HTTP/1.1\r\nHost: platform.antares.id:8080 \r\n");
+    SIM7000.print("Accept: application/json\r\nContent-Length: "+(String)dataXSend.length()+"\r\n");
+    SIM7000.print("Content-Type: application/json;ty=4\r\n");
+    SIM7000.print("X-M2M-Origin: "+accessKey+"\r\n\r\n");
+    SIM7000.print(dataXSend);
+    delay(100);
+    SIM7000.write(0x1A);
+    Serial.println("Send OK");
+}
+
+void startConnection()
+{
+  if (sendCommand("AT+CSTT=\"nb1internet\"\r\n","OK")) Serial.println("Setting APN OK!");
+}
+
+void initSIM7000 ()
+{
+  SIM7000.begin(9600);
+  pinMode(PWRKEY,OUTPUT);
+  SIM7000.write(0x1A);
+  checkSIM7000();
+  setGSM();
+  delay(500);
+  if (sendCommand("AT+CGDCONT=1,\"IP\",\"nb1internet\"","OK")) Serial.println("CGD OK!");
+  delay(1000);
+}
+</code></pre>
+
+                            <h5 id="postdata" align="justify">B. AT-Command POST Data</h5>
+
+						<pre class="line-numbers"><code class="language-c">AT+CNMP=38&ltCR>&ltLF>
+AT+CMNB=2&ltCR>&ltLF>
+AT+CPSI?&ltCR>&ltLF>
+AT+CGDCONT=1,"IP","nb1internet"&ltCR>&ltLF>
+AT+CSTT="nb1internet"&ltCR>&ltLF>
+AT+CIICR&ltCR>&ltLF>
+AT+CIFSR&ltCR>&ltLF>
+AT+CIPSTART="TCP","platform.antares.id","8080"
+AT+CIPSEND
+
+POST /~/antares-cse/antares-id/YOUR-APPLICATION-NAME/YOUR-DEVICE-NAME HTTP/1.1&ltCR>&ltLF>
+Host: platform.antares.id:8080&ltCR>&ltLF>
+Accept: application/json&ltCR>&ltLF>
+Content-Length: 36&ltCR>&ltLF>
+Content-Type: application/json;ty=4&ltCR>&ltLF>
+X-M2M-Origin: YOUR-ACCESS-KEY&ltCR>&ltLF>&ltCR>&ltLF>
+{"m2m:cin": {"con": "{\"test\":1}"}}&ltSUB></code> </pre>
+
+						<h5 id="getdata" align="justify">C. AT-Command GET Data</h5>
+
+						<pre class="line-numbers"><code class="language-c">AT+CNMP=38&ltCR>&ltLF>
+AT+CMNB=2&ltCR>&ltLF>
+AT+CPSI?&ltCR>&ltLF>
+AT+CGDCONT=1,"IP","nb1internet"&ltCR>&ltLF>
+AT+CSTT="nb1internet"&ltCR>&ltLF>
+AT+CIICR&ltCR>&ltLF>
+AT+CIFSR&ltCR>&ltLF>
+AT+CIPSTART="TCP","platform.antares.id","8080"&ltCR>&ltLF>
+AT+CIPSEND&ltCR>&ltLF>
+
+GET /~/antares-cse/antares-id/YOUR-APPLICATION-NAME/YOUR-DEVICE-NAME/la HTTP/1.1&ltCR>&ltLF>
+Host: 180.250.117.125:8080&ltCR>&ltLF>
+Accept: application/json&ltCR>&ltLF>
+Content-Type: application/json;ty=4&ltCR>&ltLF>
+X-M2M-Origin: YOUR-ACCESS-KEY&ltCR>&ltLF>&ltCR>&ltLF>&ltSUB></code></pre>
+            <br>
+<h3 id="get-data" align="center">Mengambil data dari ANTARES mengunakan Android</h3>
+<h4 id="prerequisites" align="justify">Prasyarat</h4>
+  <ul>
+    <li>Java JDK. Belum menginstall? <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Ikuti tutorial ini.</a></li>
+    <li>Android Studio IDE. Belum menginstall? <a href="https://developer.android.com/studio/index.html">Ikuti tutorial ini.</a></li>
+  </ul>
+<br>
+<h4 id="create-project" align="left">Create Android Application</h4>
+<ol>
+    <li>Download Antares Library untuk Android dengan klik button di bawah. Simpan .jar library kedalam penyimpanan lokal komputer Anda. <br>
+    <a class="btn btn-lg btn-warning btn-round" href="../assets/files/libraries/antares-http-api-0.9.jar">Download</a>
+    <br><br></li>
+    <li>Klik "Start a new Android Studio Application". <br><img class="shadow-3" src="../assets/img/android-library-tutorial-1.jpg" alt="..."><br><br></li>
+    <li>Beri nama pada aplikasi Anda. <img class="shadow-3" src="../assets/img/android-library-tutorial-2.jpg" alt="..."><br><br></li>
+    <li>Definisikan SDK target. <img class="shadow-3" src="../assets/img/android-library-tutorial-3.jpg" alt="..."><br><br></li>
+    <li>Definisikan Activity Anda. Kami menyarankan Anda untuk memilih "Empty Activity".<img class="shadow-3" src="../assets/img/android-library-tutorial-4.jpg" alt="..."><br><br></li>
+    <li>Beri nama Activity Anda. Kami menyarankan Anda untuk memilih pilihan default "MainActivity".<img class="shadow-3" src="../assets/img/android-library-tutorial-5.jpg" alt="..."><br><br></li>
+    <li>Klik pada bagian "Android".<img class="shadow-3" src="../assets/img/android-library-tutorial-6.jpg" alt="..."><br><br></li>
+    <li>Pindah layout ke "Project". <img class="shadow-3" src="../assets/img/android-library-tutorial-7.jpg" alt="..."><br><br></li>
+    <li>Copy-Paste library jar yang telah didownload ke app -> libs. <img class="shadow-3" src="../assets/img/android-library-tutorial-8.jpg" alt="..."><br><br></li>
+    <li>Selamat! Anda telah memasukkan library jar.<img class="shadow-3" src="../assets/img/android-library-tutorial-9.jpg" alt="..."><br><br></li>
+</ol>
+<h4 id="source-code">Source Code</h4>
+<h5>Data yang tersimpan di Antares</h5>
+<img class="shadow-3" src="../assets/img/android-library-tutorial-12.png" alt="...">
+<br>
+<br>
+<h5>AndroidManifest.xml</h5>
+<p>Agar bisa mengeksekusi API Antares, dibutuhkan akses Internet dan agar bisa mengakses Internet di Android, kita harus tambahkan baris berikut di AndroidManifest.xml.</p>
+<pre class="line-numbers"><code class="language-xml">&lt;!--- IMPORTANT!!!!!!! --->
+&lt;!--- Tambahkan line berikut di AndroidManifest.xml Anda --->
+&lt;!--- Setelah manifest --->
+&lt;uses-permission android:name="android.permission.INTERNET" />
+&lt;!--- Sebelum application ---></code></pre>
+<br>
+<h5>activity_main.xml</h5>
+<p>Ubah <strong>SEMUA</strong> isi dari activity_main.xml dengan konten berikut ini:</p>
+<pre class="line-numbers"><code class="language-xml">&lt?xml version="1.0" encoding="utf-8"?>
+&ltandroid.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    &ltTextView
+        android:id="@+id/txtData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data"
+        android:textSize="24sp"/>
+
+    &ltButton
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"/>
+
+&lt/android.widget.LinearLayout></code></pre>
+<br>
+<h5>MainActivity.java</h5>
+<pre class="line-numbers"><code class="language-java">// !!!!------ IMPORTANT ---------!!!!//
+// Ubah semua code setelah package nama.package.Anda dengan
+// dengan Code berikut
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import id.co.telkom.iot.AntaresHTTPAPI;
+import id.co.telkom.iot.AntaresResponse;
+
+public class MainActivity extends AppCompatActivity implements AntaresHTTPAPI.OnResponseListener{
+
+    private Button btnRefresh;
+    private TextView txtData;
+    private String TAG = "ANTARES-API";
+    private AntaresHTTPAPI antaresAPIHTTP;
+    private String dataDevice;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // --- Inisialisasi UI yang digunakan di aplikasi --- //
+        btnRefresh = (Button) findViewById(R.id.btnRefresh);
+        txtData = (TextView) findViewById(R.id.txtData);
+
+        // --- Inisialisasi API Antares --- //
+        antaresAPIHTTP = AntaresHTTPAPI.getInstance();
+        antaresAPIHTTP.addListener(this);
+
+        btnRefresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                antaresAPIHTTP.getLastDataofDevice("your-access-key","your-application-name","your-device-name");
+            }
+        });
+    }
+
+    @Override
+    public void onResponse(AntaresResponse antaresResponse) {
+        // --- Cetak hasil yang didapat dari ANTARES ke System Log --- //
+        Log.d(TAG,antaresResponse.toString());
+
+        try {
+            JSONObject body = new JSONObject(antaresResponse.getBody());
+            dataDevice = body.getJSONObject("m2m:cin").getString("con");
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    txtData.setText(dataDevice);
+                }
+            });
+            Log.d(TAG,dataDevice);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+<br>
+<h5>Hasil Logcat</h5>
+<p>Kita dapat melakukan filter terhadap hasil log keluaran di Android. Silahkan isi di bagian seperti gambar berikut. Ketika tombol diklik, maka hasil output yang didapatkan juga bisa dilihat pada gambar di bawah ini.</p>
+<img class="shadow-3" src="../assets/img/android-library-tutorial-13.png" alt="...">
+<br>
+<br>
+<h4 id="output">Output</h4>
+<img class="shadow-3" src="../assets/img/nbiot-android.png" alt="..."><br><br></li>
+              </section>
+                            </main>
+                            <!-- END Main container -->
+
+                            <!--
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              | Footer 5
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              !-->
+
+                              <footer class="site-footer py-70 bg-warning">
+                                <div class="container" id="footer">
+                                </div>
+                              </footer>
+
+
+                            <!-- Scripts -->
+                            <script src="../assets/js/core.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                            <script src="../assets/js/thesaas.min.js"></script>
+                            <script src="../assets/js/affix.js"></script>
+                            <script src="../assets/js/script.js"></script>
+                            <script src="../assets/js/prism.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+
+                                    var realm = 'https';
+                                    var domain = 'platform.antares.id';
+                                    var port = '8443';
+                                    var cseName = 'antares-cse';
+                                    var cseId = 'antares-id';
+
+                                    $('code').each(function () {
+                                        if ($(this).text().indexOf('https://') !== -1) {
+                                            $(this).text($(this).text().replace('https', realm));
+                                            $(this).text($(this).text().replace('platform.antares.id', domain));
+                                            $(this).text($(this).text().replace('8443', port));
+                                            $(this).text($(this).text().replace('antares-cse', cseName));
+                                            $(this).text($(this).text().replace('cseId', cseId));
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+                                });
+                            </script>
+
+                            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments)
+                                }
+                                ;
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-106459395-1');
+
+                            </script>
+
+                            <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+                            </html>

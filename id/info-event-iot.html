@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="theme-color" content="#D96C22">
+
+  <title>Antares | Event</title>
+
+  <!-- Styles -->
+  <link href="../assets/css/core.min.css" rel="stylesheet">
+  <link href="../assets/css/thesaas.css" rel="stylesheet">
+  <link rel='stylesheet prefetch'
+    href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/prism.css" rel="stylesheet">
+  <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/event.css">
+
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <style type="text/css">
+    .affix {
+      position: fixed;
+      top: 60px;
+    }
+
+    ::-webkit-scrollbar-track {
+      /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+      background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar {
+      width: 4px;
+      background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, .2);
+    }
+
+    .affix-bottom {
+      position: absolute;
+    }
+
+    #sideb {
+      height: calc(100vh - 60px);
+      overflow-y: hidden;
+    }
+
+    #sideb:hover {
+      height: calc(100vh - 60px);
+      overflow-y: auto;
+    }
+
+    .card {
+      -webkit-box-shadow: 0px 0px 8px 0px rgba(187, 187, 187, 1);
+      -moz-box-shadow: 0px 0px 8px 0px rgba(187, 187, 187, 1);
+      box-shadow: 0px 0px 8px 0px rgba(187, 187, 187, 1);
+      background-color: #F2F2F2;
+    }
+
+    .card-footer {
+      background-color: #F2F2F2;
+    }
+  </style>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+    (function ($, window, document, undefined) {
+
+      $(function () {
+        $("#navbar").load("nav.html #nav");
+        $('#footer').load("nav.html #foot");
+      });
+
+    })(jQuery, window, document);
+    $(window).on("load", function () {
+      $(function () {
+        $('#event').addClass('active');
+      });
+    });
+
+
+
+  </script>
+</head>
+
+<body data-target="#navbar" data-offset="60">
+
+
+  <!-- Topbar -->
+  <nav class="topbar topbar topbar-expand-lg topbar-sticky" id="navbar">
+    <!-- <nav class="topbar topbar-sticky"> -->
+  </nav>
+  <!-- END Topbar -->
+
+
+  <!-- Header -->
+  <!--   <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)"
+    data-overlay="8">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12">
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+                      <h1>Siapkan Liburanmu menjadi Developer</h1>
+                      <h4>Online Learning</h4>
+
+                      <div class="img-container" style="margin: 0 auto;">
+                        <img src="../assets/img/iot-1.png" alt="siapkan liburanmu" class="image-content">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col-12">
+                      <h1>Online Learning Fundamental</h1>
+                      <h4>Internet of Things</h4>
+                      <a href="info-event-iot-detail-1.html" rel="noopener noreferrer">
+                        <div class="img-container" style="margin: 0 auto;">
+                          <img src="../assets/img/iot-6.png" alt="fundamental" class="image-content">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col-12">
+                      <h1>Online Learning Intermediate</h1>
+                      <h4>Internet of Things - Smart Irigasi</h4>
+                      <a href="info-event-iot-detail-2.html" rel="noopener noreferrer">
+                        <div class="img-container" style="margin: 0 auto;">
+                          <img src="../assets/img/iot-14.png" alt="fundamental" class="image-content">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col-12">
+                      <h1>Online Learning Intermediate</h1>
+                      <h4>Internet of Things - GSP Kendaraan</h4>
+                      <a href="info-event-iot-detail-3.html" rel="noopener noreferrer">
+                        <div class="img-container" style="margin: 0 auto;">
+                          <img src="../assets/img/iot-17.png" alt="fundamental" class="image-content">
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">
+                << /span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">></span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </header> -->
+  <!-- END Header -->
+
+  <!-- Main container -->
+  <main class="main-content">
+
+    <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Description
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+    <section class="bg-white text-center">
+      <div class="container">
+        <h1 class="text-black"><strong>Event Seru Antares dan mitra:</strong></h1>
+        <div class="row" style="margin-top: 2rem;">
+          <div class="col-lg-12 mx-auto">
+
+            <ul class="card-deck">
+              <li class="card" id="event_iot_1">
+                <img class="card-img-top" src="../assets/img/iot-6.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-black"><strong>Online Learning Fundamental</strong></h4>
+                  <h4>Pelajari dasarnya!</h5>
+                    <p class="card-text text-4 lato-light">Internet of Things </p>
+                    <div>
+                      <p class="lato-light"><em class="fa fa-calendar"></em> Sabtu, 9 Oktober 2021
+                        <br>
+                        <em class="fa fa-calendar"></em> Senin, 11 Oktober 2021
+                        <br>
+                        <em class="fa fa-calendar"></em> Rabu, 13 Oktober 2021
+                    </div>
+                    <p class="lato-light"> <em class="fa fa-hourglass"></em> 10.00 - 12.00 WIB</p>
+                    <p id="event1" class="font-bold"></p>
+
+                    <script>
+                      let text1;
+                      const today1 = new Date();
+                      const selesai1 = new Date();
+                      selesai1.setFullYear(2021, 10, 13);
+
+                      if (selesai1 > today1) {
+                        text1 = "Event Masih Tersedia";
+                      } else {
+                        text1 = "Event Sudah Selesai";
+                      }
+
+                      document.getElementById("event1").innerHTML = text1;
+                    </script>
+
+                </div>
+                <div class="card-footer text-left">
+                  <a href="./info-event-iot-detail-1.html"
+                    class="btn btn-warning btn-sm btn-event btn-radius btn-hover"><strong>Detail &rarr;</strong></a>
+                </div>
+              </li>
+              <li class="card" id="event_iot_2">
+                <img class="card-img-top" src="../assets/img/iot-14.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-black"><strong>Online Learning Intermediate</strong></h4>
+                  <h4>Smart Irigasi</h4>
+                  <p class="card-text text-4 lato-light">Internet of Things </p>
+                  <div>
+                    <p class="lato-light"><em class="fa fa-calendar"></em> Selasa, 9 Juni 2020
+                      <br>
+                      <em class="fa fa-calendar"></em> Kamis, 11 Juni 2020
+                      <br>
+                      <em class="fa fa-calendar"></em> Sabtu, 13 Juni 2020
+                  </div>
+                  <p class="lato-light"> <em class="fa fa-hourglass"></em> 10.00 - 12.00 WIB</p>
+                  <p id="event2" class="font-bold"></p>
+
+                  <script>
+                    let text2;
+                    const today2 = new Date();
+                    const selesai2 = new Date();
+                    selesai2.setFullYear(2020, 06, 13);
+
+                    if (selesai2 > today2) {
+                      text2 = "Event Masih Tersedia";
+                    } else {
+                      text2 = "Event Sudah Selesai";
+                    }
+
+                    document.getElementById("event2").innerHTML = text2;
+                  </script>
+
+                </div>
+                <div class="card-footer text-left">
+                  <a href="./info-event-iot-detail-2.html"
+                    class="btn btn-warning btn-sm btn-event btn-radius"><strong>Detail &rarr;</strong></a>
+                </div>
+              </li>
+              <li class="card" id="event_iot_3">
+                <img class="card-img-top" src="../assets/img/iot-17.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"><strong>Online Learning Intermediate</strong></h4>
+                  <h4>Smart Kendaraan</h4>
+                  <p class="card-text text-4 lato-light">Internet of Things </p>
+                  <div>
+                    <p class="lato-light"><em class="fa fa-calendar"></em> Selasa, 9 Juni 2020
+                      <br>
+                      <em class="fa fa-calendar"></em> Kamis, 11 Juni 2020
+                      <br>
+                      <em class="fa fa-calendar"></em> Sabtu, 13 Juni 2020
+                  </div>
+                  <p class="lato-light"> <em class="fa fa-hourglass"></em> 10.00 - 12.00 WIB</p>
+                  <p id="event3" class="font-bold"></p>
+
+                  <script>
+                    let text3;
+                    const today3 = new Date();
+                    const selesai3 = new Date();
+                    selesai3.setFullYear(2020, 06, 13);
+
+                    if (selesai3 > today3) {
+                      text3 = "Event Masih Tersedia";
+                    } else {
+                      text3 = "Event Sudah Selesai";
+                    }
+
+                    document.getElementById("event3").innerHTML = text3;
+                  </script>
+
+                </div>
+                <div class="card-footer text-left">
+                  <a href="./info-event-iot-detail-3.html"
+                    class="btn btn-warning btn-sm btn-event btn-radius"><strong>Detail &rarr;</strong></a>
+                </div>
+              </li>
+              <li class="card" id="event_iot_4">
+                <img class="card-img-top" src="../assets/img/dilo-event.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title" style="line-height: 2.1 ;"><strong>TELKOM Digital Platform Hands-On Training IoT
+                      Antares</strong></h4>
+                  <p class="card-text text-4 lato-light">Internet of Things </p>
+                  <div>
+                    <p class="lato-light"><em class="fa fa-calendar"></em> Selasa, 9 Juni 2020
+                      <br>
+                      <em class="fa fa-calendar"></em> Kamis, 11 Juni 2020
+                      <br>
+                      <em class="fa fa-calendar"></em> Sabtu, 13 Juni 2020
+                  </div>
+                  <p class="lato-light"> <em class="fa fa-hourglass"></em> 10.00 - 12.00 WIB</p>
+                  <p id="event4" class="font-bold"></p>
+
+                  <script>
+                    let text4;
+                    const today4 = new Date();
+                    const selesai4 = new Date();
+                    selesai4.setFullYear(2020, 06, 13);
+
+                    if (selesai4 > today4) {
+                      text4 = "Event Masih Tersedia";
+                    } else {
+                      text4 = "Event Sudah Selesai";
+                    }
+
+                    document.getElementById("event4").innerHTML = text4;
+                  </script>
+
+                </div>
+                <div class="card-footer text-left">
+                  <a href="./info-event-iot-detail-4.html"
+                    class="btn btn-warning btn-sm btn-event btn-radius"><strong>Detail &rarr;</strong></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-white"></section>
+
+
+
+  </main>
+  <!-- END Main container -->
+
+  <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | FAB 5 to contact us
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+  <div id="fab">
+    <a href="../id/index.html#contact" class="float-contact">
+      <h4 class="float-item"> <img src="../assets/icons/questionmark.svg" alt=""></h4>
+    </a>
+  </div>
+
+  <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Footer 5
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+
+  <footer class="site-footer py-70 bg-footer">
+    <div class="container" id="footer">
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/js/core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+  <script src="../assets/js/thesaas.min.js"></script>
+  <script src="../assets/js/affix.js"></script>
+  <script src="../assets/js/bootstrap-select.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/prism.js"></script>
+
+  <script type="text/javascript">
+    _linkedin_partner_id = "3151676";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+    (function (l) {
+      if (!l) {
+        window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+        window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+    })(window.lintrk);
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+  </noscript>
+</body>
+
+</html>

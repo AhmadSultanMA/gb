@@ -1,0 +1,187 @@
+#content-price .nav-item .active {
+    color: #D96C22 !important;
+    font-family: lato-bold, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+#content-price .nav-item a {
+    padding: 10px 20px !important;
+    font-size: 16.72px;
+}
+
+@media(min-width:768px){
+    #content-price .nav-item a {
+        padding: 10px 5px !important;
+        font-size: 14.72px;
+    }
+}
+
+@media(min-width:992px){
+    #content-price .nav-item a {
+        padding: 10px 20px !important;
+        font-size: 16.72px;
+    }
+}
+
+@media(min-width:1200px){
+    #content-price .nav-item a {
+        padding: 10px 20px !important;
+        font-size: 18.72px;
+    }
+}
+
+#content-price .nav-item a:hover {
+    color: #D96C22 !important;
+}
+
+#content-price .tab-content {
+    border-radius: 0px 0px 5px 5px !important;
+}
+
+.border-price {
+    border: 1px solid #E0E0E0;
+    width: 200px;
+    height: 129px;
+    margin: 10px;
+    padding: 20px 0px;
+}
+
+.btn-platform {
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+    padding: auto;
+}
+
+@media(min-width:1200px){
+    .btn-platform{
+        padding: 5px 40px;
+    }
+}
+
+.btn-platform:hover{
+    background-color: transparent;
+    color: #D96C22;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 1);
+}
+
+.bg-price, .bg-platform-header-2 {
+    background-image: url(../img/Rectangle-109.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media(min-width:768px){
+    .bg-platform-header-2{
+        height: 100vh;
+    }
+
+    /* .bg-price{
+        height: 100vh;
+    } */
+}
+
+#getting-started .nav-item .active {
+    background-image: url(../img/Frame-10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#getting-started .nav-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+#getting-started .nav-item .active h5, #getting-started .nav-item .active p {
+    color: #ffffff;
+}
+
+#getting-started .nav-item .nav-link {
+    padding: 20px 20px;
+}
+
+.bg-langkah {
+    background-image: url(../img/Langkah-Mudah-Pic-frame.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.bg-langkah .tab-content {
+    padding: 100px 70px 0px 70px;
+}
+
+.bg-langkah-select{
+    background-image: url(../img/topography-4.png);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+}
+
+.bg-platform-header {
+    background-image: url(../img/topography-3.jpg);
+    background-position: 35% 0%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media(min-width:768px){
+    .bg-platform-header{
+        height: 100vh;
+    }
+}
+
+@media(min-width:992px){
+    .bg-platform-header {
+        height: 100vh;
+    }
+}
+
+@media(min-width:1200px){
+    .bg-platform-header {
+        background-image: url(../img/topography-2.jpg);
+        height: 100vh;
+        background-size: 20% auto;
+    }
+}
+
+div#gambarmuter {
+    -moz-transition:all .8s ease-in-out;
+    -ms-transition:all .8s ease-in-out;
+    -o-transition:all .8s ease-in-out;
+    -webkit-transition:all .8s ease-in-out;
+    transition:all .8s ease-in-out
+}
+    
+.card-feature:hover div#gambarmuter {
+    -moz-transform:rotateY(360deg);
+    -ms-transform:rotateY(360deg);
+    -o-transform:rotateY(360deg);
+    -webkit-transform:rotateY(360deg);
+    transform:rotateY(360deg)
+}
+
+#content-header .iconify{
+    font-size: 100px !important;
+    color: #00294B;
+}
+
+.carousel-indicators{
+   position: absolute;
+   top: 90%;
+}
+
+.carousel-indicators>li{
+    background-color: #D96C22;
+}
+
+.carousel-indicators>li.active{
+    background-color: #00294B;
+}
+
+@media(max-width:1190px){
+    .text-xl-6 {
+        margin-bottom: 100px !important;
+    }
+}

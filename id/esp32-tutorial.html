@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+<!-- Topbar -->
+<nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+  <!-- <nav class="topbar topbar-sticky"> -->
+  <div class="container">
+
+    <div class="topbar-left">
+      <button class="topbar-toggler">&#9776;</button>
+      <a class="topbar-brand hidden-md-down" href="index.html">
+        <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+        <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+      </a>
+    </div>
+
+    <a class="topbar-brand hidden-lg-up" href="index.html">
+      <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+      <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+    </a>
+
+
+    <div class="topbar-right">
+      <ul class="topbar-nav nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Services <em class="fa fa-caret-down"></em></a>
+          <div class="nav-submenu">
+            <a class="nav-link" href="index.html#feature">Features</a>
+            <a class="nav-link" href="index.html#getting-started">Getting Started</a>
+            <a class="nav-link" href="index.html#pricing">Pricing</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="docs.html">Documentation</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Community <em class="fa fa-caret-down"></em></a>
+          <div class="nav-submenu">
+            <a class="nav-link" href="https://blog.antares.id/">Blog</a>
+            <a class="nav-link" href="https://forum.antares.id/">Forum</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact"> Contact</a></li>
+      </ul>
+       <a class="btn btn-sm btn-warning btn-round ml-20" href="https://console.antares.id/register" style="padding-left: 12px; padding-right: 12px;"><img src="../assets/img/signup.svg" style="width: 15px; height: 15px; margin-top: -3px;" alt="signup" class="hidden-lg-up"> <span class="hidden-md-down">Sign Up</span></a>
+       <a class="btn btn-sm btn-warning btn-round ml-5" href="https://console.antares.id" style="padding-left: 12px;padding-right: 12px";><img src="../assets/img/login.svg" style="width: 15px; height: 15px; margin-top: -3px;" alt="login" class="hidden-lg-up"> <span class="hidden-md-down">Login</span></a>
+    </div>
+
+  </div>
+</nav>
+<!-- END Topbar -->
+
+
+
+        <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <h1>Tutorial ESP32 Wi-Fi</h1>
+                        <p class="fs-18 opacity-70">Dokumentasi ini akan menjelaskan kepada anda untuk menggunakan ESP32 dan Antares. Jika membutuhkan informasi lebih lanjut, jangan ragu hubungi kami melalui <a href="mailto:support@antares.id">support@antares.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+        <!-- Main container -->
+        <main class="main-content">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <section class="section bb-3" style="padding-top: 45px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+                                    <!-- Pendahuluan -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li>
+                                            <label><a class="nav-link" href="#pendahuluan" data-scrollto="pendahuluan">Pendahuluan</a></label>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                    <!-- Hardware -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li>
+                                            <label><a class="nav-link" href="#hardware" data-scrollto="hardware">Hardware</a></label>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                    <!-- Software -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li>
+                                            <label><a class="nav-link" href="#software" data-scrollto="software">Software</a></label>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                    <!-- Program Dasar ESP32 Arduino -->
+		                                <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#programdasar" data-scrollto="programdasar">Program Dasar Arduino ESP32</a></label>
+
+                                            <ul>
+                                              <li><a class="nav-link" href="#blink" data-scrollto="blink">Blink</a></li>
+                                              <li><a class="nav-link" href="#gpio" data-scrollto="gpio">GPIO</a></li>
+                                              <li><a class="nav-link" href="#serial" data-scrollto="serial">Serial Monitor</a></li>
+                                              <li><a class="nav-link" href="#light" data-scrollto="light">Sensor Cahaya</a></li>
+                                              <li><a class="nav-link" href="#temp" data-scrollto="temp">Sensor Temperatur</a></li>
+                                            </ul>
+
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                    <!-- Antares HTTP -->
+		                                <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#http" data-scrollto="http">Antares HTTP</a></label>
+
+                                            <ul>
+                                              <li><a class="nav-link" href="#http-store" data-scrollto="http-store">Kirim Data</a></li>
+                                              <li><a class="nav-link" href="#http-get" data-scrollto="http-get">Ambil Data Terakhir</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 pt-25">
+
+
+				<!--
+				|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+				| ISI DOC
+				|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+				!-->
+        <hr>
+        <!-- Pendahuluan -->
+        <h3 align="center" id="pendahuluan">
+          Pendahuluan
+        </h3>
+        <p align="justify">
+          Dokumentasi ini akan menjelaskan kepada anda bagaimana ESP32 dapat terhubung dengan platform Antares, membaca data dari beberapa sensor, dan mengambil dan mengirim data yang telah dibaca akan pada platform Antares.<br> 
+        </p>
+
+        <!-- Hardware -->
+        <h3 align="center" id="hardware">Hardware</h3>
+        <p align="justify">
+          Untuk mengukur kondisi suhu dan intensitas cahaya, dibutuhkan beberapa perangkat elektronik. Berikut adalah beberapa perangkat yang akan digunakan pada contoh ini:
+          <ul>
+            <li><strong>ESP32</strong></li>
+            Perangkat untuk membaca data hasil pengukuran sensor. <em>Board</em> yang akan digunakan adalah WeMos Lolin32 ESP32
+            <li><strong>DHT11</strong></li>
+            Sensor untuk mengukur suhu dan kelembapan
+            <li><strong>LDR</strong></li>
+            Sensor untuk mengukur intensitas cahaya
+          </ul>
+        </p>
+
+        <!-- Software -->
+        <h3 align="center" id="software">Software</h3>
+        <p align="justify">
+          Berikut adalah beberapa software yang dibutuhkan untuk menjalankan contoh-contoh pada dokumentasi ini:
+
+          <ul>
+            <li><strong>Arduino IDE</strong></li>
+            Software utama yang akan digunakan untuk memprogram ESP32.<br>
+            <a class="btn btn-lg btn-warning btn-round" href="https://www.arduino.cc/en/main/software">Download Arduino IDE</a>
+
+            <li><strong>Arduino ESP32</strong></li>
+            Arduino IDE tidak mendukung board-board ESP32 secara bawaannya, maka dari itu perlu dilakukan instalasi Arduino ESP32 melalui <em>Board Manager</em> Arduino IDE, Silahkan ikuti <a href="library-tutorial.html#esp32">Tutorial Instalasi board ESP32</a>.<br>
+            <a class="btn btn-lg btn-warning btn-round" href="https://github.com/espressif/arduino-esp32/archive/master.zip">Download Arduino ESP32</a>
+
+            <li><strong>Library Antares ESP32</strong></li>
+            Komunikasi antara ESP32 dengan database Antares dapat menggunakan <strong>HTTP</strong>.<br>
+            Instalasi <em>library</em> HTTP dapat dilakukan melalui <em>Library Manager</em> Arduino IDE, atau dengan men<em>download</em>nya pada halaman GitHub. Silahkan ikuti <a href="library-tutorial.html#antareslibrary">Tutorial Instalasi Library Antares</a>.<br>
+
+              <a class="btn btn-lg btn-warning btn-round" href="https://github.com/antaresdocumentation/antares-esp32-http/archive/master.zip">Download Library Antares ESP32 HTTP</a>
+              <a class="btn btn-lg btn-warning btn-round" href="../assets/files/antares-esp32-mqtt-master-new.zip">Download Library Antares ESP32 MQTT</a>
+
+            <li><strong>Library DHT11</strong></li>
+            Library DHT11 dapat dipasang pada Arduino IDE melalui <em>Library Manager</em> atau halaman GitHub.<br>
+            <a class="btn btn-lg btn-warning btn-round" href="https://github.com/adafruit/DHT-sensor-library/archive/master.zip">Download Library DHT Adafruit</a>
+          </ul>
+        </p>
+
+        <!-- Program Dasar ESP32 Arduino -->
+        <h3 align="center" id="programdasar">Program Dasar Arduino ESP32</h3>
+        Segmen berikut berisi contoh-contoh program yang dapat anda coba untuk menjalankan beberapa fungsi pada ESP32.
+        <br><br>
+
+        <!-- Blinky -->
+        <h5 id="blink">Blink</h5>
+        Setiap <em>board</em> ESP32 mempunyai <strong>LED</strong> di dalamnya yang bisa anda kontrol dengan mengakses dan memberi logika HIGH atau LOW pada pin <strong>GPIO2</strong> di <em>board</em> ESP32.
+        Perlu diingat bahwa LED di ESP32 adalah <em>Active Low</em>, yang berarti jika diberi logika 1 (HIGH), LED akan mati. Sebaliknya, jika diberi logika 0 (LOW), LED akan menyala.
+
+        <pre class="line-numbers"><code class="language-c">#define led 2                 // Buat variabel "led" sebagai pin GPIO2
+
+void setup() {
+  pinMode(led, OUTPUT);       // Atur pin "led" sebagai OUTPUT
+}
+
+void loop() {
+  digitalWrite(led, HIGH);    // Matikan LED
+  delay(1000);                // Jeda 1 detik
+  digitalWrite(led, LOW);     // Nyalakan LED
+  delay(1000);                // Jeda 1 detik
+}</code></pre><br>
+
+        <!-- GPIO -->
+        <h5 id="gpio">GPIO</h5>
+        GPIO pada <em>board</em> ESP32 biasanya ditandai dengan angka <strong>0</strong> sampai dengan <strong>39</strong>. Setiap pin memiliki fitur yang berbeda-beda sesuai kegunaannya masing-masing. Silahkan ikuti rangkaian sambungan ESP32 dengan LED sesuai gambar berikut: (NB. resistor bernilai sekitar 220 ohm)
+
+        <img src="../assets/img/esp32-led-schematic.png" alt="esp32-led-schematic">
+        <img src="../assets/img/esp32-led-fritzing.png" alt="esp32-led-fritzing">
+        <pre class="line-numbers"><code class="language-c">#define led1 25               // Buat variabel "led1" sebagai pin 25
+#define led2 26               // Buat variabel "led2" sebagai pin 26
+
+void setup() {
+  pinMode(led1, OUTPUT);      // Atur pin "led1" sebagai OUTPUT
+  pinMode(led2, OUTPUT);      // Atur pin "led2" sebagai OUTPUT
+}
+
+void loop() {
+  digitalWrite(led1, HIGH);   // Nyalakan LED 1
+  digitalWrite(led2, LOW);    // Matikan LED 2
+  delay(1000);                // Jeda 1 detik
+  digitalWrite(led1, LOW);    // Matikan LED 1
+  digitalWrite(led2, HIGH);   // Nyalakan LED 2
+  delay(1000);                // Jeda 1 detik
+}</code></pre><br>
+
+        <!-- Serial -->
+        <h5 id="serial">Serial Monitor</h5>
+        Serial monitor berfungsi untuk mengirim data dari ESP32 ke port serial komputer untuk menampilkan data di komputer.
+        <pre class="line-numbers"><code class="language-c">void setup() {
+  Serial.begin(115200);     // Buka komunikasi serial pada baudrate 115200
+}
+
+int angka = 0;              // Buat variabel angka dengan nilai 0
+
+void loop() {
+  Serial.print("Angka: ");  // Kirim angka ke serial monitor
+  Serial.println(angka);
+  angka++;                  // Tambah variabel angka +1
+  delay(1000);              // Jeda 1 detik
+}</code></pre><br>
+
+        <!-- Sensor Cahaya -->
+        <h5 id="light">Sensor Cahaya</h5>
+        Silahkan gunakan rangkaian dengan LDR seperti berikut:
+        <img src="../assets/img/esp32-ldr-schematic.png" alt="LDR - Schematic">
+        <img src="../assets/img/esp32-ldr-fritzing.png" alt="LDR - Fritzing" width="400px">
+        <pre class="line-numbers"><code class="language-c">void setup() {
+  Serial.begin(115200);               // Buka komunikasi serial pada baudrate 115200
+}
+
+void loop() {
+  int sensorCahaya = analogRead(A0);   // Baca nilai sensor
+  Serial.println(sensorCahaya);       // Kirim nilai sensor ke serial monitor
+  delay(1000);                        // Jeda 1 detik
+}</code></pre><br>
+
+        <!-- Sensor Temperatur -->
+        <h5 id="temp">Sensor Temperatur</h5>
+        Pada sensor temperatur DHT11, diperlukan <em>library</em> DHT11. Silahkan gunakan rangkaian seperti berikut:
+        <img src="../assets/img/esp32-dht-schematic.png" alt="DHT11 - Schematic">
+        <img src="../assets/img/esp32-dht-fritzing.png" alt="DHT11 - Fritzing">
+        <pre class="line-numbers"><code class="language-c">#include "DHT.h"            // Inisiasi library DHT11
+#define DHTPIN 15           // Buat variabel DHTPIN, mengarah pada pin 15
+#define DHTTYPE DHT11       // Tentukan tipe DHT menjadi DHT11
+DHT dht(DHTPIN, DHTTYPE);   // Buat objek dht
+
+void setup() {
+	Serial.begin(9600);      // Buka komunikasi serial pada baudrate 9600
+	dht.begin();             // Inisiasi objek dht
+}
+
+void loop() {
+	float hum = dht.readHumidity();      // Baca kelembapan
+	float temp = dht.readTemperature();  // Baca temperatur
+	if (isnan(hum) || isnan(temp)) {     // Cek jika sensor error
+      Serial.println("Gagal Membaca DHT sensor!");
+      return;
+	}
+	Serial.println("Humidity: " + (String)hum + " %");       // Print kelembapan (%)
+	Serial.println("Temperature: " + (String)temp + " *C");  // Print temperatur (*C)
+	delay(1000);
+}</code></pre><br>
+
+        <!-- Antares HTTP -->
+        <h3 align="center" id="http">Antares HTTP</h3>
+        Di bawah ini adalah beberapa contoh-contoh kode untuk mengirim dan menerima data melalui HTTP pada database Antares dengan ESP32.
+        <br><br>
+
+        <!-- Kirim data -->
+        <h5 id="http-store">Kirim Data</h5>
+        Contoh kode untuk pengiriman data ada di <strong>File > Examples > Antares ESP32 HTTP > AntaresStoreData</strong>
+        <pre class="line-numbers"><code class="language-c">#include &lt;AntaresESP32HTTP.h&gt;
+
+#define ACCESSKEY "your-access-key"       // Ganti dengan access key akun Antares anda
+#define WIFISSID "your-wifi-ssid"         // Ganti dengan SSID WiFi anda
+#define PASSWORD "your-wifi-password"     // Ganti dengan password WiFi anda
+
+#define applicationName "your-application-name"   // Ganti dengan application name Antares yang telah dibuat
+#define deviceName "your-device-name"     // Ganti dengan device Antares yang telah dibuat
+
+AntaresESP32HTTP antares(ACCESSKEY);    // Buat objek antares
+
+void setup() {
+  Serial.begin(115200);     // Buka komunikasi serial dengan baudrate 115200
+  antares.setDebug(true);   // Nyalakan debug. Set menjadi "false" jika tidak ingin pesan-pesan tampil di serial monitor
+  antares.wifiConnection(WIFISSID,PASSWORD);  // Mencoba untuk menyambungkan ke WiFi
+}
+
+void loop() {
+  // Isi variabel dengan nilai acak, dengan tipe data yang berbeda
+  int temp = random(25,30) ;
+  int hum = random(75,90);
+  float windsp = float(random(20, 30))/3.33;
+  float rainlv = float(random(0, 20))/6.99;
+  String lat = "-6.8718189";
+  String lon = "107.5872477";
+
+  // Memasukkan nilai-nilai variabel ke penampungan data sementara
+  antares.add("temperature", temp);
+  antares.add("humidity", hum);
+  antares.add("wind_speed", windsp);
+  antares.add("rain_level", rainlv);
+  antares.add("latitude", lat);
+  antares.add("longitude", lon);
+
+  // Kirim dari penampungan data ke Antares
+  antares.send(applicationName, deviceName);
+  delay(10000);
+}</code></pre><br>
+
+        <!-- Ambil Data Terakhir -->
+        <h5 id="http-get">Ambil Data Terakhir</h5>
+        Kode ini akan mengambil data terakhir yang terekam di device application Antares anda.<br>
+        Contoh kodenya bisa dilihat pada <strong>File > Examples > Antares ESP32 HTTP > AntaresGetLatestData</strong>
+        <pre class="line-numbers"><code class="language-c">#include &lt;AntaresESP32HTTP.h&gt; // Inisiasi library HTTP Antares ESP32
+
+#define ACCESSKEY "your-access-key"       // Ganti dengan access key akun Antares anda
+#define WIFISSID "your-wifi-ssid"         // Ganti dengan SSID WiFi anda
+#define PASSWORD "your-wifi-password"     // Ganti dengan password WiFi anda 
+
+#define applicationName "your-application-name"   // Ganti dengan application name Antares yang te
+#define deviceName "your-device-name"    // Ganti dengan device Antares yang telah dibuat
+
+AntaresESP32HTTP antares(ACCESSKEY);      // Buat objek antares
+
+void setup() {
+  Serial.begin(115200);     // Buka komunikasi serial dengan baudrate 115200
+  antares.setDebug(true);   // Nyalakan debug. Set menjadi "false" jika tidak ingin pesan-pesan tampil di serial monitor
+  antares.wifiConnection(WIFISSID,PASSWORD);  // Mencoba untuk menyambungkan ke WiFi
+}
+
+void loop() {
+  // Mengambil data terakhir ke penampungan data
+  antares.get(applicationName, deviceName);
+
+  // Mendapatkan data individu
+  int temp = antares.getInt("temperature");
+  int hum = antares.getInt("humidity");
+  float windsp = antares.getFloat("wind_speed");
+  float rainlv = antares.getFloat("rain_level");
+  String lat = antares.getString("latitude");
+  String lon = antares.getString("longitude");
+
+  // Kirim ke serial monitor
+  Serial.println("Temperature: " + String(temp));
+  Serial.println("Humidity: " + String(hum));
+  Serial.println("Wind speed: " + String(windsp));
+  Serial.println("Rain level: " + String(rainlv));
+  Serial.println("Latitude: " + lat);
+  Serial.println("Longitude: " + lon);
+  delay(10000);
+}</code></pre><br>
+
+        <!-- Antares MQTT -->
+        <h3 align="center" id="http">Antares MQTT</h3>
+        Di bawah ini adalah beberapa contoh-contoh kode untuk mengirim dan menerima data melalui MQTT pada database Antares dengan ESP32.
+        Mendengarkan data (subscribe) dapat berupa <em>real-time</em>, yang berarti setiap ada masuk ke database Antares melalui topik MQTT, data tersebut akan dibaca oleh ESP32 secara langsung.
+        <br><br>
+
+        <!-- Publish -->
+        <h5 id="mqtt-pub">Kirim (Publish)</h5>
+        Contoh kode untuk pengiriman data ke topic akun antares anda ada di <strong>File > Examples > Antares ESP32 MQTT > AntaresMQTTPublish</strong>
+        <pre class="line-numbers"><code class="language-c">#include &lt;AntaresESP32MQTT.h&gt;     // Inisiasi library MQTT Antares
+
+#define ACCESSKEY "your-access-key"       // Ganti dengan access key akun Antares anda
+#define WIFISSID "your-wifi-ssid"         // Ganti dengan SSID WiFi anda
+#define PASSWORD "your-wifi-password"     // Ganti dengan password WiFi anda
+
+#define applicationName "your-application-name"   // Ganti dengan application name Antares yang telah dibuat
+#define deviceName "your-device-name"     // Ganti dengan device Antares yang telah dibuat
+
+AntaresESP32MQTT antares(ACCESSKEY);    // Buat objek antares
+
+void setup() {
+  Serial.begin(115200);     // Buka komunikasi serial dengan baudrate 115200
+  antares.setDebug(true);   // Nyalakan debug. Set menjadi "false" jika tidak ingin pesan-pesan tampil di serial monitor
+  antares.wifiConnection(WIFISSID,PASSWORD);  // Mencoba untuk menyambungkan ke WiFi
+  antares.setMqttServer();  // Inisiasi server MQTT Antares
+}
+
+void loop() {
+  /*
+    Cek koneksi ke broker MQTT Antares. Jika disconnect,
+    akan dicoba untuk menyambungkan lagi
+   */
+  antares.checkMqttConnection();
+
+  // Inisiasi variabel
+  int temp = random(25,30) ;
+  int hum = random(75,90);
+  float windsp = float(random(20, 30))/3.33;
+  float rainlv = float(random(0, 20))/6.99;
+  String lat = "-6.8718189";
+  String lon = "107.5872477";
+
+  // Tambahkan variabel ke penampungan data sementara
+  antares.add("temperature", temp);
+  antares.add("humidity", hum);
+  antares.add("wind_speed", windsp);
+  antares.add("rain_level", rainlv);
+  antares.add("latitude", lat);
+  antares.add("longitude", lon);
+
+  // Publish data ke database Antares dan juga broker MQTT Antares
+  antares.publish(applicationName, deviceName);
+  delay(5000);
+}</code></pre><br>
+
+        <!-- Subscribe -->
+        <h5 id="mqtt-sub">Mendengarkan (Subscribe)</h5>
+        Contoh kode untuk mendengarkan topic MQTT akun antares anda ada di <strong>File > Examples > Antares ESP32 MQTT > AntaresMQTTSubscribe</strong>
+        <pre class="line-numbers"><code class="language-c">#include &lt;AntaresESP32MQTT.h&gt;     // Inisiasi library MQTT Antares
+
+#define ACCESSKEY "your-access-key"       // Ganti dengan access key akun Antares anda
+#define WIFISSID "your-wifi-ssid"         // Ganti dengan SSID WiFi anda
+#define PASSWORD "your-wifi-password"     // Ganti dengan password WiFi anda
+
+#define applicationName "your-application-name"   // Ganti dengan application name Antares yang telah dibuat
+#define deviceName "your-device-name"     // Ganti dengan device Antares yang telah dibuat
+
+AntaresESP32MQTT antares(ACCESSKEY);    // Buat objek antares
+
+/*
+  Fungsi utama untuk mendapatkan topik dan payload dari setiap
+  pesan MQTT yang diterima oleh ESP32.
+*/
+void callback(char topic[], byte payload[], unsigned int length) {
+
+  antares.get(topic, payload, length);  // Menyimpan topic dan payload ke penampungan data sementara
+
+  Serial.println("New Message!");
+  Serial.println("Topic: " + antares.getTopic());     // Print topic
+  Serial.println("Payload: " + antares.getPayload()); // Print payload
+
+  // Print data-data yang telah didapatkan
+  Serial.println("Temperature: " + String(antares.getInt("temperature")));
+  Serial.println("Humidity: " + String(antares.getInt("humidity")));
+  Serial.println("Wind speed: " + String(antares.getFloat("wind_speed")));
+  Serial.println("Rain level: " + String(antares.getFloat("rain_level")));
+  Serial.println("Latitude: " + antares.getString("latitude"));
+  Serial.println("Longitude: " + antares.getString("longitude"));
+}
+
+void setup() {
+  Serial.begin(115200);     // Buka komunikasi serial dengan baudrate 115200
+  antares.setDebug(true);   // Nyalakan debug. Set menjadi "false" jika tidak ingin pesan-pesan tampil di serial monitor
+  antares.wifiConnection(WIFISSID,PASSWORD);  // Mencoba untuk menyambungkan ke WiFi
+  antares.setMqttServer();  // Inisiasi server MQTT Antares
+  antares.setCallback(callback);  // Set fungsi callback menjadi fungsi callback seperti di atas
+}
+void loop() {
+  /*
+    Cek koneksi ke broker MQTT Antares. Jika disconnect,
+    akan dicoba untuk menyambungkan lagi
+   */
+  antares.checkMqttConnection();
+}</code></pre><br>
+                            </section>
+                            </main>
+
+                            <!-- END Main container -->
+
+                            <!--
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              | Footer 5
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              !-->
+
+                              <footer class="site-footer py-70 bg-warning">
+                                <div class="container" id="footer">
+                                </div>
+                              </footer>
+
+
+                            <!-- Scripts -->
+                            <script src="../assets/js/core.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                            <script src="../assets/js/thesaas.min.js"></script>
+                            <script src="../assets/js/affix.js"></script>
+                            <script src="../assets/js/script.js"></script>
+                            <script src="../assets/js/prism.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+
+                                    var realm = 'https';
+                                    var domain = 'platform.antares.id';
+                                    var port = '8443';
+                                    var cseName = 'antares-cse';
+                                    var cseId = 'antares-id';
+
+                                    $('code').each(function () {
+                                        if ($(this).text().indexOf('https://') !== -1) {
+                                            $(this).text($(this).text().replace('https', realm));
+                                            $(this).text($(this).text().replace('platform.antares.id', domain));
+                                            $(this).text($(this).text().replace('8443', port));
+                                            $(this).text($(this).text().replace('antares-cse', cseName));
+                                            $(this).text($(this).text().replace('cseId', cseId));
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+                                });
+                            </script>
+
+                            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments)
+                                }
+                                ;
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-106459395-1');
+
+                            </script>
+
+                            <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+                            </html>

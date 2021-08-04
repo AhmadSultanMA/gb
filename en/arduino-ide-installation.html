@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | RDocumentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+        <!-- Topbar -->
+  <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+    <!-- <nav class="topbar topbar-sticky"> -->
+    <div class="container">
+
+      <div class="topbar-left">
+        <button class="topbar-toggler">&#9776;</button>
+        <a class="topbar-brand hidden-md-down" href="index.html">
+          <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+          <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+        </a>
+      </div>
+
+      <a class="topbar-brand hidden-lg-up" href="index.html">
+        <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+        <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+      </a>
+
+
+      <div class="topbar-right">
+        <ul class="topbar-nav nav">
+          <li class="nav-item"><a class="nav-link" href="#home" data-scrollto="home">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services <em class="fa fa-caret-down"></em></a>
+            <div class="nav-submenu">
+              <a class="nav-link" href="#feature" data-scrollto="feature">Features</a>
+              <a class="nav-link" href="#getting-started" data-scrollto="getting-started">Getting Started</a>
+              <a class="nav-link" href="#pricing" data-scrollto="pricing">Pricing</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./docs.html">Documentation</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Community <em class="fa fa-caret-down"></em></a>
+            <div class="nav-submenu">
+              <a class="nav-link" href="https://blog.antares.id/">Blog</a>
+              <a class="nav-link" href="https://forum.antares.id/">Forum</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-scrollto="contact">Contact</a></li>
+        </ul>
+         <a class="btn btn-sm btn-warning btn-round ml-20" href="https://console.antares.id/register" style="padding-left: 12px; padding-right: 12px;"><img alt="signup" src="../assets/img/signup.svg" style="width: 15px; height: 15px; margin-top: -3px;" class="hidden-lg-up"> <span class="hidden-md-down">Sign Up</span></a>
+         <a class="btn btn-sm btn-warning btn-round ml-5" href="https://console.antares.id" style="padding-left: 12px;padding-right: 12px";><img alt="login" src="../assets/img/login.svg" style="width: 15px; height: 15px; margin-top: -3px;" class="hidden-lg-up"> <span class="hidden-md-down">Login</span></a> 
+      </div>
+
+    </div>
+  </nav>
+  <!-- END Topbar -->
+
+
+    <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+
+                        <h1>Arduino IDE Installation</h1>
+                        <p class="fs-18 opacity-70">This documentation helps you to install Arduino IDE (Integrated Development Environment). If you still need any assistance or found any misinformation, don't hesitate to mail us at <a href="mailto:support@antares.id">support@antares.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+    <!-- Main container -->
+    <main class="main-content">
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Description
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
+        <div class="container">
+
+
+          <div class="row">
+            <div class="col-12 col-md-10 offset-md-1">
+
+              <!--<img class="shadow-3" src="../assets/img/how-1.jpg" alt="...">-->
+              <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+              <br>-->
+              <!--
+              <h3>Requiremenents</h3>
+              <ol>
+                <li>Arduino IDE. <a href="#">If you don't have. Click here!</a></li>
+                <li>ESP 8266</li>
+                <li>FTDI</li>
+                <li>Laptop/Personal Computer</li>
+              </ol>
+              -->
+              <h3>Steps</h3>
+
+              <ol>
+                <li>Visit <a href="arduino.cc">arduino.cc</a>. Click <a href="https://www.arduino.cc/en/Main/Software">Software</a> to get the installer. 
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-1.jpg" alt="..."><br><br></li>
+                <li>Pick an installer of your own Operating System. 
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-2.jpg" alt="..."><br><br></li>
+                <li>Choose "JUST DOWNLOAD" to proceed the Download. 
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-3.jpg" alt="..."><br><br></li>
+                <li>Save the installer in your laptop/personal computer. <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-4.jpg" alt="..."><br><br></li>                
+                <li>Choose "I Agree" to proceed the installation. <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-5.jpg" alt="..."><br><br></li>                
+                <li>Choose "Next" to proceed the installation. <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-6.jpg" alt="..."><br><br></li>              
+                <li>Choose "Install" to proceed the installation. <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-7.jpg" alt="..."><br><br></li>                
+                <li>Wait until the installation is finish. <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-8.jpg" alt="..."><br><br></li>        
+                <li>Choose "Install" to proceed the installation. <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-9.jpg" alt="..."><br><br></li>                
+              </ol>
+              <p class="lead">Congratulation, Installation is finish!!</p>
+              <!--
+              <br>
+              <h5>Bonus Points</h5>
+              <ul>
+                <li>Experience with jQuery, Handlebars, or LESS</li>
+                <li>Experience investigating and improving JavaScript performance</li>
+                <li>Experience with WebSockets, Local Storage, or ES6</li>
+                <li>Experience in small start­up environments</li>
+                <li>Experience designing web sites or applications</li>
+              </ul>
+              -->
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+    </main>
+    <!-- END Main container -->
+
+
+
+
+
+        <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Footer 5
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+
+      <footer class="site-footer py-70 bg-warning">
+        <div class="container">
+          <div class="row gap-y">
+            <div class="col-12 col-md-12 col-lg-5">
+              <h6 class="heading-alt text-uppercase fs-14 mb-16">
+                <img src="../assets/img/logo_antares.svg" alt="logo" style="width: 200px">
+              </h6>
+              <p class="fs-13">ANTARES adalah Brand di bawah PT Telekomunikasi Indonesia yang spesifik bergerak di IoT Platform. Sebuah kebanggan kami bisa melayani Anda di seluruh dunia.</p>
+              <br>
+              <p class="text-light">Copyright © 2017 - <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> <a class="text-light" href="#">Antares</a>. All rights reserved.</p>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="heading-alt text-uppercase fs-14 mb-3">External Link</h6>
+              <div class="nav flex-column">
+                <a class="nav-link" href="#">External Link #1</a>
+                <a class="nav-link" href="#">External Link #2</a>
+                <a class="nav-link" href="#">External Link #3</a>
+                <a class="nav-link" href="#">External Link #4</a>
+                <a class="nav-link" href="#">External Link #5</a>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="heading-alt text-uppercase fs-14 mb-3">Company</h6>
+              <div class="nav flex-column">
+                <a class="nav-link" href="enterprise.html">Enterprise</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Privacy Policy</a>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <h6 class="heading-alt text-uppercase fs-14 mb-3">Language</h6>
+
+              <div class="btn-group dropup btn-block">
+                <button class="btn btn-white btn-block" data-toggle="dropdown"><span class="flag-icon flag-icon-id"></span> Bahasa Indonesia</button>
+                <div class="dropdown-menu">
+                  <h6 class="dropdown-header">Select a language</h6>
+                  <a class="dropdown-item" href="/en/arduino-ide-installation.html"><span class="flag-icon flag-icon-us"></span> English</a>
+                  <a class="dropdown-item" href="/id/arduino-ide-installation.html"><span class="flag-icon flag-icon-id"></span> Bahasa Indonesia</a>
+                </div>
+              </div>
+
+              <hr style="margin: 1rem auto">
+
+              <div class="social text-center">
+                <a class="social-facebook" href="#"><em class="fa fa-facebook"></em></a>
+                <a class="social-twitter" href="#"><em class="fa fa-twitter"></em></a>
+                <a class="social-gplus" href="#"><em class="fa fa-google-plus"></em></a>
+                <a class="social-instagram" href="#"><em class="fa fa-instagram"></em></a>
+                <a class="social-linkedin" href="#"><em class="fa fa-linkedin"></em></a>
+              </div>
+              <br>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+
+        <!-- Scripts -->
+        <script src="../assets/js/core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+        <script src="../assets/js/thesaas.min.js"></script>
+        <script src="../assets/js/affix.js"></script>
+        <script src="../assets/js/bootstrap-select.js"></script>
+        <script src="../assets/js/script.js"></script>
+        <script src="../assets/js/prism.js"></script>
+
+  <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+  </html>

@@ -1,0 +1,479 @@
+.card-eco{
+    height: auto;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+.card-eco:hover{
+    background-image: url(../img/Frame_37.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-width: 2px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card-eco h5{
+    height: 150px;
+    font-weight: lighter;
+}
+
+.card-eco h6{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-eco p{
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.card-eco a{
+    color: #000000;
+    font-weight: bold;
+}
+
+.card-eco a h6:hover{
+    color: #00294B;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card-eco p{
+    color: #000000;
+}
+
+.btn-eco{
+    text-transform: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border-color: #D96C22;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-eco:hover{
+    background-color: #FFFFFF;
+    color: #D96C22;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.no-border{
+    border-width: 0px;
+    box-shadow: none;
+    height: 150px;
+}
+
+.no-border:hover{
+    border-width: 0px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.input-eco{
+    border-radius: 5px;
+}
+
+.input-eco:focus{
+    border-color: #D96C22;
+    border-width: 2px;
+}
+
+.check-box {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.check-box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.check-box:hover input ~ .checkmark {
+    border-color: #D96C22;
+}
+
+.check-box input:checked ~ .checkmark {
+    border-color: #5CB85C;
+    /* background:url(../img/check.png); */
+    background-color: #5CB85C;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+
+@media (min-width:768px) {
+    .check-box input:checked ~ .checkmark {
+      background-position: 90%;
+    }
+}
+
+.checkmark {
+    width: 155px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eco-kat{
+    width: 155px;
+}
+
+@media (min-width:768px) {
+    .checkmark {
+      width: 172px;
+    }
+    .eco-kat{
+        width: 172px;
+    }
+}
+
+@media (min-width:1200px) {
+    .eco-kat{
+        width: 350px;
+    }
+}
+
+.trims-eco{
+    text-align: center;
+    padding: 150px 0px;
+}
+
+.ecoheader-text{
+    letter-spacing: 0.5em;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+@media (min-width:768px){
+    .trims-eco{
+        text-align: center;
+        padding: 200px 100px;
+    }
+
+    .ecoheader-text{
+        letter-spacing: 0.5em; 
+        font-size: 64px;
+    }
+}
+
+.ecoheader-detail{
+    width: auto;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 135%;
+}
+
+@media(min-width:768px){
+    .ecoheader-detail{
+        font-size: 24px;
+    }
+}
+
+@media(min-width:1200px){
+    .ecoheader-detail{
+        width: 920px;
+    }
+}
+
+.bg-header, .bg-join-partner{
+    background-image: url(../img/topography-1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bg-join-partner{
+    background-attachment: local;
+}
+
+@media(min-width:768px){
+    .bg-header{
+        background-size: 75% 100%;
+        height:45vh;
+        padding-top: 50px;
+    }
+    .bg-join-partner{
+        background-size: 50% 100%;
+        background-position: 70%;
+    }
+}
+
+@media(min-width:992px){
+    .bg-header{
+        height:30vh;
+        padding-top: 50px;
+    }
+}
+
+@media(min-width:1200px){
+    .bg-header{
+        height:65vh;
+        padding-top: 50px;
+    }
+    .bg-join-partner{
+        height: 80vh;
+    }
+}
+
+@media(max-width:360px){
+    .bg-header, .bg-join-partner{
+        height: 100vh;
+    }
+}
+
+.bg-black{
+    background-color: #000000;
+}
+
+.text-darkblue{
+    color: #00294B;
+}
+
+.btn-round-eco{
+    text-transform: none;
+    font-weight: normal;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 40px;
+}
+
+div img#gambarmuter {
+    -moz-transition:all .8s ease-in-out;
+    -ms-transition:all .8s ease-in-out;
+    -o-transition:all .8s ease-in-out;
+    -webkit-transition:all .8s ease-in-out;
+    transition:all .8s ease-in-out
+}
+    
+.card-eco:hover div img#gambarmuter {
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg)
+}
+
+.img-size{
+    width: 30%;
+    padding: 0.5em;
+}
+
+@media(min-width:1200px){
+    .pl-md-6{
+        padding-left: 40% !important;
+    }
+}
+
+.eco-slide-mobile, .eco-slide-desktop{
+    display: none;
+}
+
+@media(max-width:991px){
+    .eco-slide-mobile{
+        display: block;
+    }
+}
+@media(min-width:992px){
+    .eco-slide-desktop{
+        display: block;
+    }
+}
+
+.carousel-indicators>li{
+    background-color: #ffffff;
+}
+
+.carousel-indicators>li.active{
+    background-color: #D96C22;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: #D96C22;
+}
+
+.input-eco-kat{
+    border-color: #CCCCCC;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+    width: 100%;
+}
+
+.input-eco-kat:focus{
+    border-color: #5CB85C;
+}
+
+.border-grey{
+    border-color: #CCCCCC;
+}
+
+.bg-eco-reg, .bg-eco-reg-2{
+    /* background-image: url(../img/topography-1.jpg); */
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: cover;
+}
+
+.bg-eco-reg-2{
+    background-position: 100% 100%;
+}
+
+@media(min-width:768px){
+    .mr-350{
+        margin-right: 600px !important;
+    }
+}
+
+@media(min-width:992px){
+    .bg-eco-reg, .bg-eco-reg-2{
+        background-image: url(../img/topography-2.jpg);
+        background-size: unset;
+        border-right: 2px solid #B8B8B8;
+    }
+    
+    .mr-350{
+        margin-right: 300px !important;
+    }
+}
+
+@media(min-width:1200px){
+    .mr-350{
+        margin-right: 350px !important;
+    }
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+.card-eco-preview {
+    height: auto;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    margin: 0 auto;
+    max-width: 300px;
+    background-image: url(../img/Frame_37.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-width: 2px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media(min-width:992px){
+    .card-eco-preview{
+        height: 450px;
+    }
+}
+
+div img#company-logo {
+    -moz-transition:all .8s ease-in-out;
+    -ms-transition:all .8s ease-in-out;
+    -o-transition:all .8s ease-in-out;
+    -webkit-transition:all .8s ease-in-out;
+    transition:all .8s ease-in-out
+}
+
+.card-eco-preview:hover div img#company-logo {
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg)
+}
+
+.cgreen {
+    background-color: #5CB85C;
+    color: #ffffff;
+}
+
+.card-eco-preview h5{
+    height: 150px;
+    font-weight: lighter;
+}
+
+.card-eco-preview h6{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-eco-preview p{
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.card-eco-preview a{
+    color: #000000;
+    font-weight: bold;
+}
+
+.card-eco-preview a h6:hover{
+    color: #00294B;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card-eco-preview p{
+    color: #000000;
+}
+
+.height-forum{
+    text-align: left;
+    height: auto;
+}
+
+@media(min-width:768px){
+    .height-forum{
+        text-align: center;
+        padding-top: 20vh;
+        padding-left: 10%;
+        padding-right: 10%;
+    } 
+    
+}
+
+@media(min-width:320px){
+    .img-size {
+        width: 50%;
+        padding: 1.5em;
+    } 
+}
+
+@media(min-width:992px){
+    .height-forum{
+        padding-top: 30vh;
+    }
+}
+
+@media(min-width:1200px){
+    .height-forum{
+        text-align: left;
+        padding-top: 30vh;
+    }
+}
+
+/* @media(max-width:768px){
+    .height-forum{
+        padding-top: 20vh;
+    }
+} */

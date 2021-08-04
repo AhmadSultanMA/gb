@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+  <head>
+    <title>Simple Map</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 75%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -6.8729, lng: 107.5862},
+          zoom: 15
+        });
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(-6.8729, 107.5862),
+          icon: '../assets/img/marker2.svg',
+          map: map,
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp-M_6sJcPy4JnZTUYd2aaUCTLGuaoeoM&callback=initMap"
+    async defer></script>
+  <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+</html>

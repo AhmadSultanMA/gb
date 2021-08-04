@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+<!-- Topbar -->
+<nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+    <!-- <nav class="topbar topbar-sticky"> -->
+    <div class="container">
+
+      <div class="topbar-left">
+        <button class="topbar-toggler">&#9776;</button>
+        <a class="topbar-brand hidden-md-down" href="index.html">
+          <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+          <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+        </a>
+      </div>
+
+      <a class="topbar-brand hidden-lg-up" href="index.html">
+        <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+        <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+      </a>
+
+
+      <div class="topbar-right">
+        <ul class="topbar-nav nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Services <em class="fa fa-caret-down"></em></a>
+            <div class="nav-submenu">
+              <a class="nav-link" href="index.html#feature">Features</a>
+              <a class="nav-link" href="index.html#getting-started">Getting Started</a>
+              <a class="nav-link" href="index.html#pricing">Pricing</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="docs.html">Documentation</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Community <em class="fa fa-caret-down"></em></a>
+            <div class="nav-submenu">
+              <a class="nav-link" href="https://blog.antares.id/">Blog</a>
+              <a class="nav-link" href="https://forum.antares.id/">Forum</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact"> Contact</a></li>
+        </ul>
+         <a class="btn btn-sm btn-warning btn-round ml-20" href="https://console.antares.id/register" style="padding-left: 12px; padding-right: 12px;"><img src="../assets/img/signup.svg" style="width: 15px; height: 15px; margin-top: -3px;" alt="signup" class="hidden-lg-up"> <span class="hidden-md-down">Sign Up</span></a>
+         <a class="btn btn-sm btn-warning btn-round ml-5" href="https://console.antares.id" style="padding-left: 12px;padding-right: 12px";><img src="../assets/img/login.svg" style="width: 15px; height: 15px; margin-top: -3px;" alt="login" class="hidden-lg-up"> <span class="hidden-md-down">Login</span></a>
+      </div>
+
+    </div>
+  </nav>
+  <!-- END Topbar -->
+
+
+
+        <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <h1>Board and Antares Library Installation Tutorial on Arduino IDE</h1>
+                        <p class="fs-18 opacity-70">Dokumentasi ini akan menjelaskan kepada anda untuk menggunakan dan memasang library Antares pada perangkat anda. Jika membutuhkan informasi lebih lanjut, jangan ragu hubungi kami melalui <a href="mailto:support@antares.id">support@antares.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+        <!-- Main container -->
+        <main class="main-content">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <section class="section bb-3" style="padding-top: 45px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+                                    <!-- Pendahuluan -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#pendahuluan" data-scrollto="pendahuluan">Pendahuluan</a></label>
+
+                                            <ul>
+                                              <li><a class="nav-link" href="#esp32" data-scrollto="esp32">Instalasi Board ESP32</a></li>
+                                              <li><a class="nav-link" href="#esp8266" data-scrollto="esp8266">Instalasi Board ESP8266</a></li>
+                                              <li><a class="nav-link" href="#antareslibrary" data-scrollto="antareslibrary">Instalasi Library Antares</a></li>
+                                              </ul>
+
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 pt-25">
+
+
+				<!--
+				|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+				| ISI DOC
+				|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+				!-->
+        <hr>
+        <!-- Pendahuluan -->
+        <h3 align='center' id="pendahuluan">Pendahuluan</h3>
+        <p align-"justify">
+            Dokumetasi ini akan menjelaskan proses instalasi <em>board</em> dan <em>library</em> yang digunakan pada dokumentasi Antares ke Arduino IDE.
+            Sebelumnya pada komputer anda pastikan sudah terinstall software Arduino IDE yang akan digunakan untuk memprogram board. Jika anda belum, anda dapat mengunduh pada <a href="https://www.arduino.cc/en/main/software">link berikut</a> dan untuk tutorial instalasi Arduino IDE dapat mengikuti <a href="arduino-ide-installation.html" rel="noopener noreferrer" target="_blank">halaman berikut</a>.
+        </p>
+        <!-- ESP32 -->
+        <h5 id="esp32">Instalasi <em>Board</em> ESP32 Pada Arduino IDE</h5>
+        <p align="justify">Pada tutorial ini akan dijelaskan instalasi board ESP32 yang digunakan pada tutorial <a href="esp32-tutorial.html">ESP32 (WiFi)</a> dan <a href="lora-esp32-tutorial.html"></a>ESP32 (LoRa)</p>
+
+        <p align="center"><img src="../assets/img/lib-1-preferences.png" alt=""></p>
+        <p align="center"> Gambar 1. Pilih <strong>File->Preferences</strong> </p>
+
+        <p align="center"><img src="../assets/img/lib-2-esp32-add.png" alt=""></p>
+        <p align="center"> Gambar 2. Menambahkan URL <em>board</em> tambahan </p>
+        <p align="justify">
+            Buka Arduino IDE, pilih <strong>Files -> Preferences</strong> kemudian masukkan URL berikut ke dalam kotak <strong>Additional Board Manager URLs</strong> kemudian klik <strong>OK</strong>.
+        </p>
+        <pre class="text-center"><code>https://dl.espressif.com/dl/package_esp32_index.json</code></pre>
+        <p align="justify"><strong>CATATAN:</strong> Anda dapat menambahkan beberapa URL dengan menambahkan koma untuk memisahkannya jika diperlukan.</p>
+        <p align="center"><img src="../assets/img/lib-3-boardmanager.png" alt=""></p>
+        <p align="center"> Gambar 3. Pilih <strong>Alat->Papan->Boards Manager</strong></p>
+    
+        <p align="center"><img src="../assets/img/lib-4-esp32-install.png" alt=""></p>
+        <p align="center"> Gambar 4. Proses Instalasi board ESP32 pada Arduino IDE </p>
+        <p align="justify">
+            Setelah menambahkan URL, langkah selanjutnya adalah instalasi board kita kedalam Arduino IDE. Pilih <strong>Alat->Papan->Boards Manager</strong>, kemudian anda dapat memasukkan kata kunci "esp32" pada kotak pencarian untuk memudahkan anda.
+            Jika sudah menemukan <strong>esp32 by Espressif System</strong>, anda dapat memilih versi paling terbaru dan kemudian klik <strong>Install</strong>.
+        </p>
+        <p align="center"><img src="../assets/img/lib-5-esp32-board-lolin32.png" alt=""></p>
+        <p align="center"> Gambar 5a. Pilih <strong>Alat->Papan->WEMOS LOLIN32</strong> untuk ESP32 Wi-Fi</p>
+        <p align="center"><img src="../assets/img/lib-5-esp32-board-lora.png" alt=""></p>
+        <p align="center"> Gambar 5b. Pilih <strong>Alat->Papan->ESP32 Dev Module</strong> untuk ESP32 LoRa</p>
+        <p align="justify">
+            Untuk <a href="esp32-tutorial.html">tutorial ESP32 (WiFi)</a>, anda dapat memilih <em>board</em> <strong>WEMOS LOLIN32</strong> seperti pada <strong>Gambar 5a</strong>. Sedangkan pada <a href="lora-esp32-tutorial.html">Tutorial ESP32 LoRa</a> anda dapat memilih <em>board</em> <strong>ESP32 Dev Module</strong> seperti pada <strong>Gambar 5b</strong>.
+        </p>
+        <p align="center"><img src="../assets/img/lib-6-esp32-lolin.png" alt=""></p>
+        <p align="center"> Gambar 6. Memilih Port </p>
+        <p align="justify">
+            Sebagai tambahan, agar dapat melakukan komunikasi dengan <em>board</em>, Anda perlu untuk memilih port com. Pilih <strong>Alat > Port > Pilih port</strong> sesuai dengan device yang Anda miliki.            
+        </p>
+
+        <!-- ESP8266 -->
+        <h5 id="esp8266">Instalasi <em>Board</em> ESP8266 Pada Arduino IDE</h5>
+        <p align="justify">Pada tutorial ini akan dijelaskan instalasi board ESP8266 yang digunakan pada <a href="esp-library-example.html">Tutorial ESP8266</a>.</p>
+
+
+        <p align="center"><img src="../assets/img/lib-1-preferences.png" alt=""></p>
+        <p align="center"> Gambar 1. Pilih <strong>File->Preferences</strong> </p>
+
+        <p align="center"><img src="../assets/img/lib-2-esp8266-add.png" alt=""></p>
+        <p align="center"> Gambar 2. Menambahkan URL <em>board</em> tambahan </p>
+        <p align="justify">
+            Buka Arduino IDE, pilih <strong>Files -> Preferences</strong> kemudian masukkan URL berikut ke dalam kotak <strong>Additional Board Manager URLs</strong> kemudian klik <strong>OK</strong>.
+        </p>
+        <pre class="text-center"><code>http://arduino.esp8266.com/stable/package_esp8266com_index.json</code></pre>
+        <p align="justify"><strong>CATATAN:</strong> Anda dapat menambahkan beberapa URL dengan menambahkan koma untuk memisahkannya jika diperlukan.</p>
+        <p align="center"><img src="../assets/img/lib-3-boardmanager.png" alt=""></p>
+        <p align="center"> Gambar 3. Pilih <strong>Alat->Papan->Boards Manager</strong></p>
+
+        <p align="center"><img src="../assets/img/lib-4-esp8266-install.png" alt=""></p>
+        <p align="center"> Gambar 4. Proses Instalasi board ESP8266 pada Arduino IDE </p>
+        <p align="justify">
+            Setelah menambahkan URL, langkah selanjutnya adalah instalasi board kita kedalam Arduino IDE. Pilih <strong>Alat->Papan->Boards Manager</strong>, kemudian anda dapat memasukkan kata kunci "esp8266" pada kotak pencarian untuk memudahkan anda.
+            Jika sudah menemukan <strong>esp8266 by ESP8266 Community</strong>, anda dapat memilih versi paling terbaru dan kemudian klik <strong>Install</strong>.
+        </p>
+        <p align="center"><img src="../assets/img/lib-5-esp8266-board.png" alt=""></p>
+        <p align="center"> Gambar 5. Pilih <strong>Alat->Papan->LOLIN(WEMOS) D1 R2 & mini</strong>.</p>
+        <p align="justify">
+            Sesuai dengan <em>board</em> yang digunakan pada <a href="esp-library-example.html">Tutorial ESP8266</a>, maka anda dapat memilih <strong>LOLIN(WEMOS) D1 R2 & mini</strong>.
+        </p>
+
+        <p align="center"><img src="../assets/img/lib-6-esp8266-port.png" alt=""></p>
+        <p align="center"> Gambar 6. Memilih Port </p>
+        <p align="justify">
+            Sebagai tambahan, agar dapat melakukan komunikasi dengan <em>board</em>, Anda perlu untuk memilih port com. Pilih <strong>Alat > Port > Pilih port</strong> sesuai dengan device yang Anda miliki.            
+        </p>
+
+        <!-- Antares Library -->
+        <h5 id="antareslibrary">Instalasi Library Antares Pada Arduino IDE</h5>
+        <p align-"justify">
+            Agar perangkat yang anda program dapat berinteraksi dengan platform Antares, maka diperlukan instalasi library tambahan pada Arduino IDE di komputer anda. Pada bagian ini akan dijelaskan proses <strong>instalasi library Antares HTTP ESP32</strong> pada Arduino IDE. Untuk instalasi library menggunakan mikrokontroler atau protokol yang berbeda dapat menyesuaikan dengan tutorial berikut.
+        </p>
+        <p align="center"><img src="../assets/img/lib-antares-eps32http-1-githubdownload.png" alt=""></p>
+        <p align="center"> Gambar 1. Halaman GitHub untuk mengunduh Library </p>
+        <p align="justify">
+            Sebelumnya pastikan anda telah memiliki file <em>Library</em> Antares pada komputer anda. jika belum anda dapat mengunduh pada link yang sudah di sediakan pada masing-masing tutorial. Pilih <strong>clone or download -> Download ZIP</strong> kemudian pilih <em>direcory</em> untuk menyimpan file .zip <em>Library</em> Antares.
+        </p>
+        <p align="center"><img src="../assets/img/lib-antares-eps32http-2-includezip.png" alt=""></p>
+        <p align="center"> Gambar 2. Include .ZIP </p>
+    
+        <p align="center"><img src="../assets/img/lib-antares-eps32http-3-choose.png" alt=""></p>
+        <p align="center"> Gambar 3. Pilih file dapa direktori tampat anda mengunduh </p>
+        <p align="justify">
+            Setelah menguduh <em>Library</em> Antares pada halaman GitHub, anda dapat menambahkan <em>Library</em> tersebut kedalam Arduino IDE dengan cara pilih <strong>Sketch -> Include Library -> Menambahkan Library .ZIP</strong>, Kemudian pilih file .zip di direktori anda mengunduh <em>library</em> tersebut.
+        </p>
+        <p align="center"><img src="../assets/img/lib-antares-eps32http-4-inclidelibrary.png" alt=""></p>
+        <p align="center"> Gambar 4. Memasukkan <em>Library</em> kedalam program </p>
+        <p align="justify">
+            Setelah <em>Library</em> sudah terpasang pada Arduino IDE maka anda dapat memasukkan <em>Library</em> tersebut kedalam program yang anda buat dengan cara Pilih <strong>Sketch -> Include Library -> Antares ESP32 HTTP (Sesuaikan dengan Library yang anda butuhkan)</strong>.
+        </p>
+                            </section>
+                            </main>
+
+                            <!-- END Main container -->
+
+                            <!--
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              | Footer 5
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              !-->
+
+                              <footer class="site-footer py-70 bg-warning">
+                                <div class="container" id="footer">
+                                </div>
+                              </footer>
+
+
+                            <!-- Scripts -->
+                            <script src="../assets/js/core.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                            <script src="../assets/js/thesaas.min.js"></script>
+                            <script src="../assets/js/affix.js"></script>
+                            <script src="../assets/js/script.js"></script>
+                            <script src="../assets/js/prism.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+
+                                    var realm = 'https';
+                                    var domain = 'platform.antares.id';
+                                    var port = '8443';
+                                    var cseName = 'antares-cse';
+                                    var cseId = 'antares-id';
+
+                                    $('code').each(function () {
+                                        if ($(this).text().indexOf('https://') !== -1) {
+                                            $(this).text($(this).text().replace('https', realm));
+                                            $(this).text($(this).text().replace('platform.antares.id', domain));
+                                            $(this).text($(this).text().replace('8443', port));
+                                            $(this).text($(this).text().replace('antares-cse', cseName));
+                                            $(this).text($(this).text().replace('cseId', cseId));
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+                                });
+                            </script>
+
+                            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments)
+                                }
+                                ;
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-106459395-1');
+
+                            </script>
+
+                            <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+                            </html>

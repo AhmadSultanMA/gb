@@ -1,0 +1,40 @@
+.text-darkblue{
+    color: #00294B !important;
+}
+.text-black{
+    color: #000000;
+}
+.bg-about{
+    background-image: url(../img/Group_152.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100vh;
+}
+@media(min-width:768px){
+    .bg-about{
+        background-size: 70vh;
+    }
+}
+@media(min-width:1200px){
+    .bg-about{
+        background-size: 150vh;
+    }
+}
+
+.bg-about-header, .bg-about-misi{
+    background-image: url(../img/topography-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 30% 100%;
+    background-position: 80% 0;
+}
+
+.bg-about-misi{
+    background-position: 10% 0;
+}
+
+@media(max-width:766px){
+    .bg-about-header, .bg-about-misi{
+        background-size: cover;
+    }
+}

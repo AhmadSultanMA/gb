@@ -1,0 +1,175 @@
+.img-container {
+  width: 200px;
+  height: 200px;
+}
+
+.img-content {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.event-body {
+  border-radius: 10px;
+}
+
+.title-event {
+  padding: 20px 0 20px 0;
+}
+
+.image-event-con {
+  padding: 10px;
+  height: 350px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.image-event {
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.linkshare  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+}
+
+.linkshare > a {
+  text-decoration: none;
+  color: black;
+  padding-right: 15px;
+}
+
+.btn-radius {
+  border-radius: 10px;
+}
+
+.event-line-bottom {
+  border-bottom: 2px solid #D96C22;
+}
+
+/* .pad-lr-1 {
+  padding: 0px 0px !important;
+} */
+
+@media (min-width:768px){
+  .pad-mob-lr-1 {
+    padding: 0px 35% !important;
+  }
+}
+
+.pad-tb-1 {
+  padding: 30px 0px !important;
+}
+
+.pad-b-1{
+  padding-bottom: 20px !important;
+}
+
+.mar-b-1 {
+  margin-bottom: 30px !important;
+}
+
+.mar-b-2 {
+  margin-bottom: 20px !important;
+}
+
+@media (max-width:991px){
+  .mar-mo-b-1{
+    margin-bottom: 20px !important;
+  }
+}
+
+.btn-hover:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.event-3{
+  margin: 0px 10px;
+  text-align: center;
+}
+
+.event-8{
+  text-align: center;
+}
+
+.event-9{
+  text-align: center;
+}
+
+@media (min-width:1200px) {
+  .event-3{
+    margin: 0px 20px;
+    text-align: center;
+  }
+
+  .event-8{
+    text-align: right;
+    padding-right: 10px;
+    margin-top: -100px;
+  }
+
+  .event-9{
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+
+.event-1{
+  margin-top: 2em; 
+  padding: 20px 0 20px 0;
+  border: 1px black solid; 
+  border-radius: 10px;
+}
+
+.event-2{
+  border-right: 1px solid black;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.event-4{
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px 0px;
+}
+
+.event-5{
+  border: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  border-top: none;
+}
+
+.event-6{
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+  padding: 2px 0px;
+}
+
+.event-7{
+  border: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  border-top: none;
+}
+
+@media (max-width:991px){
+  .event-center{
+    justify-content: center;
+  }
+}
+
+/* .btn-warning{
+  background-color: #D96C22 !important;
+  border-radius: 5px;
+} */
+
+.btn-event:hover{
+  background-color: #ffffff !important;
+  color: #D96C22;
+  border-color: #D96C22;
+}
+
+.text-darkblue{
+  color: #00294B;
+}

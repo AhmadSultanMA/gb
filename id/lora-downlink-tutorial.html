@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link
+            rel='stylesheet prefetch'
+            href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+        <!-- Favicons -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="../assets/img/favicon/apple-icon-57x57.png">
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="../assets/img/favicon/apple-icon-60x60.png">
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="../assets/img/favicon/apple-icon-72x72.png">
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="../assets/img/favicon/apple-icon-76x76.png">
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../assets/img/favicon/apple-icon-114x114.png">
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="../assets/img/favicon/apple-icon-120x120.png">
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="../assets/img/favicon/apple-icon-144x144.png">
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="../assets/img/favicon/apple-icon-152x152.png">
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../assets/img/favicon/apple-icon-180x180.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="../assets/img/favicon/android-icon-192x192.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../assets/img/favicon/favicon-32x32.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="../assets/img/favicon/favicon-96x96.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta
+            name="msapplication-TileImage"
+            content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            (function ($, window, document, undefined) {
+
+                $(function () {
+                    $("#navbar").load("nav.html #nav");
+                    $('#footer').load("nav.html #foot");
+                });
+
+            })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+        <!-- Topbar -->
+        <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+            <!-- <nav class="topbar topbar-sticky"> -->
+        </nav>
+        <!-- END Topbar -->
+        <!-- END Topbar -->
+
+        <!-- Header -->
+        <header
+            class="header header-inverse bg-fixed"
+            style="background-image: url(../assets/img/javier-quesada-222120.jpg)"
+            data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <h1>LoRaWAN | Downlink Tutorial</h1>
+                        <p class="fs-18 opacity-70">Dokumentasi ini membantu Anda untuk mengirimkan
+                            message downlink ke device LoRa Anda melalui Platform ANTARES. Jika membutuhkan
+                            informasi lebih lanjut, jangan ragu hubungi kami melalui support@antares.id</a>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- END Header -->
+
+    <!-- Main container -->
+    <main class="main-content">
+
+        <!-- |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | DOC
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒ !-->
+        <section class="section bb-3" style="padding-top: 45px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 hidden-md-down" id="par">
+                        <div
+                            class=""
+                            data-spy="affix"
+                            data-offset-top="400"
+                            data-offset-bottom="440"
+                            style="border-right: 1px solid rgba(97, 103, 113, 0.07)"
+                            id="chl">
+                            <div class="card-block h-fullscreen pl-0" id="sideb">
+
+                                <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                    <li class="has-children">
+                                        <input type="checkbox" checked="checked">
+                                        <label>
+                                            <a
+                                                class="nav-link"
+                                                href="#lorawan-downlink-tutorial-1"
+                                                data-scrollto="lorawan-downlink-tutorial-1">LoRaWAN Downlink Tutorial</a>
+                                        </label>
+
+                                        <ul>
+                                            <li>
+                                                <a class="nav-link" href="#pendahuluan" data-scrollto="pendahuluan">Pendahuluan</a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#prasyarat" data-scrollto="prasyarat">Prasyarat</a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#konfigurasi" data-scrollto="konfigurasi">Konfigurasi</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-children">
+                                        <input type="checkbox" checked="checked">
+                                        <label>
+                                            <a
+                                                class="nav-link"
+                                                href="#lorawan-downlink-tutorial-2"
+                                                data-scrollto="lorawan-downlink-tutorial-2">Downlink via POSTMAN</a>
+                                        </label>
+
+                                        <ul>
+                                            <li>
+                                                <a class="nav-link" href="#postman" data-scrollto="postman">Langkah-langkah Send Downlink via POSTMAN</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-children">
+                                        <input type="checkbox" checked="checked">
+                                        <label>
+                                            <a
+                                                class="nav-link"
+                                                href="#lorawan-downlink-tutorial-3"
+                                                data-scrollto="lorawan-downlink-tutorial-3">Downlink via MQTT FX</a>
+                                        </label>
+
+                                        <ul>
+                                            <li>
+                                                <a class="nav-link" href="#mqttfx" data-scrollto="mqttfx">Langkah-langkah Send Downlink via MQTT FX</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <!-- cd-accordion-menu -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 pt-25">
+
+                        <!-- <h4 id="iot-platform-architecture">IoT Platform Architecture</h4> <img
+                        class="img-esp" src="../assets/img/iot-platform-architecture.png"> <hr> <h4
+                        id="iot-platform-standardization">IoT Platform Standardization</h4> <p>The
+                        Horizontal IoT Platform deployed by Telkom DDS is based on <strong>oneM2M</strong> IoT and
+                        M2M standardization.</p> <hr> -->
+
+                        <h4 id="lorawan-downlink-tutorial-1" class="heading-alt">LoRaWAN Downlink Tutorial</h4>
+                        <h5 id="pendahuluan" class="heading-alt">1. Pendahuluan</h5>
+                        <p align="justify">Pada tutorial ini, Anda akan menggunakan software POSTMAN
+                            atau MQTT FX untuk mengirim pesan downlink ke perangkat LoRaWAN Anda. Modul yang
+                            digunakan pada tutorial ini adalah modul Arduino LoRa Antares berbasis Arduino
+                            Pro Mini (ATMEGA328P).</p>
+                        <div align="center">
+                            <!-- Insert your page here -->
+                            <img src="../assets/img/loramodul.png" alt="loramodul">
+                            <!-- End of -->
+                        </div>
+                        <br>
+
+                        <h5 id="prasyarat" class="heading-alt">2. Prasyarat</h5>
+                        <p align="justify">Sebelum memulai, pastikan Anda telah memenuhi syarat sebagai berikut:</p>
+                        <p align="justify">a. Install Arduino IDE pada komputer Anda. Klik
+                            <a href="https://www.arduino.cc/en/Main/Software">Software Arduino IDE</a>
+                            jika Anda belum menginstall.</p>
+                        <p align="justify">b. Board Arduino: Download Library Loraid pada Arduino IDE. Klik Download
+                            <a target="_blank" href="../assets/files/Arduino-lora-id-AS923-2.zip">Download Library Loraid</a>
+                        </p>
+                        <p align="justify">c. Untuk menggunakan RESTFUL API berbasis protokol HTTP, Anda
+                            perlu meng-install software POSTMAN. Klik
+                            <a href="https://www.postman.com/downloads/">Software POSTMAN</a>
+                            jika Anda belum menginstall.</p>
+                        <p align="justify">d. Untuk menggunakan RESTFUL API berbasis protokol MQTT, Anda
+                            perlu meng-install software MQTT FX. Klik
+                            <a href="https://mqttfx.jensd.de/index.php/download">Software MQTT FX</a>
+                            jika Anda belum menginstall.</p>
+                        <br>
+
+                        <h5 id="req-topic" class="heading-alt">3. Konfigurasi Perangkat</h5>
+                        <p>a. Masuk pada laman console Antares akun Anda. Buat device pada aplikasi di
+                            console akun anda. Jika sudah memiliki device Anda bisa langsung buak page
+                            device yang telah Anda buat sebelumnya. Kemudian klik Set LoRa seperti pada
+                            gambar berikut:</p>
+                        <div align="center" ">
+                            <!-- Insert your page here -->
+                            <img src="../assets/img/downlink-tutorial-1.png" alt="downlink-tutorial-1">
+                            <!-- End of -->
+                        </div>
+                        <br>
+                        <p>
+                            Lalu akan muncul kotak dialog Set LoRa Device seperti gambar di bawah. Pada
+                            pilihan Select LoRa Device Class,
+                            <strong>pilih Class C > Aktivasi ABP > ABP Parameter Inherit > Klik Set LoRa</strong>
+                            .</p>
+                        <div align="center" ">
+                            <!-- Insert your page here -->
+                            <img src="../assets/img/downlink-tutorial-2.png" alt="downlink-tutorial-2">
+                            <!-- End of -->
+                        </div>
+                        <br>
+                        <p>b. Pada Arduino IDE, konfigurasikan Arduino Pro or Pro Mini sebagai board
+                            yang akan Anda gunakan. Klik
+                            <strong>Tools > Board > Arduino Pro or Pro Mini</strong>.</p>
+                        <p>c. Pada Arduino IDE, konfigurasikan Processor ATmega328P (3.3 V,8 MHz)
+                            sebagai processor yang akan Anda gunakan. Klik
+                            <strong>Tools > Processor > ATmega328P (3.3 V,8 MHz)</strong>.<br>
+                            *Notes: Jika menggunakan board lain, pilih sesuai board yang digunakan</p>
+                        <p>d. Pada Arduino IDE, konfigurasikan Port sesuai dengan Board Arduino LoRa
+                            yang Anda gunakan. Klik
+                            <strong>Tools > Port > COM ...</strong>.</p>
+                        <p>e. Pada Arduino IDE, upload program example class C dari library loraid melalui
+                            <strong>File > Examples > loraid > loraid-send-class-C</strong>. Sesuaikan data access key
+                            dan juga device address sesuai akun di ANTARES. Berikut source code untuk file
+                            example class C:.</p>
+                        <pre class="line-numbers"><code class="arduino">#include "loraid.h"
+
+long interval = 10000;    // 10 s interval to send message
+long previousmillis = 0;  // will store last time message sent
+unsigned int counter = 0;     // message counter
+
+void setup() {
+  // setup loraid access
+  lora.init();
+
+  // set lorawan class
+  lora.setdeviceclass(class_c);
+
+  // set data rate
+  lora.setdatarate(2);
+  
+  // put antares key and devaddress here
+  lora.setaccesskey("your-access-key");
+  lora.setdeviceid("your-device-address");
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  char mystr[50];
+  char outstr[255];
+  int recvstatus = 0;
+  
+  unsigned long currentmillis = millis();
+
+  // check interval overflow
+  if(currentmillis - previousmillis > interval) {
+    previousmillis = currentmillis; 
+
+    sprintf(mystr, "ini data lora ke-%d", counter); 
+    lora.sendtoantares((unsigned char *)mystr, strlen(mystr), 0);
+  }
+
+  recvstatus = lora.readdata(outstr);
+  if(recvstatus) {
+    serial.println(outstr);
+  }
+  
+  // check lora rx
+  lora.update();
+}
+                            </code></pre>
+                        <br>
+                        <p>Setelah mengupload program example class C pada board yang digunakan.
+                            Pastikan perangkat sudah mengirimkan data lora dan sampai pada platform ANTARES.
+                            Jika data dari board sudah dapat masuk ke ANTARES, maka langkah selanjutnya
+                            yaitu melakukan downlink (mengirimkan message) ke perangkat melalui Platform
+                            ANTARES via POSTMAN atau MQTT FX.</p>
+                        <!--<hr>-->
+                        <!-- End Add devices under your application -->
+
+                        <!-- Add devices under your application -->
+
+                        <br>
+                        <br>
+                        <h4 id="lorawan-downlink-tutorial-2" class="heading-alt">Mengirim Downlink via Software POSTMAN</h4>
+                        <p align="justify">Setelah Anda selesai melakukan konfigurasi pada perangkat dan
+                            perangkat sudah dipastikan dapat mengirim data ke ANTARES, saatnya mencoba untuk
+                            mengirim downlink ke device melalui Platform ANTARES dengan menggunakan software
+                            POSTMAN</p>
+                        <p align="justify">Jika belum melakukan instalasi POSTMAN dapat mengikuti tutorial pada page
+                            <a href="mqtt-subscribe-lora-device.html">Tutorial POSTMAN</a>.</p>
+                        <p id="postman" align="justify">Untuk melakukan downlink digunakan metode POST. Untuk melakukan metode POST ini diperlukan paramter header dan juga body. Petama-tama Isi parameter Header sesuai tabel dibawah ini:
+                            <br>
+                            *Notes: Sesuaikan parameter access key dan alamat URI sesuai akun Anda
+                        </p>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="xml-store">
+                                <table class="table table-bordered table-striped table-responsive-sm" aria-describedby="parameter-post">
+                                    <thead>
+                                        <tr>
+                                            <th id="field-parameter-post">
+                                                <strong>Field</strong>
+                                            </th>
+                                            <th id="initialvalue-parameter-post">
+                                                <strong>Initial Value</strong>
+                                            </th>
+                                            <th id="currentvalue-parameter-post">
+                                                <strong>Current Value</strong>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>
+                                            <strong>access-key</strong>
+                                        </td>
+                                        <td>
+                                            <code>access-id:access-password</code>
+                                        </td>
+                                        <td>
+                                            <code>access-id:access-password</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>application-name</strong>
+                                        </td>
+                                        <td>
+                                            <code>your app name in ANTARES</code>
+                                        </td>
+                                        <td>
+                                            <code>your app name in ANTARES</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>device-name</strong>
+                                        </td>
+                                        <td>
+                                            <code>your device name in ANTARES</code>
+                                        </td>
+                                        <td>
+                                            <code>your device name in ANTARES</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>e-mail</strong>
+                                        </td>
+                                        <td>Your e-mail</td>
+                                        <td>Your e-mail</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <br>
+                        <p>Jika sudah diisi, tampilan header akan menjadi seperti ini</p>
+                        <p align="justify"></p>
+                        <div align="center">
+                            <!-- Insert your page here -->
+                            <img src="../assets/img/downlink-tutorial-3.png" alt="downlink-tutorial-3">
+                            <!-- End of -->
+                        </div>
+                        <br>
+
+                        <p>Kemdian selanjutnya ke bagian body. Pada bagian body ini berisikan data yang ingin dikirimkan ke device LoRa Anda. Isi parameter Body sesuai dengan apa yang ingin dikirimkan ke perangkat dengan mengikuti format di bawah ini:</p>
+                        <div class="text-center pull-right" style="margin-top: -40px"></div>
+
+                        <div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="json-store2">
+                                    <table class="table table-bordered table-striped table-responsive-sm" aria-describedby="json-store2">
+                                        <thead>
+                                            <tr>
+                                                <th id="field-json-store2">
+                                                    <strong>Field</strong>
+                                                </th>
+                                                <th id="value-json-store2" colspan="2">
+                                                    <strong>Value</strong>
+                                                </th>
+                                            </tr>
+                                        </thead>
+
+                                        <tr>
+                                            <td>Body</td>
+                                            <td colspan="2">
+                                                <pre class="line-numbers"><code class="language-json">{
+      "m2m:cin": {
+        "con": "{\"type\":\"downlink\", \"data\":\"your-downlink-data\"}"
+    }
+}</code></pre>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        <p>Jika parameter body sudah diisi maka akan seperti pada gambar di bawah ini:</p>
+                        <p align="justify"></p>
+                        <div align="center" ">
+                            <!-- Insert your page here -->
+                            <img src="../assets/img/downlink-tutorial-4.png" alt="downlink-tutorial-4">
+                            <!-- End of -->
+                        </div>
+                        <br>
+                        <p>Klik send untuk mengeksekusi POST downlink message ke ANTARES. Jika sudah di POST maka downlink message akan langsung dikirimkan ke perangkat melalui gateway LoRa terdekat. Message downlink dapat dilihat melalui serial monitor pada Arduino IDE</p>
+                        <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/downlink-tutorial-9.png" alt="downlink-tutorial-9">
+                                <!-- End of -->
+                        </div>
+                        <br>
+                        <p>Jika menggunakan board arduino dapat menggunakan Baud Rate 9600 untuk melihat data downlink yang diterima. Berikut contoh serial monitor saat berhasil menerima downlink:</p>
+                        <br>
+
+                        <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/downlink-tutorial-10.png" alt="downlink-tutorial-10">
+                                <!-- End of -->
+                        </div>
+                        <br>
+                        <br>
+                        <h4 id="lorawan-downlink-tutorial-3" class="heading-alt">Mengirim Downlink via Software MQTT FX</h4>
+                        <p id="mqttfx">Setelah Anda selesai melakukan konfigurasi pada perangkat dan perangkat sudah dipastikan dapat mengirim data ke ANTARES, selain menggunakan POSTMAN, Bagi Anda yang lebih cocok menggunakan protokol MQTT, Anda dapat mencoba untuk mengirim downlink ke device melalui Platform ANTARES dengan menggunakan software MQTT FX</p>
+                        <p align="justify">Pada bagian ini, Anda untuk mengirimkan data melalui MQTT FX, diperlukan konfigurasi broker ke Platform ANTARES sebagai berikut:</p>
+                        <table class="table table-bordered table-striped table-responsive-sm">
+                                <tbody>
+                                    <tr>
+                                        <td><code>Host</code></td>
+                                        <td>mqtt.antares.id</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>Port</code></td>
+                                        <td>1883</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <br>
+                        <p align="justify">Untuk bagian Client ID bisa disesuaikan dengan access key akun Anda ataupun uniqe code lainnya. Setelah sesuai dapat disimpan dengan menekan tombol save.</p>
+                        <br>
+                        <p align="justify">Setelah konfigurasi broker sudah sesuai dapat langsung dihubungkan ke broker MQTT ANTARES dengan menekan tombol Connect.</p>
+                        <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/downlink-tutorial-6.png" alt="downlink-tutorial-6">
+                                <!-- End of -->
+                        </div>
+                        <p align="justify">Jika sudah terhubung maka akan menampilkan lingkaran hijau di atas kanan seperti pada gambar:</p>
+                        <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/downlink-tutorial-7.png" alt="downlink-tutorial-7">
+                                <!-- End of -->
+                        </div>
+                        <br>
+                        <p align="justify">Setelah terhubung, langkah selanjutnya yaitu mengirimkan publish ke ANTARES ke device yang terdaftar di ANTARES dengan menginputkan topic dan juga content body sebagai berikut:</p>
+                        <table class="table table-bordered table-striped table-responsive-sm">
+                                <tr>
+                                    <td><strong>Topic</strong></td>
+                                    <td colspan="2"><code>/oneM2M/req/your-access-key/antares-cse/json</code>
+                                </tr>
+                                <tr>
+                                    <td><strong>Payload</strong></td>
+                                    <td colspan="2"><pre class="line-numbers"><code class="language-json">{
+  "m2m:rqp": {
+    "fr": "your-access-key",
+    "to": "/antares-cse/antares-id/your-application-name/your-device-name",
+    "op": 1,
+    "rqi": 123456,
+    "pc": {
+      "m2m:cin": {
+        "cnf": "message",
+        "con": "{\"type\":\"downlink\",\"data\":\"your-downlink-data\"}"
+      }
+    },
+    "ty": 4
+  }
+}</code></pre></td></tr></table>
+                        <p align="justify">Setelah data access key dan alamat device sudah sesuai, klik tombol publiish untuk mengirimkan data ke ANTARS</p>
+                        <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/downlink-tutorial-8.png" alt="downlink-tutorial-8">
+                                <!-- End of -->
+                        </div>
+                        <p align="justify">Jika berhasil masuk ke ANTARES, maka pada device ANTARES akan muncul seperti pada gambar dibawah ini:</p>
+                        <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/downlink-tutorial-9.png" alt="downlink-tutorial-9">
+                                <!-- End of -->
+                        </div>
+                        <p align="justify">Jika data downlink masuk ke Platform ANTARES, maka akan langsung di forwardkan ke NS Lora dan dikirimkan melalui gateway terdekat. Data dapat diterima oleh perangkat seperti pada gambar berikut:</p>
+                        <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/downlink-tutorial-10.png" alt="downlink-tutorial-10">
+                                <!-- End of -->
+                        </div>
+                    </section>
+                </main>
+                <!-- END Main container -->
+
+                <!-- |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                | Footer 5
+                |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒ !-->
+
+                <footer class="site-footer py-70 bg-warning">
+                    <div class="container" id="footer"></div>
+                </footer>
+
+                <!-- Scripts -->
+                <script src="../assets/js/core.min.js"></script>
+                <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                <script src="../assets/js/thesaas.min.js"></script>
+                <script src="../assets/js/affix.js"></script>
+                <script src="../assets/js/script.js"></script>
+                <script src="../assets/js/prism.js"></script>
+
+                <script>
+                    $(document).ready(function () {
+                        $('#chl').width($('#par').width());
+
+                        var realm = 'https';
+                        var domain = 'platform.antares.id';
+                        var port = '8443';
+                        var cseName = 'antares-cse';
+                        var cseId = 'antares-id';
+
+                        $('code').each(function () {
+                            if ($(this).text().indexOf('https://') !== -1) {
+                                $(this).text($(this).text().replace('https', realm));
+                                $(this).text($(this).text().replace('platform.antares.id', domain));
+                                $(this).text($(this).text().replace('8443', port));
+                                $(this).text($(this).text().replace('antares-cse', cseName));
+                                $(this).text($(this).text().replace('cseId', cseId));
+                            }
+                        });
+                    });
+                </script>
+
+                <script>
+                    $(document).ready(function () {
+                        $('#chl').width($('#par').width());
+                    });
+                </script>
+
+            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+            <script
+                async="async"
+                src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments)
+                };
+                gtag('js', new Date());
+
+                gtag('config', 'UA-106459395-1');
+            </script>
+
+        <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+    </html>

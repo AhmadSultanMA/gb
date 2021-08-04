@@ -1,0 +1,2214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>ANTARES | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+        <!-- Topbar -->
+  <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+    <!-- <nav class="topbar topbar-sticky"> -->
+    <div class="container">
+
+      <div class="topbar-left">
+        <button class="topbar-toggler">&#9776;</button>
+        <a class="topbar-brand hidden-md-down" href="index.html">
+          <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+          <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+        </a>
+      </div>
+
+      <a class="topbar-brand hidden-lg-up" href="index.html">
+        <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+        <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+      </a>
+
+
+      <div class="topbar-right">
+        <ul class="topbar-nav nav">
+          <li class="nav-item"><a class="nav-link" href="#home" data-scrollto="home">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services <em class="fa fa-caret-down"></em></a>
+            <div class="nav-submenu">
+              <a class="nav-link" href="#feature" data-scrollto="feature">Features</a>
+              <a class="nav-link" href="#getting-started" data-scrollto="getting-started">Getting Started</a>
+              <a class="nav-link" href="#pricing" data-scrollto="pricing">Pricing</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./docs.html">Documentation</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Community <em class="fa fa-caret-down"></em></a>
+            <div class="nav-submenu">
+              <a class="nav-link" href="https://blog.ANTARES.id/">Blog</a>
+              <a class="nav-link" href="https://forum.ANTARES.id/">Forum</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-scrollto="contact">Contact</a></li>
+        </ul>
+         <a class="btn btn-sm btn-warning btn-round ml-20" href="https://console.ANTARES.id/register" style="padding-left: 12px; padding-right: 12px;"><img alt="signup" src="../assets/img/signup.svg" style="width: 15px; height: 15px; margin-top: -3px;" class="hidden-lg-up"> <span class="hidden-md-down">Sign Up</span></a>
+         <a class="btn btn-sm btn-warning btn-round ml-5" href="https://console.ANTARES.id" style="padding-left: 12px;padding-right: 12px";><img alt="login" src="../assets/img/login.svg" style="width: 15px; height: 15px; margin-top: -3px;" class="hidden-lg-up"> <span class="hidden-md-down">Login</span></a> 
+      </div>
+
+    </div>
+  </nav>
+  <!-- END Topbar -->
+
+        <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <h1>MIT App Inventor</h1>
+                        <p class="fs-18 opacity-70">This documentation helps you to maka an Application on Android and connect it to ANTARES. If you still need any assistance or found any misinformation, don't hesitate to mail us at <a href="mailto:support@ANTARES.id">support@ANTARES.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+        <!-- Main container -->
+        <main class="main-content">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <section class="section bb-3" style="padding-top: 45px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        
+										<li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#mitappinventor" data-scrollto="mitappinventor">MIT App Inventor</a></label>
+
+                                            <ul>
+                                                <li><a class="nav-link" href="#tampilan" data-scrollto="tampilan">Display of MIT App Inventor</a></li>
+												
+												<li class="has-children">
+													<input type="checkbox">
+													<label class="nav-link" href="#halamandesigner" data-scrollto="halamandesigner">Designer Page</label>
+													
+													<ul style="">
+														<li><a class="nav-link" href="#userinterface" data-scrollto="userinterface">User Interface</a></li>
+														<li><a class="nav-link" href="#layout" data-scrollto="layout">Layout</a></li>
+														<li><a class="nav-link" href="#media" data-scrollto="media">Media</a></li>
+														<li><a class="nav-link" href="#drawingandanimation" data-scrollto="drawingandanimation">Drawing and Animation</a></li>
+														<li><a class="nav-link" href="#maps" data-scrollto="maps">Maps</a></li>
+														<li><a class="nav-link" href="#sensors" data-scrollto="sensors">Sensors</a></li>
+														<li><a class="nav-link" href="#social" data-scrollto="social">Social</a></li>
+														<li><a class="nav-link" href="#storage" data-scrollto="storage">Storage</a></li>
+														<li><a class="nav-link" href="#connectivity" data-scrollto="connectivity">Connectivity</a></li>
+														<li><a class="nav-link" href="#experimental" data-scrollto="experimental">Experimental</a></li>
+													</ul>				
+												</li>
+												
+                                                <li class="has-children">
+													<input type="checkbox">
+													<label class="nav-link" href="#halamanblocks" data-scrollto="halamanblocks">Blocks Page</label>
+													
+													<ul style="">
+														<li><a class="nav-link" href="#control" data-scrollto="control">Control</a></li>
+														<li><a class="nav-link" href="#logic" data-scrollto="logic">Logic</a></li>
+														<li><a class="nav-link" href="#math" data-scrollto="math">Math</a></li>
+														<li><a class="nav-link" href="#text" data-scrollto="text">Text</a></li>
+														<li><a class="nav-link" href="#list" data-scrollto="list">List</a></li>
+														<li><a class="nav-link" href="#colors" data-scrollto="colors">Colors</a></li>
+														<li><a class="nav-link" href="#variables" data-scrollto="variables">Variables</a></li>
+														<li><a class="nav-link" href="#procedure" data-scrollto="procedure">Procedure</a></li>
+													</ul>				
+												</li>	      
+                                            </ul>
+                                        </li>
+										
+										<li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#hubungkeantares" data-scrollto="hubungkeantares">Connect to ANTARES</a></label>
+												
+											<ul>
+												<li><a class="nav-link" href="#kirimdatakeserver" data-scrollto="kirimdatakeserver">Send Data to Server</a></li>
+												<li><a class="nav-link" href="#menerimadatadariserver" data-scrollto="menerimadatadariserver">Receive Data from Server</a></li>
+												<li><a class="nav-link" href="#menerimadatarealtime" data-scrollto="menerimadatarealtime">Receive Realtime Data</a></li>	     
+                                            </ul>
+											
+										</li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+
+                                </div>
+                            </div>
+                        </div>
+						
+						<!--
+						|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+						| ISI DOC
+						|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+						!-->
+						
+                        <div class="col-lg-9 pt-25" id="cust">
+
+                            <!-- <h4 id="iot-platform-architecture">IoT Platform Architecture</h4>
+                            <img class="img-esp" src="../assets/img/iot-platform-architecture.png">
+
+                            <hr>
+
+                            <h4 id="iot-platform-standardization">IoT Platform Standardization</h4>
+                            <p>The Horizontal IoT Platform deployed by Telkom DDS is based on <strong>oneM2M</strong> IoT and M2M standardization.</p>
+
+                            <hr> -->
+
+                            <h3 align="center" id="mitappinventor">Introduction</h3>
+                            <p align="justify">MIT App Inventor is a platform to facilitate the process of making simple applications without having to learn or use too many programming languages. We can design Android applications as desired by using various layouts and components available.</p>
+                            
+                            <p align="justify">Below is how to use MIT App Inventor. If you need help and find flaws in this tutorial, can contact us via <a href="mailto:support@ANTARES.id">support@ANTARES.id</a></p>
+                            <br>
+                            
+                            <h4 align="center" id="tampilan" >Display of MIT App Inventor</h4>
+
+                            <p align="justify">MIT App Inventor has two main pages, namely designer page and blocks page. The designer page is used to design the appearance of the application with various components and layouts provided as desired. While blocks page are used to program the course of the Android application in accordance with the purpose.</p>
+
+                            <!--<p>Assuming that you don’t have an account so then you have to click Register. This User Interface will appear. It is located in <a href="http://console.ANTARES.id/register">http://console.ANTARES.id/register</a> to be exactly.</p><br>-->
+                            <div class="browser shadow-2">
+                                <div class="toolbar-web">
+                                    <div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+                                    </div>
+                                    <div class="tab"></div>
+                                </div>
+
+                                <!-- <div class="tabbar"></div> -->
+
+                                <div class="viewport">
+                                    <!-- Insert your page here -->
+                                    <img alt="halaman designer" src="../assets/img/halamandesigner.png">
+                                    <!-- End of -->
+                                </div>
+                            </div>
+                            <p align="center">Figure 1. Display of Designer Page</p>
+                            <div class="browser shadow-2">
+                                <div class="toolbar-web">
+                                    <div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+                                    </div>
+                                    <div class="tab"></div>
+                                </div>
+
+                                <!-- <div class="tabbar"></div> -->
+
+                                <div class="viewport">
+                                    <!-- Insert your page here -->
+                                    <img alt="halaman blocks" src="../assets/img/halamanblocks.png">
+                                    <!-- End of -->
+                                </div>
+                            </div>
+                            <p align="center">Figure 2. Display of Blocks Page</p>
+                            
+                            <!-- Create your first application -->
+                            
+                            <h4 align="center" id="halamandesigner" >Designer Page</h4>
+                            <p align="justify">In the designer page there are several windows like Palette, Viewer, Components, Media, and Properties. These tools function to design the appearance of the Android application as desired.</p>
+							<ol type="1">
+                                <li>Palettete is a window where components are categorized into several categories to be included in the application created. There are categories of User Interface, Layout, Media, Drawing and Animation, Maps, Sensors, Social, Storage, Connectivity, LEGO MINDSTORMS, Experimental, and Extension.</li>
+                                <li>Viewer is a place to adjust the appearance of components in the application.</li>
+                                <li>Components are places to manage components that have been placed in the viewer, such as changing the name of a component, and deleting a component.</li>
+                                <li>Properties is a place to set layer properties, and the components used in applications that are being made such as width, height, background color, font size, etc.</li>
+								<li>Media is a place to upload images for use in applications that are being created.</li>
+                            </ol>
+							<p align="justify">In the Palette section there are constituent components for designing applications, here are the constituent components: </p>
+                                
+							<h5 id="userinterface" class="heading-alt">1. User Interface</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="User Interface Table">
+                                <thead>
+                                    <tr>
+                                        <th id="symbtabl1"> <strong> <p align="center">Symbol</strong></th>
+                                        <th id="nametabl1"> <strong> <p align="center">Name</strong></th>
+                                        <th id="desctabl1"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="buttonmit" src="../assets/img/buttonmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Button</td>
+                                        <td>Can detect beats, hold down when the user presses a button, or when the user releases a button. When the button detects one of these things, the button will execute the command.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="checkboxmit" src="../assets/img/checkboxmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Checkbox</td>
+                                        <td>Can detect beats from users and change their state to true / false (boolean).</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="datepickermit" src="../assets/img/datepickermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Date Picker</td>
+                                        <td>Bring up a calendar to choose a date.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="imagemit" src="../assets/img/imagemit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Image</td>
+                                        <td>Enter images in the application.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="labelmit" src="../assets/img/labelmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Label</td>
+                                        <td>Display text in the application.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="listpickermit" src="../assets/img/listpickermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>List Picker</td>
+                                        <td>Displays a list that can be selected by the user when the user presses the list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="listviewmit" src="../assets/img/listviewmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>List View</td>
+                                        <td>Displays list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="notifiermit" src="../assets/img/notifiermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Notifier</td>
+                                        <td>Bring up a pop-up message / warning on the application. Messages can disappear automatically, or they must first receive input from users and then disappear.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="passwordtextboxmit" src="../assets/img/passwordtextboxmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Password Text Box</td>
+                                        <td>Provides a textbox that hides the entered text.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="slidermit" src="../assets/img/slidermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Slider</td>
+                                        <td>Provides a progress bar that can be shifted.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="spinnermit" src="../assets/img/spinnermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Spinner</td>
+                                        <td>Displays a pop-up list with elements that can be selected when pressed.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="textboxmit" src="../assets/img/textboxmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Text Box</td>
+                                        <td>Provides an area for typing text.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="timepickermit" src="../assets/img/timepickermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Time Picker</td>
+                                        <td>Bring up a clock to choose the time.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="webviewermit" src="../assets/img/webviewermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Web Viewer</td>
+                                        <td>Provides areas that can display webpages.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+						
+							<h5 id="layout" class="heading-alt">2. Layout</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Layout">
+                                <thead>
+                                    <tr>
+                                        <th id="symbtabl2"> <strong> <p align="center">Symbol</strong></th>
+                                        <th id="nametabl2"> <strong> <p align="center">Name</strong></th>
+                                        <th id="desctabl2"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="horizontalarrangementmit" src="../assets/img/horizontalarrangementmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Horizontal Arrangement</td>
+                                        <td>Arrange the components horizontally.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="horizontalscrollarrangementmit" src="../assets/img/horizontalscrollarrangementmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Horizontal Scroll Arrangement</td>
+                                        <td>Arrange the components horizontally, but if the component width exceeds the width of this component, it can be shifted (scroll).</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="tablearrangementmit" src="../assets/img/tablearrangementmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Table Arrangement</td>
+                                        <td>Create table.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="verticalarrangementmit" src="../assets/img/verticalarrangementmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Vertical Arrangement</td>
+                                        <td>Arrange components vertically.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="verticalscrollarrangementmit" src="../assets/img/verticalscrollarrangementmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Vertical Scroll Arrangement</td>
+                                        <td>Arrange the components vertically, but if the component height exceeds the height of this component, it can be shifted (scroll).</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="media" class="heading-alt">3. Media</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Media">
+                                <thead>
+                                    <tr>
+                                        <th id="symbtabl3"> <strong> <p align="center">Symbol</strong></th>
+                                        <th id="nametabl3"> <strong> <p align="center">Name</strong></th>
+                                        <th id="desctabl3"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="camcordermit" src="../assets/img/camcordermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Camcorder</td>
+                                        <td>Activate the HP camera and record.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="cameramit" src="../assets/img/cameramit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Camera</td>
+                                        <td>Activate the HP camera and take pictures.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="imagepickermit" src="../assets/img/imagepickermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Image Picker</td>
+                                        <td>Display gallery on application. The user can choose the image to be saved from the displayed gallery.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="playermit" src="../assets/img/playermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Player</td>
+                                        <td>Play music / audio and adjust the vibration of the HP.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="soundmit" src="../assets/img/soundmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Sound</td>
+                                        <td>Play music / audio and adjust the vibration of HP at certain time intervals.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="soundrecordermit" src="../assets/img/soundrecordermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Sound Recorder</td>
+                                        <td>Record the sound</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="speechrecognizermit" src="../assets/img/speechrecognizermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Speech Recognizer</td>
+                                        <td>Convert sound to text using the speech recognition feature on HP.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="texttospeechmit" src="../assets/img/texttospeechmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Text to Speech</td>
+                                        <td>Convert text to sound. Pitch and reading speed can be adjusted.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="videoplayermit" src="../assets/img/videoplayermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Video Player</td>
+                                        <td>Play videos and display their settings.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="yandextranslatemit" src="../assets/img/yandextranslatemit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Yandex Translate</td>
+                                        <td>Translate text from one language to another.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="drawingandanimation" class="heading-alt">4. Drawing and Animation</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Drawing and Animation">
+                                <thead>
+                                    <tr>
+                                        <th id="symbtabl4"> <strong> <p align="center">Symbol</strong></th>
+                                        <th id="nametabl4"> <strong> <p align="center">Name</strong></th>
+                                        <th id="desctabl4"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="ballmit" src="../assets/img/ballmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Ball</td>
+                                        <td>Sprite balls that can interact with touch and drag, and interact with other sprites on the canvas.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="canvasmit" src="../assets/img/canvasmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Canvas</td>
+                                        <td>Canvas where sprites interact with users or with other sprites, or where users are drawing.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="imagespritemit" src="../assets/img/imagespritemit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Image Sprite</td>
+                                        <td>Image sprites that can interact with touch and drag, and interact with other sprites on the canvas.</td>
+                                    </tr>
+								</tbody>	
+							</table>		
+                         
+							<h5 id="maps" class="heading-alt">5. Maps</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Maps">
+                                <thead>
+                                    <tr>
+                                        <th id="symbtabl5"> <strong> <p align="center">Symbol</strong></th>
+                                        <th id="nametabl5"> <strong> <p align="center">Name</strong></th>
+                                        <th id="desctabl5"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="circlemit" src="../assets/img/circlemit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Circle</td>
+                                        <td>Visualize circles with a certain radius (in meters) at certain coordinates. Can also be used to run programs when users are in an area. </td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="featurecollectionmit" src="../assets/img/featurecollectionmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Feature Collection</td>
+                                        <td>Group Maps features. Events that occur on one component in the group will trigger events in other components. </td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="linestringmit" src="../assets/img/linestringmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Line String</td>
+                                        <td>Draw lines on the map.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="mapmit" src="../assets/img/mapmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Map</td>
+                                        <td>Display maps on the application screen.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="markermit" src="../assets/img/markermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Marker</td>
+                                        <td>Mark a location on the map.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="polygonmit" src="../assets/img/polygonmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Polygon</td>
+                                        <td>Make a perimeter on the map.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="rectanglemit" src="../assets/img/rectanglemit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Rectangle</td>
+                                        <td>Is a polygon with latitude and longitude for the boundaries of north, south, east and west. If the rectangular angle is moved, the coordinate information will be updated. </td>
+                                    </tr>
+								</tbody>
+							</table>
+
+							<h5 id="sensors" class="heading-alt">6. Sensors</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Sensors">
+                                <thead>
+                                    <tr>
+                                        <th id="symbtabl6"> <strong> <p align="center">Symbol</strong></th>
+                                        <th id="nametabl6"> <strong> <p align="center">Name</strong></th>
+                                        <th id="desctabl6"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="acceleromit" src="../assets/img/acceleromit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Accelerometer Sensor</td>
+                                        <td>Detect shake and acceleration in m / s2.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="barcodemit" src="../assets/img/barcodemit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Barcode Scanner</td>
+                                        <td>Read the barcode.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="gyroscopemit" src="../assets/img/gyroscopemit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Gyroscope Sensor</td>
+                                        <td>Measure angular velocity in degrees / seconds.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="locationmit" src="../assets/img/locationmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Location Sensor</td>
+                                        <td>Provides geographic information such as coordinates, altitude, speed, and address. Can also convert addresses to coordinates.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="nearfieldmit" src="../assets/img/nearfieldmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Near Field</td>
+                                        <td>Allows the application to activate the close communication (NFC) feature.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="orientationmit" src="../assets/img/orientationmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Orientation</td>
+                                        <td>Determine HP orientation.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="pedometermit" src="../assets/img/pedometermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Pedometer</td>
+                                        <td>Determine the number of steps, and the distance traveled. </td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="proxymitymit" src="../assets/img/proximitymit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Proximity Sensor</td>
+                                        <td>Measure the distance between objects with the HP screen.</td>
+                                    </tr>
+								</tbody>	
+							</table>	
+
+							<h5 id="social" class="heading-alt">7. Social</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Social">
+                                <thead>
+                                    <tr>
+                                        <th id="symbtabl7"> <strong> <p align="center">Symbol</strong></th>
+                                        <th id="nametabl7"> <strong> <p align="center">Name</strong></th>
+                                        <th id="desctabl7"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="contactpickerpickermit" src="../assets/img/contactpickermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Contact Picker</td>
+                                        <td>Displays a list containing contacts when pressed.</td>
+                                    </tr>	
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="emailpickermit" src="../assets/img/emailpickermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Email Picker</td>
+                                        <td>Displays a list containing e-mail when the user types in a keyword or e-mail from the intended person.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="phonecallmit" src="../assets/img/phonecallmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Phone Call</td>
+                                        <td>Make a phone call.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="phonenumberpickermit" src="../assets/img/phonenumberpickermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Phone Number Picker</td>
+                                        <td>Display a list containing contact numbers on the HP screen.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="sharingmit" src="../assets/img/sharingmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Sharing</td>
+                                        <td>Allows exchange of files or messages between one application and another application found on the HP.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="textingmit" src="../assets/img/textingmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Texting</td>
+                                        <td>Send a text message to a contact number.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="twittermit" src="../assets/img/twittermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Twitter</td>
+                                        <td>Allows communication with Twitter so users can tweet, view tweets, etc.</td>
+                                    </tr>
+								</tbody>
+							</table>
+							
+							<h5 id="storage" class="heading-alt">8. Storage</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Storage">
+                                <thead>
+                                    <tr>
+                                        <th id="symbtabl8"> <strong> <p align="center">Symbol</strong></th>
+                                        <th id="nametabl8"> <strong> <p align="center">Name</strong></th>
+                                        <th id="desctabl8"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="filemit" src="../assets/img/filemit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>File</td>
+                                        <td>Receive or send files. Can also be used to read or write files.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="fusiontablesmit" src="../assets/img/fusiontablesmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Fusiontables Control</td>
+                                        <td>Enables communication with Google Fusion Table. Google Fusion Table can store, share, query, and visualize data tables.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="tinydbmit" src="../assets/img/tinydbmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>TinyDB</td>
+                                        <td>Save data for the application so that when the application is closed, and then reopened, the data is still stored.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="tinywebdbmit" src="../assets/img/tinywebdbmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>TinyWebDB</td>
+                                        <td>Save data on the web.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="connectivity" class="heading-alt">9. Connectivity</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Connectivity">
+                                <thead>
+                                    <tr>
+                                        <th id="symbtabl9"> <strong> <p align="center">Symbol</strong></th>
+                                        <th id="nametabl9"> <strong> <p align="center">Name</strong></th>
+                                        <th id="desctabl9"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="activitystartermit" src="../assets/img/activitystartermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Activity Starter</td>
+                                        <td>Call another application.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="bluetoothclientmit" src="../assets/img/bluetoothclientmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Bluetooth Client</td>
+                                        <td>Make the application as a Bluetooth client.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="bluetoothservermit" src="../assets/img/bluetoothservermit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Bluetooth Server</td>
+                                        <td>Make the application as a Bluetooth server.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="webmit" src="../assets/img/webmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Web</td>
+                                        <td>Allows applications to interact with the web and provides functions for HTTP GET, POST, PUT, and DELETE.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="experimental" class="heading-alt">10. Experimental</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Experimental">
+                                <thead>
+                                    <tr>
+                                        <th id="symbtabl10"> <strong> <p align="center">Symbol</strong></th>
+                                        <th id="nametabl10"> <strong> <p align="center">Name</strong></th>
+                                        <th id="desctabl10"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="clouddbmit" src="../assets/img/clouddbmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>CloudDB</td>
+                                        <td>Allows application users to exchange data on databases with Redis software.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="firebasedbmit" src="../assets/img/firebasedbmit.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>FirebaseDB</td>
+                                        <td>Allows application users to exchange data on databases with Firebase.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+                            
+							<h4 align="center" id="halamanblocks" >Blocks Page</h4>
+                            <p align="justify">On the blocks page there are several codeblocks that function to program the Android application as desired. On the block page there are several components such as Control, Logic, Math, Text, Lists, Colors, Variables, and Procedures. The following are the components found on the blocks page:</p>
+							
+							<h5 id="control" class="heading-alt">1. Control</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Blocks Page Control">
+                                <thead>
+                                    <tr>
+                                        <th id="bc1"> <strong> <p align="center">Block Code</strong></th>
+                                        <th id="fn1"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="controlmit1" src="../assets/img/controlmit1.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>If conditional. If "if" meets the requirements, then the block that is after "then" is executed.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="controlmit2" src="../assets/img/controlmit2.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Looping from the first number to the last number with an interval. Then the image beside means a loop from numbers 1 to 5 with intervals of 1: 1, 2, 3, 4, 5.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="controlmit3" src="../assets/img/controlmit3.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>For is multilevel. For each object in the list, looping is done.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="controlmit4" src="../assets/img/controlmit4.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>If the test value is true, then the loop while runs.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							
+							<h5 id="logic" class="heading-alt">2. Logic</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Blocks Page Logic">
+                                <thead>
+                                    <tr>
+                                        <th id="bc2"> <strong> <p align="center">Block Code</strong></th>
+                                        <th id="fn2"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="logicmit1a" src="../assets/img/logicmit1a.png">
+											<img alt="logicmit1b" src="../assets/img/logicmit1b.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Boolean true/false.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="logicmit2" src="../assets/img/logicmit2.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>If paired with true / false, true becomes false, and false becomes true.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="logicmit3" src="../assets/img/logicmit3.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Check whether an object is equal to / not the same as the object on the right. If according to the criteria, the block will be true, and false if it doesn't match.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="logicmit4" src="../assets/img/logicmit4.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>In logic and if both conditions are met, then the value becomes true. Whereas in logic or, if one of the conditions or both is fulfilled, then the value becomes true.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="math" class="heading-alt">3. Math</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Blocks Page Math">
+                                <thead>
+                                    <tr>
+                                        <th id="bc3"> <strong> <p align="center">Block Code</strong></th>
+                                        <th id="fn3"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="mathmit1" src="../assets/img/mathmit1.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Used to input numbers.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="mathmit2" src="../assets/img/mathmit2.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Used to compare two numbers. Comparison can be the same as, not the same as, more than, less than, more than the same as, and less than the same as.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="mathmit3" src="../assets/img/mathmit3.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Basic mathematical operations, namely added, less, times, divide, rank, and modulus.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="mathmit4" src="../assets/img/mathmit4.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Take an integer value randomly from the specified range.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="mathmit5" src="../assets/img/mathmit5.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Trigonometric operations (sin, cos, tan).</td>
+                                    </tr>
+								</tbody>
+							</table>
+							
+							<h5 id="text" class="heading-alt">4. Text</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Blocks Page Text">
+                                <thead>
+                                    <tr>
+                                        <th id="bc4"> <strong> <p align="center">Block Code</strong></th>
+                                        <th id="fn4"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="textmit1" src="../assets/img/textmit1.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Blank text.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="textmit2" src="../assets/img/textmit2.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Combine two or more texts.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="textmit3" src="../assets/img/textmit3.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Check if the text is blank or not.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="textmit4" src="../assets/img/textmit4.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Check whether there are certain parts in a text.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="textmit5" src="../assets/img/textmit5.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Separate text on certain markers and make it a list.</td>
+                                    </tr>
+								</tbody>
+							</table>
+
+							<h5 id="list" class="heading-alt">5. List</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Blocks Page List">
+                                <thead>
+                                    <tr>
+                                        <th id="bc5"> <strong> <p align="center">Block Code</strong></th>
+                                        <th id="fn5"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="listmit1" src="../assets/img/listmit1.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Make a blank list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="listmit2" src="../assets/img/listmit2.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Create a list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="listmit3" src="../assets/img/listmit3.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Add elements to the list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="listmit4" src="../assets/img/listmit4.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Check if there are certain elements in the list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="listmit5" src="../assets/img/listmit5.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Check the number of elements in the list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="listmit6" src="../assets/img/listmit6.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Check whether the list is empty or not.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="listmit7" src="../assets/img/listmit7.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Take elements from a list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="listmit8" src="../assets/img/listmit8.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Remove elements from a list.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="colors" class="heading-alt">6. Colors</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Blocks Page Colors">
+                                <thead>
+                                    <tr>
+                                        <th id="bc6"> <strong> <p align="center">Block Code</strong></th>
+                                        <th id="fn6"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="colorsmit1" src="../assets/img/colorsmit1.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Color choices provided by MIT AI.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="colorsmit2" src="../assets/img/colorsmit2.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Make your own color using RGB color code.</td>
+                                    </tr>
+								</tbody>
+							</table>			
+							
+							<h5 id="variables" class="heading-alt">7. Variables</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Blocks Page Variables">
+                                <thead>
+                                    <tr>
+                                        <th id="bc7"> <strong> <p align="center">Block Code</strong></th>
+                                        <th id="fn7"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="variablesmit1" src="../assets/img/variablesmit1.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Creating a global variable.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="variablesmit2" src="../assets/img/variablesmit2.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Take global variables.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="variablesmit3" src="../assets/img/variablesmit3.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Modify the contents of global variables.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="procedure" class="heading-alt">8. Procedure</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Blocks Page Procedure">
+                                <thead>
+                                    <tr>
+                                        <th id="bc8"> <strong> <p align="center">Block Code</strong></th>
+                                        <th id="fn8"> <strong> <p align="center">Function</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="proceduremit1" src="../assets/img/proceduremit1.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Create a procedure</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img alt="proceduremit2" src="../assets/img/proceduremit2.png">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Make a function that returns certain results.</td>
+                                    </tr>
+								</tbody>
+							</table>
+							<br>
+
+							<h3 align="center" id="hubungkeantares">Connect to ANTARES</h3>
+							<p align="justify">After we find out about MIT App Inventor and the features available, then we will create an application that will connect to the ANTARES server to send and receive data.</p>
+							
+							
+							<h5 id="kirimdatakeserver" class="heading-alt">A. Send Data to Server</h5>
+							<p align="justify">Send data (post) in the MIT App Inventor section, a command used in the MIT App Inventor application to be able to post data manually from the data we input in the MIT App Inventor "text box" to the ANTARES Platform. Before creating a code block for the Post application, it can be done by making a design first. The component design that we have created, functions as a tool that will help users to be able to run applications that have been made. Design examples for the Post Data application from MIT App Inventor to ANTARES as follows: </p>
+						
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center">		<img alt="postdatamit" src="../assets/img/postdatamit.png"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>								
+								<p align="center">Figure 3. Simple Data Post Application Design Display</p>
+							
+							<p align="justify">The design above uses several components, there are: </p>
+							
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Simple Data Post">
+                                <thead>
+                                    <tr>
+										<th id="SDno"> <strong> <p align="center">No.</strong></th>
+                                        <th id="SDpalt"> <strong> <p align="center">Palette</strong></th>
+                                        <th id="SDcomp"> <strong> <p align="center">Components</strong></th>
+                                        <th id="SDcompn"> <strong> <p align="center">Components Name</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+										<td>1</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Header</td>
+                                    </tr>
+									<tr>
+										<td>2</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Temperature</td>
+                                    </tr>
+									<tr>
+										<td>3</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Humidity</td>
+                                    </tr>
+									<tr>
+										<td>4</td>
+                                        <td>User Interface</td>
+                                        <td>TextBox</td>
+                                        <td>TextBox1</td>
+                                    </tr>
+									<tr>
+										<td>5</td>
+                                        <td>User Interface</td>
+                                        <td>TextBox</td>
+                                        <td>TextBox2</td>
+                                    </tr>
+									<tr>
+										<td>6</td>
+                                        <td>User Interface</td>
+                                        <td>Button</td>
+                                        <td>PostButton</td>
+                                    </tr>
+									<tr>
+										<td>7</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement1</td>
+                                    </tr>
+									<tr>
+										<td>8</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement2</td>
+                                    </tr>
+									<tr>
+										<td>9</td>
+                                        <td>Connectivity</td>
+                                        <td>Web</td>
+                                        <td>Web1</td>
+                                    </tr>
+								</tbody>
+							</table>	
+						
+						<p align="justify">After we make the application display design, the next step that must be done is to make the program run the application according to the purpose. To program it we use the code blocks found on the blocks page.</p> 
+						<br>
+						<p align="justify">To be able to send data to the ANTARES server, format the data transmission using JSON format. The following below is JSON format with code blocks:</p>
+						<td colspan="2"><pre class="line-numbers"><code class="language-json">{
+	"m2m:cin":{
+		"con":"{\"key1\":integer-value, \"key2\":\"string-value\", \"keyN\":\"valueN\"}"
+		}
+						</code></pre></td>
+						<br>
+						
+						 <div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center">		<img alt="codeblockpostmit" src="../assets/img/codeblockpostmit.png"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Figure 4. Code Block of Data Post to ANTARES</p>
+							
+							<p align="justify">After we create the design and program for the application, then we will see the data sent to the server via the ANTARES console (<a href="https://console.antares.id/dashboard/applications">https://console.antares.id/dashboard/application</a>). The following is the data displayed on the ANTARES console:</p>
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center">		<img alt="consolepostmit" src="../assets/img/consolepostmit.png"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Figure 5. ANTARES Console</p>
+							
+							<h5 id="menerimadatadariserver" class="heading-alt">B. Receive Data from Server</h5>
+							<p align="justify">The Get data application with MIT App Inventor is a simple application that will display the data we take from a platform through the URL and Header. In the Get Data process using the ANTARES platform. The example we made is, trying to get the data from ANTARES '"Retrieve Latest Data" documentations. Before creating the Get Data application on MIT App Inventor, we first create a design for the application as follows:</p>
+						
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center">		<img alt="desaingetdatamit" src="../assets/img/desaingetdatamit.png"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>								
+								<p align="center">Figure 6. Simple Design of Data Get Application Display</p>
+								
+								<p align="justify">The design above uses several components, there are: </p>
+							
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Simple Design of Data Get Application">
+                                <thead>
+                                    <tr>
+										<th id="RDno"> <strong> <p align="center">No.</strong></th>
+                                        <th id="RDpalt"> <strong> <p align="center">Palette</strong></th>
+                                        <th id="RDcomp"> <strong> <p align="center">Components</strong></th>
+                                        <th id="RDcompn"> <strong> <p align="center">Components Name</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+										<td>1</td>
+                                        <td>User Interface</td>
+                                        <td>Button</td>
+                                        <td>Button</td>
+                                    </tr>
+									<tr>
+										<td>2</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Header</td>
+                                    </tr>
+									<tr>
+										<td>3</td>
+                                        <td>Connectivity</td>
+                                        <td>Web</td>
+                                        <td>Web1</td>
+                                    </tr>
+								</tbody>
+							</table>
+							
+						<p align="justify">After we make the design of the application, then we program by using the available code blocks as follows: </p>	
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center">		<img alt="codeblockgetmit" src="../assets/img/codeblockgetmit.png"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Figure 7. Code Block of Get Data Application</p>
+							
+							<p align="justify">After we design and program the application, we can see the results in the android application that we made earlier. The data displayed is the latest data from the console on ANTARES which has JSON format. Here are the results:</p>	
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center"> <img alt="hasilgetdatamit" src="../assets/img/hasilgetdatamit.png"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Figure 8. Display of Get Data Application Result</p>
+							
+							<h5 id="menerimadatarealtime" class="heading-alt">C. Receive Realtime Data</h5>
+							<p align="justify">In this section, an application is created that can retrieve data from Antares, display it on the screen, and update data that is displayed automatically if the user wants to get a live measurement. The data taken is the temperature and humidity data obtained using the DHT11 sensor. The UI in this application consists of 3 parts, namely the instruction section, the results section, and the preview section. Here are the user interface settings made in the MIT Designer Inventor (AI) "Designer" tab:</p>
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center"> <img alt="desainrealtimemit" src="../assets/img/desainrealtimemit.png"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Figure 9. Display of Real Time Data Application Design</p>
+							
+							<p align="justify">The design above uses several components, there are: </p>
+							
+							<table class="table table-bordered table-striped table-responsive-sm" summary="Display of Real Time Data Application Design">
+                                <thead>
+                                    <tr>
+										<th id="RRDno"> <strong> <p align="center">No.</strong></th>
+                                        <th id="RRDpalt"> <strong> <p align="center">Palette</strong></th>
+                                        <th id="RRDcomp"> <strong> <p align="center">Components</strong></th>
+                                        <th id="RRDcompn"> <strong> <p align="center">Components Name</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+										<td>1</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label1</td>
+                                    </tr>
+									<tr>
+										<td>2</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement1</td>
+                                    </tr>
+									<tr>
+										<td>3</td>
+                                        <td>User Interface</td>
+                                        <td>Button</td>
+                                        <td>BGet</td>
+                                    </tr>
+									<tr>
+										<td>4</td>
+                                        <td>User Interface</td>
+                                        <td>CheckBox</td>
+                                        <td>CBLiveMeasurement</td>
+                                    </tr>
+									<tr>
+										<td>5</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LRC</td>
+                                    </tr>
+									<tr>
+										<td>6</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label2</td>
+                                    </tr>
+									<tr>
+										<td>7</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement2</td>
+                                    </tr>
+									<tr>
+										<td>8</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label5</td>
+                                    </tr>
+									<tr>
+										<td>9</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LTemp</td>
+                                    </tr>
+									<tr>
+										<td>10</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement3</td>
+                                    </tr>
+									<tr>
+										<td>11</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label6</td>
+                                    </tr>
+									<tr>
+										<td>12</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LHum</td>
+                                    </tr>
+									<tr>
+										<td>13</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label3</td>
+                                    </tr>
+									<tr>
+										<td>14</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LRaw</td>
+                                    </tr>
+									<tr>
+										<td>15</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label4</td>
+                                    </tr>
+									<tr>
+										<td>16</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement4</td>
+                                    </tr>
+									<tr>
+										<td>17</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement5</td>
+                                    </tr>
+									<tr>
+										<td>18</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement6</td>
+                                    </tr>
+									<tr>
+										<td>18</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement6</td>
+                                    </tr>
+									<tr>
+										<td>19</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label7</td>
+                                    </tr>
+									<tr>
+										<td>20</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LJSON1</td>
+                                    </tr>
+									<tr>
+										<td>21</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label9</td>
+                                    </tr>
+									<tr>
+										<td>22</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LJSON2</td>
+                                    </tr>
+									<tr>
+										<td>23</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label11</td>
+                                    </tr>
+									<tr>
+										<td>24</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LJSON3</td>
+                                    </tr>
+									<tr>
+										<td>25</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LParsed</td>
+                                    </tr>
+									<tr>
+										<td>26</td>
+                                        <td>Connectivity</td>
+                                        <td>Web</td>
+                                        <td>Web1</td>
+                                    </tr>
+									<tr>
+										<td>27</td>
+                                        <td>Sensors</td>
+                                        <td>Clock</td>
+                                        <td>Clock1</td>
+                                    </tr>
+								</tbody>
+							</table>
+						
+							<p align="justify">After we make the design of the application, then we program by using the available code blocks as follows: </p>	
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<img alt="codeblockrealtimemit1" src="../assets/img/codeblockrealtimemit1.png">
+									<img alt="codeblockrealtimemit2" src="../assets/img/codeblockrealtimemit2.png">
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Figure 10. Code Block of Real Time Data Application</p>
+							
+							<p align="justify">After we design and program the application, we can see the results in the android application that we created. The data displayed is the last data and will continue to refresh automatically. Here are the results:</p>	
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center"> <img alt="datarealtime1" src="../assets/img/datarealtime1.png"> <img alt="datarealtime2" src="../assets/img/datarealtime2.png"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Figure 11. Display Results of Real Time Data Applications</p>
+			</section>
+        </main>
+						
+		
+                            <!-- END Main container -->
+
+                            <!--
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              | Footer 5
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              !-->
+
+                            <footer class="site-footer py-70 bg-warning">
+                              <div class="container">
+                                <div class="row gap-y">
+                                  <div class="col-12 col-md-12 col-lg-5">
+                                    <h6 class="heading-alt text-uppercase fs-14 mb-16">
+                                      <img src="../assets/img/logo_antares.svg" alt="logo" style="width: 200px">
+                                    </h6>
+                                    <p class="fs-13">ANTARES is brandmark under PT Telekomunikasi Indonesia that specialized in IoT Platform. It is our pleasure to enable IoT Application all over the globe.</p>
+                                    <br>
+                                    <p class="text-light">Copyright © 2017 - <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> <a class="text-light" href="#">ANTARES</a>. All rights reserved.</p>
+                                  </div>
+
+                                  <div class="col-6 col-md-4 col-lg-2">
+                                    <h6 class="heading-alt text-uppercase fs-14 mb-3">External Link</h6>
+                                    <div class="nav flex-column">
+                                      <a class="nav-link" href="#">External Link #1</a>
+                                      <a class="nav-link" href="#">External Link #2</a>
+                                      <a class="nav-link" href="#">External Link #3</a>
+                                      <a class="nav-link" href="#">External Link #4</a>
+                                      <a class="nav-link" href="#">External Link #5</a>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-6 col-md-4 col-lg-2">
+                                    <h6 class="heading-alt text-uppercase fs-14 mb-3">Company</h6>
+                                    <div class="nav flex-column">
+                                      <a class="nav-link" href="enterprise.html">Enterprise</a>
+                                      <a class="nav-link" href="#">Pricing</a>
+                                      <a class="nav-link" href="#">Blog</a>
+                                      <a class="nav-link" href="#">About</a>
+                                      <a class="nav-link" href="#">Privacy Policy</a>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="col-12 col-md-4 col-lg-3">
+                                    <h6 class="heading-alt text-uppercase fs-14 mb-3">Language</h6>
+
+                                    <div class="btn-group dropup btn-block">
+                                      <button class="btn btn-white btn-block" data-toggle="dropdown"><span class="flag-icon flag-icon-id"></span> Bahasa Indonesia</button>
+                                      <div class="dropdown-menu">
+                                        <h6 class="dropdown-header">Select a language</h6>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-us"></span> English</a>
+                                        <a class="dropdown-item" href="index-id.html"><span class="flag-icon flag-icon-id"></span> Bahasa Indonesia</a>
+                                      </div>
+                                    </div>
+
+                                    <hr style="margin: 1rem auto">
+
+                                    <div class="social text-center">
+                                      <a class="social-facebook" href="#"><em class="fa fa-facebook"></em></a>
+                                      <a class="social-twitter" href="#"><em class="fa fa-twitter"></em></a>
+                                      <a class="social-gplus" href="#"><em class="fa fa-google-plus"></em></a>
+                                      <a class="social-instagram" href="#"><em class="fa fa-instagram"></em></a>
+                                      <a class="social-linkedin" href="#"><em class="fa fa-linkedin"></em></a>
+                                    </div>
+                                    <br>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </footer>
+
+
+                            <!-- Scripts -->
+                            <script src="../assets/js/core.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                            <script src="../assets/js/thesaas.min.js"></script>
+                            <script src="../assets/js/affix.js"></script>
+                            <script src="../assets/js/script.js"></script>
+                            <script src="../assets/js/prism.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+
+                                    var realm = 'https';
+                                    var domain = 'platform.ANTARES.id';
+                                    var port = '8443';
+                                    var cseName = 'ANTARES-cse';
+                                    var cseId = 'ANTARES-id';
+
+                                    $('code').each(function () {
+                                        if ($(this).text().indexOf('https://') !== -1) {
+                                            $(this).text($(this).text().replace('https', realm));
+                                            $(this).text($(this).text().replace('platform.ANTARES.id', domain));
+                                            $(this).text($(this).text().replace('8443', port));
+                                            $(this).text($(this).text().replace('ANTARES-cse', cseName));
+                                            $(this).text($(this).text().replace('cseId', cseId));
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+                                });
+                            </script>
+
+                            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments)
+                                }
+                                ;
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-106459395-1');
+
+                            </script>
+
+                            <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+                            </html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+        <!-- Topbar -->
+        <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+          <!-- <nav class="topbar topbar-sticky"> -->
+        </nav>
+  <!-- END Topbar -->
+
+
+    <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+
+                        <h1>Instalasi Arduino IDE</h1>
+                        <p class="fs-18 opacity-70">Dokumentasi ini membantu Anda untuk memasang Arduino IDE (Integrated Development Environment). Jika Anda memerlukan bantuan atau menemukan informasi yang kurang, jangan ragu untuk menghubungi kami melalui <a href="mailto:support@antares.id">support@antares.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+    <!-- Main container -->
+    <main class="main-content">
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Description
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
+        <div class="container">
+
+
+          <div class="row">
+            <div class="col-12 col-md-10 offset-md-1">
+
+              <!--<img class="shadow-3" src="../assets/img/how-1.jpg" alt="...">-->
+              <br><br>
+
+              <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+              <br>-->
+              <!--
+              <h3>Requiremenents</h3>
+              <ol>
+                <li>Arduino IDE. <a href="#">If you don't have. Click here!</a></li>
+                <li>ESP 8266</li>
+                <li>FTDI</li>
+                <li>Laptop/Personal Computer</li>
+              </ol>
+              -->
+
+              <br>
+              <h3>Langkah-langkah</h3>
+
+              <ol>
+                <li>Buka <a href="arduino.cc">arduino.cc</a>. Klik <a href="https://www.arduino.cc/en/Main/Software">Software</a> untuk mendapatkan installer.</li>
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-1.jpg" alt="...">
+                <li>Pilih installer sesuai dengan Operating System yang Anda gunakan.</li>
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-2.jpg" alt="...">
+                <li>Pilih "JUST DOWNLOAD" untuk memulai proses Download.</li>
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-3.jpg" alt="...">
+                <li>Simpan installer pada laptop/personal computer.</li>
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-4.jpg" alt="...">
+                <li>Pilih "I Agree" untuk memroses instalasi.</li>
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-5.jpg" alt="...">
+                <li>Pilih "Next" untuk memroses instalasi.</li>
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-6.jpg" alt="...">
+                <li>Pilih "Install" untuk memroses instalasi.</li>
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-7.jpg" alt="...">
+                <li>Tunggu hingga proses instalasi selesai.</li>
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-8.jpg" alt="...">
+                <li>Pilih "Install" untuk memroses instalasi.</li>
+                <img class="shadow-3" src="../assets/img/tutorial-install-arduino-ide-9.jpg" alt="...">
+              </ol>
+              <p class="lead">Selamat, instalasi telah selesai!!</p>
+              <!--
+              <br>
+              <h5>Bonus Points</h5>
+              <ul>
+                <li>Experience with jQuery, Handlebars, or LESS</li>
+                <li>Experience investigating and improving JavaScript performance</li>
+                <li>Experience with WebSockets, Local Storage, or ES6</li>
+                <li>Experience in small start­up environments</li>
+                <li>Experience designing web sites or applications</li>
+              </ul>
+              -->
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+    </main>
+    <!-- END Main container -->
+
+
+
+
+
+        <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Footer 5
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+
+          <footer class="site-footer py-70 bg-warning">
+            <div class="container" id="footer">
+            </div>
+          </footer>
+
+
+        <!-- Scripts -->
+        <script src="../assets/js/core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+        <script src="../assets/js/thesaas.min.js"></script>
+        <script src="../assets/js/affix.js"></script>
+        <script src="../assets/js/bootstrap-select.js"></script>
+        <script src="../assets/js/script.js"></script>
+        <script src="../assets/js/prism.js"></script>
+
+
+  <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+  </html>

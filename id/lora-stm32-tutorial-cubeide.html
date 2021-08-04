@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+        <!-- Topbar -->
+        <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+          <!-- <nav class="topbar topbar-sticky"> -->
+          <div class="container">
+      
+            <div class="topbar-left">
+              <button class="topbar-toggler">&#9776;</button>
+              <a class="topbar-brand hidden-md-down" href="index.html">
+                <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+                <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+              </a>
+            </div>
+      
+            <a class="topbar-brand hidden-lg-up" href="index.html">
+              <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+              <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+            </a>
+      
+      
+            <div class="topbar-right">
+              <ul class="topbar-nav nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Services <em class="fa fa-caret-down"></em></a>
+                  <div class="nav-submenu">
+                    <a class="nav-link" href="index.html#feature">Features</a>
+                    <a class="nav-link" href="index.html#getting-started">Getting Started</a>
+                    <a class="nav-link" href="index.html#pricing">Pricing</a>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="docs.html">Documentation</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Community <em class="fa fa-caret-down"></em></a>
+                  <div class="nav-submenu">
+                    <a class="nav-link" href="https://blog.antares.id/">Blog</a>
+                    <a class="nav-link" href="https://forum.antares.id/">Forum</a>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact"> Contact</a></li>
+              </ul>
+               <a class="btn btn-sm btn-warning btn-round ml-20" href="https://console.antares.id/register" style="padding-left: 12px; padding-right: 12px;"><img src="../assets/img/signup.svg" style="width: 15px; height: 15px; margin-top: -3px;" alt="signup" class="hidden-lg-up"> <span class="hidden-md-down">Sign Up</span></a>
+               <a class="btn btn-sm btn-warning btn-round ml-5" href="https://console.antares.id" style="padding-left: 12px;padding-right: 12px";><img src="../assets/img/login.svg" style="width: 15px; height: 15px; margin-top: -3px;" alt="login" class="hidden-lg-up"> <span class="hidden-md-down">Login</span></a>
+            </div>
+      
+          </div>
+        </nav>
+        <!-- END Topbar -->
+
+
+
+        <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <h1>Tutorial STM32 LoRa dengan STM32Cube IDE</h1>
+                        <p class="fs-18 opacity-70">Dokumentasi ini akan menjelaskan kepada anda untuk menggunakan modul LoRa STM32 dan menghubungkannya dengan Antares menggunakan STM32Cube IDE. Jika membutuhkan informasi lebih lanjut, jangan ragu hubungi kami melalui <a href="mailto:support@antares.id">support@antares.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+        <!-- Main container -->
+        <main class="main-content">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <section class="section bb-3" style="padding-top: 45px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+                                    <!-- Pendahuluan -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li>
+                                            <label><a class="nav-link" href="#pendahuluan" data-scrollto="pendahuluan">Pendahuluan</a></label>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                    <!-- Hardware -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li>
+                                            <label><a class="nav-link" href="#hardware" data-scrollto="hardware">Hardware</a></label>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                    <!-- Software -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li>
+                                            <label><a class="nav-link" href="#software" data-scrollto="software">Software</a></label>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                    <!-- Instalasi -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                      <li>
+                                          <label><a class="nav-link" href="#instalasi" data-scrollto="instalasi">Instalasi dan Konfigurasi Awal</a></label>
+                                      </li>
+                                  </ul> <!-- cd-accordion-menu -->
+
+                                  
+                                  <!--Memulai Application Baru-->
+                                  <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                    <li>
+                                        <label><a class="nav-link" href="#projectbaru" data-scrollto="projectbaru">Memulai Application Baru</a></label>
+                                    </li>
+                                </ul> <!-- cd-accordion-menu -->
+
+                                    <!-- Registrasi Parameter Aktivasi LoRa -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                      <li>
+                                          <label><a class="nav-link" href="#registrasi" data-scrollto="registrasi">Registrasi Parameter Aktivasi LoRa</a></label>
+                                      </li>
+                                  </ul> <!-- cd-accordion-menu -->
+                                  
+
+                                    <!-- Build dan pre-Build Program -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                      <li>
+                                          <label><a class="nav-link" href="#buildproject" data-scrollto="buildproject">Build dan pre-Build Program</a></label>
+                                      </li>
+                                  </ul> <!-- cd-accordion-menu -->
+                                  
+                                  <!-- Build dan pre-Build Program -->
+                                  <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                    <li>
+                                        <label><a class="nav-link" href="#downlink" data-scrollto="downlink">Tutorial Downlink</a></label>
+                                    </li>
+                                </ul> <!-- cd-accordion-menu -->
+                              
+                                    <!-- Video Tutorial -->
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                      <li>
+                                          <label><a class="nav-link" href="#stm32video" data-scrollto="stm32video">Video Tutorial</a></label>
+                                      </li>
+                                  </ul> <!-- cd-accordion-menu -->                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 pt-25">
+
+
+				<!--
+				|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+				| ISI DOC
+				|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+				!-->
+        <hr>
+        <!-- Pendahuluan -->
+        <h3 align="center" id="pendahuluan">
+          Pendahuluan
+        </h3>
+        <p align="justify">
+          Dokumentasi ini akan menjelaskan kepada anda bagaimana Modul LoRa STM32 dapat terhubung dengan platform Antares. Pada tutorial ini modul atau papan pengembang yang digunakan adalah seri STM32 LoRa Discovery Kit B-L072-LRWAN1 dan IDE yang digunakan adalah STM32Cube IDE, untuk penggunaan modul lainnya anda dapat menyesuaikan dengan langkah yang ada pada tutorial ini. Untuk anda yang menggunakan Arduino IDE, dapat mengikuti <a href="../id/lora-stm32-tutorial-arduinoide.html">tutorial berikut</a>.<br> 
+        </p>
+
+        <!-- Hardware -->
+        <h3 align="center" id="hardware">Hardware</h3>
+        <p align="justify">
+          Untuk mengikuti tutorial pada halaman ini berikut adalah beberapa perangkat yang kita butuhkan:
+          <ul>
+            <li><strong>Board STM32L072 LoRa Discovery Kit</strong></li>
+            Papan yang digunakan pada tutorial ini adalah STM32 LoRa Discovery Kit B-L072-LRWAN1.
+            <li><strong>Kabel Micro USB to USB</strong></li>
+            Untuk menghubungkan papan anda dengan PC anda.
+          </ul>
+        </p>
+
+        <!-- Software -->
+        <h3 align="center" id="software">Software</h3>
+        <p align="justify">
+          Berikut adalah beberapa software yang dibutuhkan untuk menjalankan contoh-contoh pada dokumentasi ini:
+
+          <ul>
+            <li><strong>STM32 Cube IDE</strong></li>
+            Software utama yang akan digunakan untuk memprogram papan STM32, telah dilengkapi pula dengan fitur STM32 Cube MX untuk konfigurasi pin .<br>
+            <a class="btn btn-lg btn-warning btn-round" href="https://www.st.com/en/development-tools/stm32cubeide.html">Download STM32 Cube IDE</a>
+
+            <li><strong>I-CUBE-LRWAN</strong></li>
+            I-CUBE-LRWAN merupakan paket ekspansi yang disediakan oleh STMicroelectronis telah dilengkapi dengan beberapa library yang dibutuhkan dan juga beberapa contoh program yang siap digunakan dan dimodifikasi.<br>
+            <a class="btn btn-lg btn-warning btn-round" href="https://www.st.com/en/embedded-software/i-cube-lrwan.html">Download I-CUBE-LRWAN</a>
+
+            <li><strong>Library AS923 untuk I-CUBE-LRWAN</strong></li>
+            Agar dapat kompatibel dengan frekuensi LoRa yang ada di Indonesia dan yang di deploy oleh PT Telkom Indonesia maka anda perlu untuk mengganti beberapa file library yang digunakan menggunakan file yang telah disediakan oleh kami berikut:  <br>
+
+              <a class="btn btn-lg btn-warning btn-round" href="../assets/files/RegionAS923.rar">Download Library AS923</a>
+              
+            </ul>
+        </p>
+
+        <!-- Proses Instalasi -->
+        <h3 align="center" id="instalasi">Proses Instalasi dan Konfigurasi Awal</h3>
+        <p align="justify">Segmen berikut akan menjelaskan bagaimana langkah-langkah awal instalasi dan konfigurasi untuk anda dapat memulai memrogram papan STM32 anda.</p><br>
+        
+
+          <div class="viewport">
+              <img src="../assets/img/stm32-1-downloadcubeide.png">
+          </div>
+      <p align="center">Gambar 1. Halaman Unduh STM32Cube IDE</p>
+      <p align="justify">Jika pada PC anad belum terpasang perangkat lunak STM32Cube IDE maka anda dapat mengunjungi halaman <a href="https://www.st.com/en/development-tools/stm32cubeide.html">Download</a> pada laman resmi STMicroelectronics. Anda dapat memilih sistem operasi sesuai dengan yang anda gunakan, anda hanya perlu mengisikan beberapa data seperti nama dan email saja untuk dapat mengunduh STM32Cube IDE, atau bagi anda yang sudah memiliki akun juga dapat langsung Log-In menggunakan akun anda. Setelah melakukan pengunduhan maka langkah selanjutnya adalah instalasi yag dilakukan seperti biasa sesuai dengan sistem operasi masing-mqasing.</p>
+        <br>
+
+        <div class="viewport">
+          <img src="../assets/img/stm32-2-downloadpackage.png">
+        </div>
+  <p align="center">Gambar 2. Halaman Unduh STM32 LoRaWAN Software Expansion Pack</p>
+  <p align="justify">
+    Untuk memudahkan para pengembang dalam mengembangkan papan STM32, STMicroelectronics telah menyediakan Software Expansion Pack yang terdiri dari beberapa library, dan juga contoh program yang dapat kita coba dan pelajari. Anda dapat mengunduhnya secara gratis pada link <a href="https://www.st.com/en/embedded-software/i-cube-lrwan.html#get-software">berikut</a>. 
+  </p>
+    <p align="justify">
+      Setelah melakukan pengunduhan expansion pack yang dibutuhkan maka anda dapat mengekstrak file yang telah di download pada direktori sesuai yang anda inginkan. 
+    </p>
+    <br>
+    <div class="viewport">
+      <img src="../assets/img/stm32-additional-1-ekstrak.png">
+    </div>
+    <p align="center">Gambar 3. Ekstrak file Library AS923</p>
+    <div class="viewport">
+      <img src="../assets/img/stm32-additional-2-gantifile.png">
+      <p align="center">Gambar 4. ganti file <b>AS923.c</b> dan <b>AS923.h</b> yang ada pada software expansion pack dengan file library baru yang di unduh dari Antares</p>
+    </div>
+    
+    <p align="justify">
+      Kemudian anda perlu mengunduh file <a href="../assets/files/RegionAS923.rar">library AS923</a> dan lakukan ekstrak pada direktori software expansion package yang sudah anda ekstrak sebelumnya <strong>../Middleware/Third_Party/LoRaWAN/Mac/Region</strong>, pastika file <b>AS923.c</b> dan <b>AS943.h</b> yang baru saja anda unduh menggantikan fila yang lama.
+    </p>
+        <br><br>
+
+        <!--Membuat Application Baru-->
+        <h3 align="center" id="projectbaru">Memulai Application Baru</h3>
+        <p align="justify">
+          Setelah selesai melakukan instalasi dan konfigurasi awal maka anda dapat memulai membuat application menggunakan STM32Cube IDE yang akan terintegrasi dengan platform Antares.
+        </p>
+        
+        <div class="viewport">
+          <img src="../assets/img/stm32-3-workspace.png" alt="">
+          <p align="center">Gambar 5. Memulai dengan membuat workspace baru</p>
+        </div>
+        
+        <p align="justify">
+          STM32Cube IDE menggunakan workspace untuk menyimpan file application yang akan kita buat. Anda dapat meninggalkannya secara default, atau membuat workspace baru, serta memilih workspace yang pernah anda buat.
+        </p>
+        <div class="viewport">
+          <img src="../assets/img/stm32-4-importproject.png" alt="">
+          <p align="center">Gambar 6. Import Application SW4STM32</p>
+          <p align="justify">Untuk mwnggunakan contoh application yang telah disediakan oleh software expansion I-CUBE-LRWAN anda dapat mengimport application yang telah disediakan pada folder ekspansi tersebut. Pada contoh kali ini kita akan menggunakan file application SW4STM32 untuk diimpor kedalam application STM32CUbe IDE kita.</p>
+        </div>
+        <div class="viewport">
+          <img src="../assets/img/stm32-5-pilihdirektori.png" alt="">
+          <p align="center">Gambar 7. Pilih direktori application</p>
+          <p align="justify">Pada contoh ini kita akan mengimpor application <b>End Node</b> untuk mendemonstrasikan proses pengiriman data dari papan B-STM32L072-LRWAN1 Discovery kit ke platform Antares. anda dapat menemukan file application SW4STM32 pada direktori <b>..\Projects \B-L072Z-LRWAN1 \Applications \LoRa \End_Node \SW4STM32</b></p>
+        </div>
+        <br>
+
+        <!--Konfigurasi parameter LoRaWAN-->
+
+        <h3 align="center" id="registrasi">Registrasi Parameter Aktivasi LoRa</h3>
+        <div class="viewport">
+          <img src="../assets/img/stm32-6-pilihabporotaa.png" alt="">
+          <p align="center">Gambar 8. Memilih aktivasi OTAA atau ABP enggunakan STM32Cube IDE</p>
+        </div>
+        <p align="justify">Agar perangkat anda dapat terhubung dengan platform Antares maka anda perlu melakukan registrasi dan sinkronisasi beberapa parameter yang perlu dilakukan baik pada perangkat anda maupun pada platform Antares. Untuk dapat mengetahui langkah-langkah registrasi perangkat pada platform Antares, anda dapat memeplajarinya pada <a href="https://antares.id/id/register-perangkat-lora.html">tutorial berikut</a>.</p>
+        <p align="justify">Kemudian untuk melakukan registrasi parameter pada perangkat STM32 anda, anda dapat melakukannya pada file Commissioning.h yang dapat ditemukan pada I-CUBE-LRWAN expansion pacakge pada direktori <b>..\Projects\ B-L072Z-LRWAN1\ Applications\ LoRa\ End_Node\ LoRaWAN\ App\ inc</b></p>
+        <p align="justify">Sebagai contoh, anda dapat menentukan perangkat anda akan melakukan aktivasi dengan metode OTAA atau ABP pada baris kode 85, dapat melakukan konfigurasi device address pada baris kode ke 161, konfigurasi device eui pada baris kode ke 118, dan masih banyak parameter yang dapat anda konfigurasi sesuai dengan spesifikasi kebutuhan anda.</p>
+        <pre class="line-numbers"><code class="language-c">/*!
+ * \file      Commissioning.h
+ *
+ * \brief     End device commissioning parameters
+ *
+ * \copyright Revised BSD License, see section \ref LICENSE.
+ *
+ * \code
+ *                ______                              _
+ *               / _____)             _              | |
+ *              ( (____  _____ ____ _| |_ _____  ____| |__
+ *               \____ \| ___ |    (_   _) ___ |/ ___)  _ \
+ *               _____) ) ____| | | || |_| ____( (___| | | |
+ *              (______/|_____)_|_|_| \__)_____)\____)_| |_|
+ *              (C)2013-2017 Semtech
+ *
+ * \endcode
+ *
+ * \author    Miguel Luis ( Semtech )
+ *
+ * \author    Gregory Cristian ( Semtech )
+ */
+/**
+  ******************************************************************************
+  * @file    commissioning.h
+  * @author  MCD Application Team
+  * @brief   End device commissioning parameters
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics.
+  * All rights reserved.</center></h2>
+  *
+  * This software component is licensed by ST under Ultimate Liberty license
+  * SLA0044, the "License"; You may not use this file except in compliance with
+  * the License. You may obtain a copy of the License at:
+  *                             www.st.com/SLA0044
+  *
+  ******************************************************************************
+  */
+
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __LORA_COMMISSIONING_H__
+#define __LORA_COMMISSIONING_H__
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+/*!
+ ******************************************************************************
+ ********************************** WARNING ***********************************
+ ******************************************************************************
+  The crypto-element implementation supports both 1.0.x and 1.1.x LoRaWAN
+  versions of the specification.
+  Thus it has been decided to use the 1.1.x keys and EUI name definitions.
+  The below table shows the names equivalence between versions:
+               +---------------------+-------------------------+
+               |       1.0.x         |          1.1.x          |
+               +=====================+=========================+
+               | LORAWAN_DEVICE_EUI  | LORAWAN_DEVICE_EUI      |
+               +---------------------+-------------------------+
+               | LORAWAN_APP_EUI     | LORAWAN_JOIN_EUI        |
+               +---------------------+-------------------------+
+               | LORAWAN_GEN_APP_KEY | LORAWAN_APP_KEY         |
+               +---------------------+-------------------------+
+               | LORAWAN_APP_KEY     | LORAWAN_NWK_KEY         |
+               +---------------------+-------------------------+
+               | LORAWAN_NWK_S_KEY   | LORAWAN_F_NWK_S_INT_KEY |
+               +---------------------+-------------------------+
+               | LORAWAN_NWK_S_KEY   | LORAWAN_S_NWK_S_INT_KEY |
+               +---------------------+-------------------------+
+               | LORAWAN_NWK_S_KEY   | LORAWAN_NWK_S_ENC_KEY   |
+               +---------------------+-------------------------+
+               | LORAWAN_APP_S_KEY   | LORAWAN_APP_S_KEY       |
+               +---------------------+-------------------------+
+ ******************************************************************************
+ ******************************************************************************
+ ******************************************************************************
+ */
+
+/*!
+ * When set to 1 the application uses the Over-the-Air activation procedure
+ * When set to 0 the application uses the Personalization activation procedure
+ */
+#define OVER_THE_AIR_ACTIVATION                            0
+
+/*!
+ * When using ABP activation the MAC layer must know in advance to which server
+ * version it will be connected.
+ */
+#define ABP_ACTIVATION_LRWAN_VERSION_V10x                  0x01000300 // 1.0.3.0
+
+#define ABP_ACTIVATION_LRWAN_VERSION                       ABP_ACTIVATION_LRWAN_VERSION_V10x
+
+/*!
+ * Indicates if the end-device is to be connected to a private or public network
+ */
+#define LORAWAN_PUBLIC_NETWORK                             true
+
+/*!
+ * IEEE Organizationally Unique Identifier ( OUI ) (big endian)
+ * \remark This is unique to a company or organization
+ */
+#define IEEE_OUI                                           0x01, 0x01, 0x01
+
+/*!
+ * When set to 1 DevEui is LORAWAN_DEVICE_EUI
+ * When set to 0 DevEui is automatically generated by calling
+ *         BoardGetUniqueId function
+ */
+#define STATIC_DEVICE_EUI                                  0
+
+/*!
+ * Mote device IEEE EUI (big endian)
+ *
+ * \remark see STATIC_DEVICE_EUI comments
+ */
+#define LORAWAN_DEVICE_EUI                                 { IEEE_OUI, 0x01, 0x01, 0x01, 0x01, 0x01 }
+
+/*!
+ * App/Join server IEEE EUI (big endian)
+ */
+#define LORAWAN_JOIN_EUI                                   { 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01 }
+
+/*!
+ * Application root key
+ * WARNING: NOT USED FOR 1.0.x DEVICES
+ */
+#define LORAWAN_APP_KEY                                    { 0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C }
+
+/*!
+ * Application root key - Used to derive Multicast keys on 1.0.x devices.
+ * WARNING: USED only FOR 1.0.x DEVICES
+ */
+#define LORAWAN_GEN_APP_KEY                                { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F }
+
+/*!
+ * Network root key
+ * WARNING: FOR 1.0.x DEVICES IT IS THE \ref LORAWAN_APP_KEY
+ */
+#define LORAWAN_NWK_KEY                                    { 0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C }
+
+/*!
+ * Current network ID
+ */
+#define LORAWAN_NETWORK_ID                                 ( uint32_t )0
+
+/*!
+ * When set to 1 DevAdd is LORAWAN_DEVICE_ADDRESS
+ * When set to 0 DevAdd is automatically generated using
+ *         a pseudo random generator seeded with a value derived from
+ *         BoardUniqueId value
+ */
+#define STATIC_DEVICE_ADDRESS                              0
+
+/*!
+ * Device address on the network (big endian)
+ *
+ * \remark see STATIC_DEVICE_ADDRESS comments
+ */
+#define LORAWAN_DEVICE_ADDRESS                             ( uint32_t )0x00000000
+
+/*!
+ * Forwarding Network session integrity key
+ * WARNING: NWK_S_KEY FOR 1.0.x DEVICES
+ */
+#define LORAWAN_F_NWK_S_INT_KEY                            { 0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C }
+
+/*!
+ * Serving Network session integrity key
+ * WARNING: NOT USED FOR 1.0.x DEVICES. MUST BE THE SAME AS \ref LORAWAN_F_NWK_S_INT_KEY
+ */
+#define LORAWAN_S_NWK_S_INT_KEY                            { 0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C }
+
+/*!
+ * Network session encryption key
+ * WARNING: NOT USED FOR 1.0.x DEVICES. MUST BE THE SAME AS \ref LORAWAN_F_NWK_S_INT_KEY
+ */
+#define LORAWAN_NWK_S_ENC_KEY                              { 0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C }
+
+/*!
+ * Application session key
+ */
+#define LORAWAN_APP_S_KEY                                  { 0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C }
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __LORA_COMMISSIONING_H__ */</code></pre>
+
+        <br>
+
+<!--Build Program-->
+<h3 align="center" id="builproject">Build dan pre-Build Program</h3>
+<p align="justify">Secara default program yang terdapat pada ekspansi I-CUBE-LRWAN akan aktif dengan library region EU868, oelh karena itu sebelum melakukan <i>build</i> program, anda perlu melakukan beberapa pengaturan yang dibutuhkan agar program, yang telah anda buat dapat bekerja sesuai dengan spesifikasi LoRa indonesia yang telah disesuaikan pada library AS923.</p>
+<div class="viewport">
+  <img src="../assets/img/stm32-7-propertiesproject (2).png" alt="">
+  <p align="center">Gambar 9.  Pilih <b>Project > Properties</b></p>
+</div>
+<p align="justify">Anda dapat memilih penggunaan library AS923 pertama-tama anda dapat memilih tab <b>Project>Properties</b>, kemudian akan terbuka jendela Properties.</p>
+
+
+<div class="viewport">
+  <img src="../assets/img/stm32-9-gantiregion.png" alt="">
+  <p align="center">Gambar 10. Mengganti Region_EU868 menjadi Region_AS923 </p>
+</div>
+<p align="justify">Setelah terbuka jendela properties, maka langkah selanjutya anda dapat memilih <b>C/C++ Build > Settings > Tool Settings > Preprocessor > Ganti "Region_EU868" menjadi "Region_AS923"</b></p>
+
+<div class="viewport">
+  <img src="../assets/img/stm32-buildtab.png" alt="">
+  <p align="">Gambar 11. Build all application</p>
+</div>
+<p align="justify">Setelah diganti menjadi Region_AS923, maka anda dapat mem-<i>build</i> application anda dengan cara <b>CTRL+B</b>, atau dapat juga memilih tab <b>Project > Build All</b> dan dapat juga dengan klik icon <img src="../assets/img/stm32-buildicon.png" alt=""></p>
+
+<div class="viewport">
+  <img src="../assets/img/stm32-10-debug.png" alt="">
+  <p align="center">Gambar 12. Debug Application </p>
+</div>
+<p align="justify">Kemudian anda dapat debug program anda kedalam papan B-L072Z-LRWAN dengan cara klik <b>F11</b> atau klik tab <b>Run > Debug</b>, serta dapat juga klik icon <img src="../assets/img/stm32-debugicon.png" alt=""></p>
+<br>
+
+
+        <!--Tutorial Downlink-->
+        <h4 align="left" id="downlink">Tutorial Downlink</h4>
+        <p align="justify">Untuk dapat melakukan downlink pada <i>End-Devices</i>, anda dapat menggunakan salah satu perangkat lunak bernama Postman yang dapat anda pelajari pada <a href="../id/lora-downlink-tutorial.html">tutorial berikut</a>. Lalu anda dapat memantaunya pada serial monitor pada STM32Cube IDE. Untuk dapat membuka serial monitor pada STM32Cube IDE, anda dapat mengikuti langkah berikut</p>
+        <div class="viewport">
+          <img src="../assets/img/stm32-serialmonitor1.png" alt="">
+          <p align="center">Gambar 13, Pertama anda perlu mengetahui posisi console yang ditunjukkan panah pada gambar berikut</p>
+        </div>
+
+        <div class="viewport">
+          <img src="../assets/img/stm32-serialmonitor2.png" alt="">
+          <p align="center">Gambar< 14. Lalu anda perlu membuka <strong>Command Shell Console</strong>/p>
+        </div>
+
+        <div class="viewport">
+          <img src="../assets/img/stm32-serialmonitor3.png" alt="">
+          <p align="center">Gambar 15. Maka akan terbuka jendela <strong>Remote COnnection</strong>, lalu tentukan <strong>Connection Type</strong></p>
+        </div>
+
+        <div class="viewport">
+          <img src="../assets/img/stm32-serialmonitor4.png" alt="">
+          <p align="center">Gambar 16. Pilih jenis koneksi <strong>Serial Port</strong></p>
+        </div>
+
+        <div class="viewport">
+          <img src="../assets/img/stm32-serialmonitor5.png" alt="">
+          <p align="center">Gambar 17. Buatlah pengaturan <strong>Connection name</strong> baru</p>
+        </div>
+
+        <div class="viewport">
+          <img src="../assets/img/stm32-serialmonitor6.png" alt="">
+          <p align="center">Gambar 18. Isikan <strong>Connection name</strong> sesuai dengan keinginan anda, dan <strong>Serial Port</strong> sesuai dengan yang anda gunakan, lalu klik <strong>Finish</strong></p>
+        </div>
+
+        <div class="viewport">
+          <img src="../assets/img/stm32-serialmonitor7.png" alt="">
+          <img src="../assets/img/stm32-serialmonitor8.png" alt="">
+          <p align="center">Gambar 19. pesan downlink yang ditampilkan pada serial monitor hasil dari POST menggunakan postman</p>
+        </div>
+        <br>
+
+        <!--Video Tutorial-->
+        <h3 align="center">Tutorial Video</h3>
+        <p align="justify">Dibawah ini berikut kami menyertakan sebuah video tutorial untuk memudahkan anda lebih memahami penjelasan kami di atas. Jika membutuhkan informasi lebih lanjut, jangan ragu hubungi kami melalui <a href="mailto:support@antares.id">support@antares.id</a> </p>
+        <div style="display:flex;justify-content:center;margin:20px">
+          <iframe width="100%" id="stm32video" width="560" height="315" src="https://www.youtube.com/embed/O0oBk8T9isU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Your browser does not support this video.</iframe>
+        </div>
+        <br>
+
+
+</section>
+                            </main>
+
+                            <!-- END Main container -->
+
+                            <!--
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              | Footer 5
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              !-->
+
+                              <footer class="site-footer py-70 bg-warning">
+                                <div class="container" id="footer">
+                                </div>
+                              </footer>
+
+
+                            <!-- Scripts -->
+                            <script src="../assets/js/core.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                            <script src="../assets/js/thesaas.min.js"></script>
+                            <script src="../assets/js/affix.js"></script>
+                            <script src="../assets/js/script.js"></script>
+                            <script src="../assets/js/prism.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+
+                                    var realm = 'https';
+                                    var domain = 'platform.antares.id';
+                                    var port = '8443';
+                                    var cseName = 'antares-cse';
+                                    var cseId = 'antares-id';
+
+                                    $('code').each(function () {
+                                        if ($(this).text().indexOf('https://') !== -1) {
+                                            $(this).text($(this).text().replace('https', realm));
+                                            $(this).text($(this).text().replace('platform.antares.id', domain));
+                                            $(this).text($(this).text().replace('8443', port));
+                                            $(this).text($(this).text().replace('antares-cse', cseName));
+                                            $(this).text($(this).text().replace('cseId', cseId));
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+                                });
+                            </script>
+
+                            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments)
+                                }
+                                ;
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-106459395-1');
+
+                            </script>
+
+                            <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+                            </html>

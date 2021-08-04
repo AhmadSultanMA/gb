@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+        <!-- Topbar -->
+        <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+            <!-- <nav class="topbar topbar-sticky"> -->
+            <div class="container">
+        
+              <div class="topbar-left">
+                <button class="topbar-toggler">&#9776;</button>
+                <a class="topbar-brand hidden-md-down" href="index.html">
+                  <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+                  <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+                </a>
+              </div>
+        
+              <a class="topbar-brand hidden-lg-up" href="index.html">
+                <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+                <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+              </a>
+        
+        
+              <div class="topbar-right">
+                <ul class="topbar-nav nav">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Services <em class="fa fa-caret-down"></em></a>
+                    <div class="nav-submenu">
+                      <a class="nav-link" href="index.html#feature">Features</a>
+                      <a class="nav-link" href="index.html#getting-started">Getting Started</a>
+                      <a class="nav-link" href="index.html#pricing">Pricing</a>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="docs.html">Documentation</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Community <em class="fa fa-caret-down"></em></a>
+                    <div class="nav-submenu">
+                      <a class="nav-link" href="https://blog.antares.id/">Blog</a>
+                      <a class="nav-link" href="https://forum.antares.id/">Forum</a>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="index.html#contact"> Contact</a></li>
+                </ul>
+                 <a class="btn btn-sm btn-warning btn-round ml-20" href="https://console.antares.id/register" style="padding-left: 12px; padding-right: 12px;"><img src="../assets/img/signup.svg" style="width: 15px; height: 15px; margin-top: -3px;" alt="signup" class="hidden-lg-up"> <span class="hidden-md-down">Sign Up</span></a>
+                 <a class="btn btn-sm btn-warning btn-round ml-5" href="https://console.antares.id" style="padding-left: 12px;padding-right: 12px";><img src="../assets/img/login.svg" style="width: 15px; height: 15px; margin-top: -3px;" alt="login" class="hidden-lg-up"> <span class="hidden-md-down">Login</span></a>
+              </div>
+        
+            </div>
+          </nav>
+          <!-- END Topbar -->
+
+
+
+        <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <h1>LoRa ESP32</h1>
+                        <p class="fs-18 opacity-70">Dokumentasi ini membantu Anda untuk menggunakan modul Arduino LoRa Antares. Jika membutuhkan informasi lebih lanjut, jangan ragu hubungi kami melalui support@antares.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+        <!-- Main container -->
+        <main class="main-content">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <section class="section bb-3" style="padding-top: 45px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+
+                                  
+									<ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#tutorial" data-scrollto="tutorial">Tutorial LoRa</a></label>
+
+                                            <ul>
+
+                                                <li><a class="nav-link" href="#pendahuluan" data-scrollto="pendahuluan">Pendahuluan</a></li>
+                                                <li><a class="nav-link" href="#prasyarat" data-scrollto="prasyarat">Prasyarat</a></li>
+                                                <li><a class="nav-link" href="#loraid" data-scrollto="loraid">Langkah-langkah Install Library Antares LoraWAN</a></li>
+                                                <li><a class="nav-link" href="#konfigurasi" data-scrollto="konfigurasi">Konfigurasi</a></li>
+												<li><a class="nav-link" href="#kirimdata" data-scrollto="kirimdata">Mengirim Data Sederhana ke Antares</a></li>
+                                            </ul>
+                                        </li>
+										<li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#shield" data-scrollto="shield">Menggunakan Workshop Shield Antares</a></label>
+
+                                            <ul>
+
+                                                <li><a class="nav-link" href="#pendahuluan2" data-scrollto="pendahuluan2">Pendahuluan</a></li>
+                                                <li><a class="nav-link" href="#alatbahan" data-scrollto="alatbahan">Alat dan Bahan</a></li>
+                                                <li><a class="nav-link" href="#kirimdata2" data-scrollto="kirimdata2">Kirim Data Sensor</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 pt-25">
+
+                            <!-- <h4 id="iot-platform-architecture">IoT Platform Architecture</h4>
+                            <img class="img-esp" src="../assets/img/iot-platform-architecture.png">
+
+                            <hr>
+
+                            <h4 id="iot-platform-standardization">IoT Platform Standardization</h4>
+                            <p>The Horizontal IoT Platform deployed by Telkom DDS is based on <strong>oneM2M</strong> IoT and M2M standardization.</p>
+
+                            <hr> -->
+							
+							
+
+							<h4 id="tutorial">Tutorial LoRa</h4>
+							<p><strong>Silakan download modul Workshop LoRa Antares</strong>. Klik <a target="_blank" href="../assets/files/MODUL WORKSHOP LORA ANTARES.pdf">Modul Workshop LoRa Antares</a></p>
+
+							<h5 id="pendahuluan">Pendahuluan</h5>
+                            <p align="justify">Pada tutorial ini, Anda akan menggunakan LoRa untuk mengirim data sederhana ke Antares. Modul yang digunakan pada tutorial ini adalah modul ESP32 LoRa Antares.</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/lora-esp-modul.jpg">
+                                <!-- End of -->
+                            </div>
+							<br>
+
+							<h5 id="prasyarat" class="heading-alt" id="req-topic">1. Prasyarat</h5>
+                            <p align="justify">Sebelum memulai, pastikan Anda telah memenuhi syarat sebagai berikut:</p>
+							<p align="justify">a. Install Arduino IDE pada komputer Anda. Klik <a href="https://www.arduino.cc/en/Main/Software">Software Arduino IDE</a> jika Anda belum menginstall.</p>
+                            <p align="justify">b. Board ESP32: Download Board ESP32 pada Arduino IDE. Klik Tutorial Berikut <a target="_blank" href="library-tutorial.html">Tutorial Install Board ESP32</a></p>
+                            <p align="justify">c. Library LoRaWAN: Download Library LoraWAN pada Arduino IDE. Klik Download <a target="_blank" href="../assets/files/ESP32-lora-id-AS923-2.zip">Download Library LoraWAN</a></p>
+                            <p align="justify">   Note: Tutorial dibawah hanya untuk board ESP32.</p>
+                            <p align="justify">d. Membuat aplikasi dan device pada console Antares akun Anda.</p>
+							
+                            <!--<hr>-->
+                            <!-- End Create your first application -->
+
+                            <!-- Add devices under your application -->
+
+							<h5 id="loraid" class="heading-alt" id="req-topic">2. Langkah-langkah Install Library LoraWAN</h5>
+                            <p>Sebelum memulai proses pada software, Anda perlu menginstall Library Loraid pada Arduino IDE yang Anda gunakan. Pada Arduino IDE, buka add .ZIP Library dengan klik <strong>Sketch > Include Library > add .ZIP Library</strong>.</p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/libantaresws2.png" alt="libantaresws2">
+                                <!-- End of -->
+                            </div>
+                         
+							<p>Kemudian pilih file zip Library antares-lora-wan.zip pada direktori penyimpanan yang telah Anda download sebelumnya. Lalu klik Open.</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/librarylorawan.png" alt="librarylorawan">
+                                <!-- End of -->
+                            </div>
+							<br>
+							
+                                
+                                    
+
+                            <!--<hr>-->
+                            <!-- End Add devices under your application -->
+
+                            <!-- Add devices under your application -->
+
+							<h5 id="konfigurasi" class="heading-alt" id="req-topic">3. Konfigurasi</h5>
+                            <p>a. Masuk pada laman console Antares akun Anda. Klik pada device yang telah Anda buat sebelumnya. Kemudian klik Set LoRa seperti pada gambar berikut.</p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/klik-lora-esp32.png" alt="klik-lora-esp32">
+                                <!-- End of -->
+                            </div>
+							<p>   Lalu akan muncul kotak dialog Set LoRa Device seperti gambar di bawah. Ikuti pengaturan seperti di bawah.</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/set-lora-esp32.png" alt="set-lora-esp32">
+                                <!-- End of -->
+                            </div>
+							<br>
+							<p>b. Pada Arduino IDE, konfigurasikan ESP32 Dev Modul sebagai board yang akan Anda gunakan. Klik <strong>Tools > Board > ESP32 Dev Modul</strong>.</p>
+							<p>c. Pada Arduino IDE, konfigurasikan Port sesuai dengan Board ESP32 yang Anda gunakan. Klik <strong>Tools > Port > COM ...</strong>.</p>
+                            <!--<hr>-->
+                            <!-- End Add devices under your application -->
+
+                            <!-- Add devices under your application -->
+
+                          
+                            <h5 id="kirimdata" class="heading-alt">4. Mengirim Data Sederhana ke Antares</h5>
+                            <p>Setelah Anda selesai melakukan konfigurasi, saatnya membuat kode program untuk mengirim data sederhana ke device pada console Antares yang telah Anda buat sebelumnya. Kode Program dapat Anda dapatkan di direktori example pada folder library Loraid yang telah Anda download sebelumnya atau dengan mudah Anda dapatkan dengan klik <strong>File > Examples > Antares-LoRaWAN > antares-lorawan-send</strong> pada Arduino IDE.</p>
+                            <p>Kode program antares-lorawan-send seperti berikut. Jangan lupa untuk ketik Access Key dan Device Id yang Anda gunakan pada console Antares akun Anda. Setelah itu upload program dan tunggu beberapa detik.</p>
+							<pre class="line-numbers"><code class="arduino">
+#include <AntaresLoRaWAN.h>
+#include <EEPROM.h>
+
+#define ACCESSKEY "e7e349fc2216941a:9d0cf82c25277bdd"
+#define DEVICEID "50e8bfe5"
+#define vbatt 32
+
+AntaresLoRaWAN antares;
+size_t EPROM_MEMORY_SIZE = 512;
+
+float nilaivbatt;
+String dataSend = "";
+int readaddress;
+int address = 0;
+int hitung;
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println(F("Starting"));
+  EEPROM.begin(EPROM_MEMORY_SIZE);
+  EEPROM.get(address, readaddress);
+  hitung = readaddress;
+  antares.setPins(2, 14, 12);   // Set pins for NSS, DIO0, and DIO1
+  antares.setTxInterval(1);    // Set the amount of interval time (in seconds) to transmit
+  antares.setSleep(true);  // antares.setSleep(true, 10);
+  antares.init(ACCESSKEY, DEVICEID);
+  antares.setDataRateTxPow(DR_SF10, 17);
+}
+
+void loop() {
+  hitung = hitung + 1;
+  EEPROM.put(address, hitung);
+  EEPROM.commit();
+  dataSend = "Counting saat ini : " + String(hitung);
+  Serial.println(dataSend);
+  delay(3000);
+  if (hitung >= 4096) {
+    hitung = 0;
+    EEPROM.put(address, hitung);
+    EEPROM.commit();
+    delay(10);
+  }
+  if (hitung <= 4095 ) {
+    Serial.println("saat ini masih" + String(hitung) + ", belum 4096");
+    delay(10);
+    sendPacket(dataSend);
+  }
+}
+
+
+void sendPacket(String &input) {
+  String dataA = String(input);
+  antares.send(dataA);
+
+  char dataBuf[50];
+  int dataLen = dataA.length();
+
+  dataA.toCharArray(dataBuf, dataLen + 1);
+  Serial.println("Data :" + (String)dataLen );
+  if (dataLen > 1)
+  {
+    Serial.println("\n[ANTARES] Data: " + dataA + "\n");
+
+    if (LMIC.opmode & OP_TXRXPEND) {
+      Serial.println(F("OP_TXRXPEND, not sending"));
+    } else {
+      LMIC_setTxData2(1, (uint8_t*)dataBuf, dataLen, 0);
+      Serial.println(F("Packet queued"));
+      esp_sleep_enable_timer_wakeup(10 * 1000000);
+      //esp_sleep_enable_ext0_wakeup(GPIO_NUM_34,0);
+      esp_deep_sleep_start();
+
+    }
+  }
+  else
+  {
+    Serial.println("\n[ANTARES] Data: Kosong\n");
+  }
+  delay(10000);
+}
+							</code></pre>
+							
+							<p>Setelah proses upload kode program selesai, silakan periksa data yang masuk pada Device Antares yang telah Anda buat sebelumnya. Jika berhasil maka tampilan pada Device Anda akan seperti berikut ini:</p>
+							<p align="justify"></p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/esp32-lora-antares.png" alt="esp32-lora-antares">
+                                <!-- End of -->
+                            </div>
+							
+							<br>
+							<br>
+							
+							<h5 id="shield">Menggunakan Shield Workshop Antares</h5>
+							<h5 id="pendahuluan2">Pendahuluan</h5>
+                            <p><strong>Silakan download modul Workshop LoRa Antares</strong>. Klik <a target="_blank" href="../assets/files/MODUL WORKSHOP LORA ANTARES.pdf">Modul Workshop LoRa Antares</a></p>
+
+							<p align="justify">Pada bagian ini, Anda akan menggunakan Shield Workshop Antares pada modul Arduino LoRa. Pada Shield Workshop Antares ini terdapat sensor suhu dan kelembaban (DHT11), relay, LED dan push button. Pada tutorial ini, Anda akan melakukan monitoring suhu dan kelembaban melalui console Antares menggunakan Modul Arduino LoRa.</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/shieldworkshop.jpg" alt="shieldworkshop">
+                                <!-- End of -->
+                            </div>
+							<br>
+
+							<h5 id="alatbahan" class="heading-alt" id="req-topic">1. Alat dan Bahan</h5>
+                            <p align="justify">Alat dan bahan yang digunakan diantaranya:</p>
+							<p align="justify">a. Modul Arduino LoRa</p>
+							<p align="justify">b. Shield Workshop Antares</p>
+							<p align="justify">c. Kabel Mini USB</p>
+							
+                            <!--<hr>-->
+                            <!-- End Create your first application -->
+
+                            <!-- Add devices under your application -->
+
+							                          
+                            <h5 id="kirimdata2" class="heading-alt">2. Kirim Data Sensor</h5>
+                            <p>Sebelumnya, pastikan Anda telah memasang Shield Workshop Antares pada Modul Arduino LoRa dengan benar.</p>
+                            <p>Kode program ditunjukkan seperti dibawah ini. Jangan lupa untuk ketik Access Key dan Device Id yang Anda gunakan pada console Antares akun Anda. Setelah itu upload program dan tunggu beberapa detik.</p>
+							<pre class="line-numbers"><code class="arduino">#include <loraid.h>
+#include "DHT.h"
+#define DHTPIN 4
+#define DHTTYPE DHT11
+
+long interval = 10000; // 10 s interval to send message
+long previousMillis = 0; // will store last time message sent
+unsigned int counter = 0; // message counter
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+// Setup loraid access
+lora.init();
+// Set LoRaWAN Class
+lora.setDeviceClass(CLASS_A);
+// Set Data Rate
+lora.setDataRate(2);
+
+// Put Antares Key and DevAddress here
+lora.setAccessKey("your-access-key");
+lora.setDeviceId("dev addr lora");
+dht.begin();
+}
+
+void loop() {
+char myStr[50];
+char outStr[255];
+int recvStatus = 0;
+unsigned long currentMillis = millis();
+
+if(currentMillis - previousMillis > interval) {
+float h = round(dht.readHumidity());
+float t = round(dht.readTemperature());
+if (isnan(h) || isnan(t)) {
+h = 0;
+t = 0;
+}
+
+previousMillis = currentMillis;
+
+String dataKirim = lora.makeData(1, 2, 0, (String)t,(String)h,"");
+Serial.println((String)dataKirim);
+dataKirim.toCharArray(myStr, dataKirim.length()+1);
+lora.sendToAntares((unsigned char *)myStr, strlen(myStr), 0);
+}
+
+recvStatus = lora.readData(outStr);
+if(recvStatus) {
+Serial.println(outStr);
+}
+
+lora.update();
+}
+
+							</code></pre>
+							
+							<p>Setelah proses upload kode program selesai, silakan periksa data yang masuk pada Device Antares yang telah Anda buat sebelumnya. Jika berhasil maka tampilan pada Device Anda akan seperti berikut ini:</p>
+							<p align="justify"></p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/setlora4.png" alt="setlora4">
+                                <!-- End of -->
+                            </div>
+							
+							
+                            </section>
+                            </main>
+                            <!-- END Main container -->
+
+                            <!--
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              | Footer 5
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              !-->
+
+                              <footer class="site-footer py-70 bg-warning">
+                                <div class="container" id="footer">
+                                </div>
+                              </footer>
+
+
+                            <!-- Scripts -->
+                            <script src="../assets/js/core.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                            <script src="../assets/js/thesaas.min.js"></script>
+                            <script src="../assets/js/affix.js"></script>
+                            <script src="../assets/js/script.js"></script>
+                            <script src="../assets/js/prism.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+
+                                    var realm = 'https';
+                                    var domain = 'platform.antares.id';
+                                    var port = '8443';
+                                    var cseName = 'antares-cse';
+                                    var cseId = 'antares-id';
+
+                                    $('code').each(function () {
+                                        if ($(this).text().indexOf('https://') !== -1) {
+                                            $(this).text($(this).text().replace('https', realm));
+                                            $(this).text($(this).text().replace('platform.antares.id', domain));
+                                            $(this).text($(this).text().replace('8443', port));
+                                            $(this).text($(this).text().replace('antares-cse', cseName));
+                                            $(this).text($(this).text().replace('cseId', cseId));
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+                                });
+                            </script>
+
+                            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments)
+                                }
+                                ;
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-106459395-1');
+
+                            </script>
+
+                            <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+                            </html>

@@ -1,0 +1,2133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>ANTARES | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+        <!-- Topbar -->
+        <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+            <!-- <nav class="topbar topbar-sticky"> -->
+          </nav>
+  <!-- END Topbar -->
+
+        <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <h1>MIT App Inventor</h1>
+                        <p class="fs-18 opacity-70">Dokumentasi ini menjelaskan cara membuat aplikasi Android (apk) dan menghubungkannya ke ANTARES. Jika anda membutuhkan informasi lebih lanjut, jangan ragu hubungi kami melalui email <a href="mailto:support@ANTARES.id">support@ANTARES.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+        <!-- Main container -->
+        <main class="main-content">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <section class="section bb-3" style="padding-top: 45px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        
+										<li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#mitappinventor" data-scrollto="mitappinventor">MIT App Inventor</a></label>
+
+                                            <ul>
+                                                <li><a class="nav-link" href="#tampilan" data-scrollto="tampilan">Tampilan MIT App Inventor</a></li>
+												
+												<li class="has-children">
+													<input type="checkbox">
+													<label class="nav-link" href="#halamandesigner" data-scrollto="halamandesigner">Halaman Designer</label>
+													
+													<ul style="">
+														<li><a class="nav-link" href="#userinterface" data-scrollto="userinterface">User Interface</a></li>
+														<li><a class="nav-link" href="#layout" data-scrollto="layout">Layout</a></li>
+														<li><a class="nav-link" href="#media" data-scrollto="media">Media</a></li>
+														<li><a class="nav-link" href="#drawingandanimation" data-scrollto="drawingandanimation">Drawing and Animation</a></li>
+														<li><a class="nav-link" href="#maps" data-scrollto="maps">Maps</a></li>
+														<li><a class="nav-link" href="#sensors" data-scrollto="sensors">Sensors</a></li>
+														<li><a class="nav-link" href="#social" data-scrollto="social">Social</a></li>
+														<li><a class="nav-link" href="#storage" data-scrollto="storage">Storage</a></li>
+														<li><a class="nav-link" href="#connectivity" data-scrollto="connectivity">Connectivity</a></li>
+														<li><a class="nav-link" href="#experimental" data-scrollto="experimental">Experimental</a></li>
+													</ul>				
+												</li>
+												
+                                                <li class="has-children">
+													<input type="checkbox">
+													<label class="nav-link" href="#halamanblocks" data-scrollto="halamanblocks">Halaman Blocks</label>
+													
+													<ul style="">
+														<li><a class="nav-link" href="#control" data-scrollto="control">Control</a></li>
+														<li><a class="nav-link" href="#logic" data-scrollto="logic">Logic</a></li>
+														<li><a class="nav-link" href="#math" data-scrollto="math">Math</a></li>
+														<li><a class="nav-link" href="#text" data-scrollto="text">Text</a></li>
+														<li><a class="nav-link" href="#list" data-scrollto="list">List</a></li>
+														<li><a class="nav-link" href="#colors" data-scrollto="colors">Colors</a></li>
+														<li><a class="nav-link" href="#variables" data-scrollto="variables">Variables</a></li>
+														<li><a class="nav-link" href="#procedure" data-scrollto="procedure">Procedure</a></li>
+													</ul>				
+												</li>	      
+                                            </ul>
+                                        </li>
+										
+										<li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#hubungkeantares" data-scrollto="hubungkeantares">Menghubungkan ke ANTARES</a></label>
+												
+											<ul>
+												<li><a class="nav-link" href="#kirimdatakeserver" data-scrollto="kirimdatakeserver">Kirim Data ke Server</a></li>
+												<li><a class="nav-link" href="#menerimadatadariserver" data-scrollto="menerimadatadariserver">Menerima Data dari Server</a></li>
+												<li><a class="nav-link" href="#menerimadatarealtime" data-scrollto="menerimadatarealtime">Menerima Data Realtime</a></li>	     
+                                            </ul>
+											
+										</li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+
+                                </div>
+                            </div>
+                        </div>
+						
+						<!--
+						|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+						| ISI DOC
+						|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+						!-->
+						
+                        <div class="col-lg-9 pt-25" id="cust">
+
+                            <!-- <h4 id="iot-platform-architecture">IoT Platform Architecture</h4>
+                            <img class="img-esp" src="../assets/img/iot-platform-architecture.png">
+
+                            <hr>
+
+                            <h4 id="iot-platform-standardization">IoT Platform Standardization</h4>
+                            <p>The Horizontal IoT Platform deployed by Telkom DDS is based on <strong>oneM2M</strong> IoT and M2M standardization.</p>
+
+                            <hr> -->
+
+                            <h3 align="center" id="mitappinventor">Penjelasan</h3>
+                            <p align="justify">MIT App Inventor merupakan platform untuk memudahkan proses pembuatan aplikasi sederhana tanpa harus mempelajari atau menggunakan bahasa pemrograman yang terlalu banyak. Kita dapat mendesain aplikasi android sesuai keinginan dengan menggunakan berbagai macam layout dan komponen yang tersedia.</p>
+                            
+                            <p align="justify">Berikut di bawah ini cara menggunakan MIT App Inventor. Jika anda membutuhkan bantuan dan menemukan kekurangan pada tutorial ini, bisa menghubungi kami melalui <a href="mailto:support@ANTARES.id">support@ANTARES.id</a></p>
+                            <br>
+                            
+                            <h4 align="center" id="tampilan" >Tampilan MIT App Inventor</h4>
+
+                            <p align="justify">Pada MIT App Inventor terdapat dua halaman utama, yaitu halaman designer dan halaman blocks. Halaman designer digunakan untuk mendesain tampilan aplikasi dengan berbagai komponen dan layout yang disediakan sesuai dengan keinginan. Sedangkan halaman blocks digunakan untuk memprogram jalannya aplikasi android sesuai dengan tujuan.</p>
+
+                            <!--<p>Assuming that you don’t have an account so then you have to click Register. This User Interface will appear. It is located in <a href="http://console.ANTARES.id/register">http://console.ANTARES.id/register</a> to be exactly.</p><br>-->
+                            <div class="browser shadow-2">
+                                <div class="toolbar-web">
+                                    <div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+                                    </div>
+                                    <div class="tab"></div>
+                                </div>
+
+                                <!-- <div class="tabbar"></div> -->
+
+                                <div class="viewport">
+                                    <!-- Insert your page here -->
+                                    <img src="../assets/img/halamandesigner.png" alt="halamandesigner">
+                                    <!-- End of -->
+                                </div>
+                            </div>
+                            <p align="center">Gambar 1. Tampilan Halaman Designer</p>
+                            <div class="browser shadow-2">
+                                <div class="toolbar-web">
+                                    <div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+                                    </div>
+                                    <div class="tab"></div>
+                                </div>
+
+                                <!-- <div class="tabbar"></div> -->
+
+                                <div class="viewport">
+                                    <!-- Insert your page here -->
+                                    <img src="../assets/img/halamanblocks.png" alt="halamanblocks">
+                                    <!-- End of -->
+                                </div>
+                            </div>
+                            <p align="center">Gambar 2. Tampilan Halaman Blocks</p>
+                            
+                            <!-- Create your first application -->
+                            
+                            <h4 align="center" id="halamandesigner" >Halaman Designer</h4>
+                            <p align="justify">Pada halaman designer terdapat beberapa jendela seperti Palette, Viewer, Components, Media, dan Properties. Tools tersebut berfungsi untuk mendesain tampilan aplikasi android sesuai keinginan.</p>
+							<ol type="1">
+                                <li>Palette merupakan jendela tempat mengambil komponen-komponen yang dikategorikan dalam beberapa kategori untuk dimasukkan dalam aplikasi yang dibuat. Terdapat kategori User Interface, Layout, Media, Drawing and Animation, Maps, Sensors, Social, Storage, Connectivity, LEGO MINDSTORMS, Experimental, dan Extension.</li>
+                                <li>Viewer merupakan tempat untuk mengatur tampilan komponen pada aplikasi nantinya.</li>
+                                <li>Components merupakan tempat untuk mengatur komponen-komponen yang telah diletakkan di viewer, seperti misalnya mengganti nama komponen, dan menghapus komponen.</li>
+                                <li>Properties merupakan tempat untuk mengatur properti layar, dan komponen-komponen yang digunakan pada aplikasi yang sedang dibuat seperti lebar, tinggi, warna latar, besar huruf, dll.</li>
+								<li>Media merupakan tempat untuk mengunggah gambar untuk digunakan pada aplikasi yang sedang dibuat.</li>
+                            </ol>
+							<p align="justify">Pada bagian Palette terdapat komponen penyusun untuk mendesain aplikasi, berikut adalah komponen penyusunnya: </p>
+                                
+							<h5 id="userinterface" class="heading-alt">1. User Interface</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="User-Interface">
+                                <thead>
+                                    <tr>
+                                        <th id="simbol-ui"> <strong> <p align="center">Simbol</strong></th>
+                                        <th id="nama-ui"> <strong> <p align="center">Nama</strong></th>
+                                        <th id="fungsi-ui"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/buttonmit.png" alt="buttonmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Button</td>
+                                        <td>Dapat mendeteksi ketukan, hold down ketika pengguna menekan tombol, atau ketika pengguna melepas tombol. Ketika button mendeteksi salah satu dari hal tersebut, button akan menjalankan perintah.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/checkboxmit.png" alt="checkboxmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Checkbox</td>
+                                        <td>Dapat mendeteksi ketukan dari pengguna dan mengganti state-nya menjadi true/false (boolean).</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/datepickermit.png" alt="datepickermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Date Picker</td>
+                                        <td>Memunculkan kalender untuk memilih tanggal.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/imagemit.png" alt="imagemit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Image</td>
+                                        <td>Memasukkan gambar dalam aplikasi.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/labelmit.png" alt="labelmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Label</td>
+                                        <td>Menampilkan teks dalam aplikasi.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/listpickermit.png" alt="listpickermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>List Picker</td>
+                                        <td>Menampilkan list yang dapat dipilih oleh pengguna ketika pengguna menekan list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/listviewmit.png" alt="listviewmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>List View</td>
+                                        <td>Menampilkan list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/notifiermit.png" alt="notifiermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Notifier</td>
+                                        <td>Memunculkan pesan/peringatan pop-up pada aplikasi. Pesan dapat hilang secara otomatis, atau harus menerima input dari pengguna terlebih dahulu baru menghilang.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/passwordtextboxmit.png" alt="passwordtextboxmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Password Text Box</td>
+                                        <td>Menyediakan textbox yang menyembunyikan teks yang dimasukkan.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/slidermit.png" alt="slidermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Slider</td>
+                                        <td>Menyediakan progress bar yang dapat digeser.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/spinnermit.png" alt="spinnermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Spinner</td>
+                                        <td>Menampilkan pop-up list dengan elemen yang dapat dipilih ketika ditekan.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/textboxmit.png" alt="textboxmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Text Box</td>
+                                        <td>Menyediakan area untuk mengetik teks.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/timepickermit.png" alt="timepicketmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Time Picker</td>
+                                        <td>Memunculkan jam untuk memilih waktu.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/webviewermit.png" alt="webviewermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Web Viewer</td>
+                                        <td>Menyediakan area yang dapat menampilkan laman web.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+						
+							<h5 id="layout" class="heading-alt">2. Layout</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="layout-table">
+                                <thead>
+                                    <tr>
+                                        <th id="simbol-layout"> <strong> <p align="center">Simbol</strong></th>
+                                        <th id="nama-layout"> <strong> <p align="center">Nama</strong></th>
+                                        <th id="fungsi-layout"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/horizontalarrangementmit.png" alt="horizontalarrangementmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Horizontal Arrangement</td>
+                                        <td>Menyusun komponen secara horizontal.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/horizontalscrollarrangementmit.png" alt="horizontalscrollarrangementmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Horizontal Scroll Arrangement</td>
+                                        <td>Menyusun komponen secara horizontal, namun jika lebar komponen melebihi lebar komponen ini, maka dapat digeser (scroll).</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/tablearrangementmit.png" alt="tablearrangementmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Table Arrangement</td>
+                                        <td>Membuat tabel.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/verticalarrangementmit.png" alt="verticalarrangementmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Vertical Arrangement</td>
+                                        <td>Menyusun komponen secara vertikal.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/verticalscrollarrangementmit.png" alt="verticalscrollarrangementmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Vertical Scroll Arrangement</td>
+                                        <td>Menyusun komponen secara vertikal, namun jika tinggi komponen melebihi tinggi komponen ini, maka dapat digeser (scroll).</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="media" class="heading-alt">3. Media</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="media-table">
+                                <thead>
+                                    <tr>
+                                        <th id="simbol-media"> <strong> <p align="center">Simbol</strong></th>
+                                        <th id="nama-media"> <strong> <p align="center">Nama</strong></th>
+                                        <th id="fungsi-media"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/camcordermit.png" alt="camcordermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Camcorder</td>
+                                        <td>Mengaktifkan kamera HP dan merekam.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/cameramit.png" alt="cameramit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Camera</td>
+                                        <td>Mengaktifkan kamera HP dan memotret.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/imagepickermit.png" alt="imagepickermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Image Picker</td>
+                                        <td>Menampilkan galeri pada aplikasi. Pengguna dapat memilih gambar yang akan disimpan dari galeri yang ditampilkan.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/playermit.png" alt="playermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Player</td>
+                                        <td>Memainkan musik/audio dan mengatur vibrasi HP.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/soundmit.png" alt="soundmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Sound</td>
+                                        <td>Memainkan musik/audio dan mengatur vibrasi HP dalam interval waktu tertentu.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/soundrecordermit.png" alt="soundrecordermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Sound Recorder</td>
+                                        <td>Merekam suara.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/speechrecognizermit.png" alt="speechrecognizermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Speech Recognizer</td>
+                                        <td>Mengkonversi suara menjadi teks menggunakan fitur speech recognition pada HP.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/texttospeechmit.png" alt="texttospeechmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Text to Speech</td>
+                                        <td>Mengkonversi teks menjadi suara. Pitch dan kecepatan pembacaan dapat diatur.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/videoplayermit.png" alt="videoplayermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Video Player</td>
+                                        <td>Memutar video serta menampilkan pengaturannya.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/yandextranslatemit.png" alt="yandextranslatemit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Yandex Translate</td>
+                                        <td>Menerjemahkan teks dari satu bahasa ke bahasa yang lainnya.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="drawingandanimation" class="heading-alt">4. Drawing and Animation</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="drawing-animation-table">
+                                <thead>
+                                    <tr>
+                                        <th id="simbol-drawing-animation"> <strong> <p align="center">Simbol</strong></th>
+                                        <th id="nama-drawing-animation"> <strong> <p align="center">Nama</strong></th>
+                                        <th id="fungsi-drawing-animation"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/ballmit.png" alt="ballmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Ball</td>
+                                        <td>Sprite bola yang dapat berinteraksi pada sentuhan dan tarikan, serta berinteraksi dengan sprite lainnya pada kanvas.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/canvasmit.png" alt="canvasmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Canvas</td>
+                                        <td>Kanvas tempat sprite berinteraksi dengan pengguna atau dengan sprite lainnya, atau tempat pengguna menggambar.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/imagespritemit.png" alt="imagespritemit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Image Sprite</td>
+                                        <td>Sprite gambar yang dapat berinteraksi pada sentuhan dan tarikan, serta berinteraksi dengan sprite lainnya pada kanvas.</td>
+                                    </tr>
+								</tbody>	
+							</table>		
+                         
+							<h5 id="maps" class="heading-alt">5. Maps</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="maps-table">
+                                <thead>
+                                    <tr>
+                                        <th id="simbol-maps"> <strong> <p align="center">Simbol</strong></th>
+                                        <th id="nama-maps"> <strong> <p align="center">Nama</strong></th>
+                                        <th id="fungsi-maps"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/circlemit.png" alt="circlemit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Circle</td>
+                                        <td>Memvisualisasikan lingkaran dengan radius tertentu (dalam meter) pada koordinat tertentu. Dapat juga digunakan untuk menjalankan program ketika pengguna berada di suatu area. </td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/featurecollectionmit.png" alt="featurecollectionmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Feature Collection</td>
+                                        <td>Mengelompokkan fitur-fitur Maps. Event yang terjadi pada salah satu komponen pada kelompok tersebut, akan memicu event pada komponen-komponen lainnya. </td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/linestringmit.png" alt="linestringmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Line String</td>
+                                        <td>Menggambar garis pada peta.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/mapmit.png" alt="mapmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Map</td>
+                                        <td>Menampilkan peta pada layar aplikasi.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/markermit.png" alt="markermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Marker</td>
+                                        <td>Memberi tanda pada suatu lokasi di peta.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/polygonmit.png" alt="polygonmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Polygon</td>
+                                        <td>Membuat perimeter pada peta.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/rectanglemit.png" alt="rectanglemit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Rectangle</td>
+                                        <td>Merupakan polygon dengan garis lintang dan garis bujur untuk batas utara, selatan, timur, dan barat. Jika sudut segiempat dipindahkan, maka informasi koordinat akan diperbaharui. </td>
+                                    </tr>
+								</tbody>
+							</table>
+
+							<h5 id="sensors" class="heading-alt">6. Sensors</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="sensors-table">
+                                <thead>
+                                    <tr>
+                                        <th id="simbol-sensors"> <strong> <p align="center">Simbol</strong></th>
+                                        <th id="nama-sensors"> <strong> <p align="center">Nama</strong></th>
+                                        <th id="fungsi-sensors"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/acceleromit.png" alt="acceleromit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Accelerometer Sensor</td>
+                                        <td>Mendeteksi goyangan dan percepatan dalam m/s2.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/barcodemit.png" alt="barcodemit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Barcode Scanner</td>
+                                        <td>Membaca barcode.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/gyroscopemit.png" alt="gyroscopemit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Gyroscope Sensor</td>
+                                        <td>Mengukur kecepatan sudut dalam derajat/detik.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/locationmit.png" alt="locationmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Location Sensor</td>
+                                        <td>Menyediakan informasi geografis seperti koordinat, ketinggian, kecepatan, dan alamat. Dapat juga mengkonversi alamat menjadi koordinat.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/nearfieldmit.png" alt="nearfieldmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Near Field</td>
+                                        <td>Memungkinkan aplikasi mengaktifkan fitur komunikasi jarak dekat (NFC).</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/orientationmit.png" alt="orientationmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Orientation</td>
+                                        <td>Menentukan orientasi HP.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/pedometermit.png" alt="pedometermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Pedometer</td>
+                                        <td>Menentukan banyaknya langkah, dan jarak yang ditempuh. </td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/proximitymit.png" alt="proximitymit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Proximity Sensor</td>
+                                        <td>Mengukur jarak antara objek dengan layar HP.</td>
+                                    </tr>
+								</tbody>	
+							</table>	
+
+							<h5 id="social" class="heading-alt">7. Social</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="social-table">
+                                <thead>
+                                    <tr>
+                                        <th id="simbol-social"> <strong> <p align="center">Simbol</strong></th>
+                                        <th id="nama-social"> <strong> <p align="center">Nama</strong></th>
+                                        <th id="fungsi-social"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/contactpickermit.png" alt="contactpickermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Contact Picker</td>
+                                        <td>Menampilkan list berisi kontak ketika ditekan.</td>
+                                    </tr>	
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/emailpickermit.png" alt="emailpickermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Email Picker</td>
+                                        <td>Menampilkan list berisi email ketika pengguna mengetikkan kata kunci ataupun email dari orang yang dituju.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/phonecallmit.png" alt="phonecallmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Phone Call</td>
+                                        <td>Melakukan panggilan telepon.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/phonenumberpickermit.png" alt="phonenumberpickermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Phone Number Picker</td>
+                                        <td>Menampilkan list berisi nomor kontak pada layar HP.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/sharingmit.png" alt="sharingmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Sharing</td>
+                                        <td>Memungkinkan pertukaran berkas atau pesan antara satu aplikasi dengan aplikasi lainnya yang terdapat pada HP.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/textingmit.png" alt="textingmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Texting</td>
+                                        <td>Mengirim pesan teks ke suatu nomor kontak.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/twittermit.png" alt="twittermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Twitter</td>
+                                        <td>Memungkinkan komunikasi dengan Twitter sehingga pengguna dapat membuat tweet, melihat tweet, dll.</td>
+                                    </tr>
+								</tbody>
+							</table>
+							
+							<h5 id="storage" class="heading-alt">8. Storage</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="storage-table">
+                                <thead>
+                                    <tr>
+                                        <th id="simbol-storage"> <strong> <p align="center">Simbol</strong></th>
+                                        <th id="nama-storage"> <strong> <p align="center">Nama</strong></th>
+                                        <th id="fungsi-storage"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/filemit.png" alt="filemit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>File</td>
+                                        <td>Menerima atau mengirim berkas. Dapat juga digunakan untuk membaca atau menulis berkas.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/fusiontablesmit.png" alt="fusiontablesmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Fusiontables Control</td>
+                                        <td>Memungkinkan komunikasi dengan Google Fusion Table. Google Fusion Table dapat menyimpan, membagikan, query, dan memvisualisasikan tabel data.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/tinydbmit.png" alt="tinydbmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>TinyDB</td>
+                                        <td>Menyimpan data untuk aplikasi sehingga ketika aplikasi ditutup, dan kemudian dibuka kembali, data masih tersimpan.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/tinywebdbmit.png" alt="tinywebdbmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>TinyWebDB</td>
+                                        <td>Menyimpan data pada web.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="connectivity" class="heading-alt">9. Connectivity</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="connectivity-tables">
+                                <thead>
+                                    <tr>
+                                        <th id="simbol-connectivity"> <strong> <p align="center">Simbol</strong></th>
+                                        <th id="nama-connectivity"> <strong> <p align="center">Nama</strong></th>
+                                        <th id="fungsi-connectivity"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/activitystartermit.png" alt="activitystartermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Activity Starter</td>
+                                        <td>Memanggil aplikasi lain.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/bluetoothclientmit.png" alt="bluetoothclientmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Bluetooth Client</td>
+                                        <td>Membuat aplikasi sebagai Bluetooth client.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/bluetoothservermit.png" alt="bluetoothservermit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Bluetooth Server</td>
+                                        <td>Membuat aplikasi sebagai Bluetooth server.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/webmit.png" alt="webmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Web</td>
+                                        <td>Memungkinkan aplikasi untuk berinteraksi dengan web dan menyediakan fungsi untuk HTTP GET, POST, PUT, dan DELETE.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="experimental" class="heading-alt">10. Experimental</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="experimental-table">
+                                <thead>
+                                    <tr>
+                                        <th id="simbol-experimental"> <strong> <p align="center">Simbol</strong></th>
+                                        <th id="nama-experimental"> <strong> <p align="center">Nama</strong></th>
+                                        <th id="fungsi-experimental"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/clouddbmit.png" alt="clouddbmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>CloudDB</td>
+                                        <td>Memungkinkan pengguna aplikasi untuk saling bertukar data pada database dengan software Redis.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/firebasedbmit.png" alt="firebasedbmit">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>FirebaseDB</td>
+                                        <td>Memungkinkan pengguna aplikasi untuk saling bertukar data pada database dengan Firebase.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+                            
+							<h4 align="center" id="halamanblocks" >Halaman Blocks</h4>
+                            <p align="justify">Pada halaman blocks terdapat beberapa codeblock yang berfungsi untuk memprogram aplikasi android sesuai yang diinginkan. Pada halaman block terdapat beberapa komponen seperti Control, Logic, Math, Text, Lists, Colors, Variables, dan Procedures. Berikut adalah komponen yang terdapat pada halaman blocks:</p>
+							
+							<h5 id="control" class="heading-alt">1. Control</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="hb-control-tables">
+                                <thead>
+                                    <tr>
+                                        <th id="blokkode-control-hb"> <strong> <p align="center">Blok Kode</strong></th>
+                                        <th id="fungsi-control-hb"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/controlmit1.png" alt="controlmit1">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>If kondisional. Jika “if” memenuhi syarat, maka blok yang ada setelah “then” dieksekusi.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/controlmit2.png" alt="controlmit2">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Looping dari angka pertama hingga angka terakhir dengan suatu interval. Maka gambar disamping berarti loop dari angka 1 hingga 5 dengan interval 1: 1, 2, 3, 4, 5.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/controlmit3.png" alt="controlmit3">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>For bertingkat. Untuk setiap objek dalam list, dilakukan looping.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/controlmit4.png" alt="controlmit4">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Jika nilai test true, maka loop while berjalan.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							
+							<h5 id="logic" class="heading-alt">2. Logic</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="hb-logic-tables">
+                                <thead>
+                                    <tr>
+                                        <th id="blokkode-logic-hb"> <strong> <p align="center">Blok Kode</strong></th>
+                                        <th id="fungsi-logic-hb"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/logicmit1a.png" alt="logicmit1a">
+											<img src="../assets/img/logicmit1b.png" alt="logicmit1b">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Boolean true/false.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/logicmit2.png" alt="logicmit2">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Jika dipasangkan dengan true/false maka true menjadi false, dan false menjadi true.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/logicmit3.png" alt="logicmit3">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Memeriksa apakah satu objek sama dengan/tidak sama dengan objek di kanan. Jika sesuai kriteria, maka blok akan bernilai true, dan false jika tidak sesuai.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/logicmit4.png" alt="logicmit4">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Pada logika and jika kedua syarat terpenuhi, maka nilainya menjadi true. Sedangkan pada logika or, jika salah satu syarat atau keduanya terpenuhi, maka nilainya menjadi true.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="math" class="heading-alt">3. Math</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="hb-math-tables">
+                                <thead>
+                                    <tr>
+                                        <th id="blokkode-math-hb"> <strong> <p align="center">Blok Kode</strong></th>
+                                        <th id="fungsi-math-hb"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/mathmit1.png" alt="mathmit1">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Digunakan untuk menginput angka.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/mathmit2.png" alt="mathmit2">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Digunakan untuk membandingkan dua angka. Perbandingan dapat berupa sama dengan, tidak sama dengan, lebih dari, kurang dari, lebih dari sama dengan, dan kurang dari sama dengan.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/mathmit3.png" alt="mathmit3">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Operasi matematika dasar, yaitu tambah, kurang, kali, bagi, pangkat, dan modulus.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/mathmit4.png" alt="mathmit4">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Mengambil nilai integer secara acak dari range yang ditentukan.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/mathmit5.png" alt="mathmit5">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Operasi trigonometri sin, cos, tan.</td>
+                                    </tr>
+								</tbody>
+							</table>
+							
+							<h5 id="text" class="heading-alt">4. Text</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="hb-text-tables">
+                                <thead>
+                                    <tr>
+                                        <th id="blokkode-text-hb"> <strong> <p align="center">Blok Kode</strong></th>
+                                        <th id="fungsi-text-hb"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/textmit1.png" alt="textmit1">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Teks kosong.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/textmit2.png" alt="textmit2">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Menggabungkan dua atau lebih teks.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/textmit3.png" alt="textmi3">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Memeriksa jika teks kosong atau tidak.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/textmit4.png" alt="textmit4">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Memeriksa apakah ada bagian tertentu dalam suatu teks.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/textmit5.png" alt="textmi5">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Memisahkan teks pada penanda tertentu dan membuatnya menjadi list.</td>
+                                    </tr>
+								</tbody>
+							</table>
+
+							<h5 id="list" class="heading-alt">5. List</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="hb-list-tables">
+                                <thead>
+                                    <tr>
+                                        <th id="blokkode-list-hb"> <strong> <p align="center">Blok Kode</strong></th>
+                                        <th id="fungsi-list-hb"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/listmit1.png" alt="listmit1">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Membuat list kosong.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/listmit2.png" alt="listmit2">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Membuat list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/listmit3.png" alt="listmit3">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Menambahkan elemen pada list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/listmit4.png" alt="listmit4">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Memeriksa apakah ada elemen tertentu pada list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/listmit5.png" alt="listmit5">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Memeriksa banyaknya elemen pada list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/listmit6.png" alt="listmit6">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Memeriksa apakah list kosong atau tidak.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/listmit7.png" alt="listmit7">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Mengambil elemen dari suatu list.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/listmit8.png" alt="listmit8">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Menghapus elemen dari suatu list.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="colors" class="heading-alt">6. Colors</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="hb-colors-tables">
+                                <thead>
+                                    <tr>
+                                        <th id="blokkode-colors-hb"> <strong> <p align="center">Blok Kode</strong></th>
+                                        <th id="fungsi-colors-hb"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/colorsmit1.png" alt="colorsmit1">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Pilihan warna yang disediakan MIT AI.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/colorsmit2.png" alt="colorsmit2">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Membuat warna sendiri dengan menggunakan kode RGB warna.</td>
+                                    </tr>
+								</tbody>
+							</table>			
+							
+							<h5 id="variables" class="heading-alt">7. Variables</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="hb-variables-tables">
+                                <thead>
+                                    <tr>
+                                        <th id="blokkode-variables-hb"> <strong> <p align="center">Blok Kode</strong></th>
+                                        <th id="fungsi-variables-hb"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/variablesmit1.png" alt="variablesmit1">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Membuat suatu variabel global.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/variablesmit2.png" alt="variablesmit2">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Mengambil variabel global.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/variablesmit3.png" alt="variablesmit3">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Memodifikasi isi dari variabel global.</td>
+                                    </tr>
+								</tbody>
+							</table>	
+							
+							<h5 id="procedure" class="heading-alt">8. Procedure</h5>
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="hb-procedure-tables">
+                                <thead>
+                                    <tr>
+                                        <th id="blokkode-procedure-hb"> <strong> <p align="center">Blok Kode</strong></th>
+                                        <th id="fungsi-procedure-hb"> <strong> <p align="center">Fungsi</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/proceduremit1.png" alt="proceduremit1">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Membuat suatu prosedur.</td>
+                                    </tr>
+									<tr>
+                                        <td>
+											<div class="viewport">
+											<!-- Insert your page here -->
+											<img src="../assets/img/proceduremit2.png" alt="proceduremit2">
+											<!-- End of -->
+											</div>
+										</td>
+                                        <td>Membuat suatu fungsi yang mengembalikan hasil tertentu.</td>
+                                    </tr>
+								</tbody>
+							</table>
+							<br>
+
+							<h3 align="center" id="hubungkeantares">Menghubungkan ke ANTARES</h3>
+							<p align="justify">Setelah kita mengetahui tentang MIT App Inventor dan fitur-fitur yang ada, selanjutnya kita akan membuat sebuah aplikasi yang akan terhubung ke server ANTARES untuk mengirim dan menerima data.</p>
+							
+							
+							<h5 id="kirimdatakeserver" class="heading-alt">A. Kirim Data ke Server</h5>
+							<p align="justify">Kirim data (post) pada bagian MIT App Inventor, merupakan perintah yang digunakan dalam aplikasi MIT App Inventor untuk dapat melakukan post data secara manual dari data yang kita input dalam “text box” MIT App Inventor ke Platform ANTARES. Sebelum membuat code blocks untuk aplikasi Post, dapat dilakukan dengan membuat desain terlebih dahulu. Desain komponen yang telah kita buat tersebut, berfungsi sebagai tools yang akan membantu pengguna untuk dapat menjalankan aplikasi yang telah dibuat. Contoh desain untuk aplikasi Post Data dari MIT App Inventor ke ANTARES  sebagai berikut: </p>
+						
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center">		<img src="../assets/img/postdatamit.png" alt="postdatamit"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>								
+								<p align="center">Gambar 3. Tampilan Desain Aplikasi Post Data Sederhana</p>
+							
+							<p align="justify">Desain di atas menggunakan beberapa komponen, yaitu: </p>
+							
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="komponen-post">
+                                <thead>
+                                    <tr>
+										<th id="no-komponen-post"> <strong> <p align="center">No.</strong></th>
+                                        <th id="palette-komponen-post"> <strong> <p align="center">Palette</strong></th>
+                                        <th id="komponen-komponen-post"> <strong> <p align="center">Komponen</strong></th>
+                                        <th id="nama-komponen-post"> <strong> <p align="center">Nama Komponen</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+										<td>1</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Header</td>
+                                    </tr>
+									<tr>
+										<td>2</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Temperature</td>
+                                    </tr>
+									<tr>
+										<td>3</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Humidity</td>
+                                    </tr>
+									<tr>
+										<td>4</td>
+                                        <td>User Interface</td>
+                                        <td>TextBox</td>
+                                        <td>TextBox1</td>
+                                    </tr>
+									<tr>
+										<td>5</td>
+                                        <td>User Interface</td>
+                                        <td>TextBox</td>
+                                        <td>TextBox2</td>
+                                    </tr>
+									<tr>
+										<td>6</td>
+                                        <td>User Interface</td>
+                                        <td>Button</td>
+                                        <td>PostButton</td>
+                                    </tr>
+									<tr>
+										<td>7</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement1</td>
+                                    </tr>
+									<tr>
+										<td>8</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement2</td>
+                                    </tr>
+									<tr>
+										<td>9</td>
+                                        <td>Connectivity</td>
+                                        <td>Web</td>
+                                        <td>Web1</td>
+                                    </tr>
+								</tbody>
+							</table>	
+						
+						<p align="justify">Setelah kita membuat desain tampilan aplikasi, langkah selanjutnya yang harus dilakukan yaitu membuat program untuk menjalankan aplikasi sesuai dengan tujuan. Untuk memprogramnya kita gunakan code blocks yang terdapat pada halaman blocks.</p> 
+						<br>
+						<p align="justify">Untuk dapat mengirim data ke server ANTARES, format pengiriman data menggunakan format JSON. Berikut di bawah ini adalah format JSON beserta code blocks:</p>
+						<td colspan="2"><pre class="line-numbers"><code class="language-json">{
+	"m2m:cin":{
+		"con":"{\"key1\":integer-value, \"key2\":\"string-value\", \"keyN\":\"valueN\"}"
+		}
+						</code></pre></td>
+						<br>
+						
+						 <div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center">		<img src="../assets/img/codeblockpostmit.png" alt="codeblockpostmit"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Gambar 4. Code Block Post Data ke ANTARES</p>
+							
+							<p align="justify">Setelah kita membuat desain dan program untuk aplikasinya, selanjutnya kita akan melihat data yang dikirim ke server melalui console ANTARES (<a href="https://console.antares.id/dashboard/applications">https://console.antares.id/dashboard/application</a>). Berikut adalah data yang ditampilkan pada console ANTARES:</p>
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center">		<img src="../assets/img/consolepostmit.png" alt="consolepostmit"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Gambar 5. Console Pada ANTARES</p>
+							
+							<h5 id="menerimadatadariserver" class="heading-alt">B. Menerima Data dari Server</h5>
+							<p align="justify">Aplikasi Get data dengan MIT App Inventor merupakan aplikasi sederhana yang akan menampilkan data yang kita ambil dari suatu platform melalui URL dan Header. Dalam proses Get Data ini menggunakan platform ANTARES. Contoh yang kami buat ini, mencoba untuk melakukan get data dari documentations ANTARES “Retrieve Latest Data”. Sebelum membuat aplikasi Get Data pada MIT App Inventor, terlebih dahulu kita buat desain untuk aplikasinya seperti berikut :</p>
+						
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center">		<img src="../assets/img/desaingetdatamit.png" alt="desaingetdatamit"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>								
+								<p align="center">Gambar 6. Tampilan Desain Aplikasi Get Data Sederhana</p>
+								
+								<p align="justify">Desain di atas menggunakan beberapa komponen, yaitu: </p>
+							
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="komponen-get">
+                                <thead>
+                                    <tr>
+										<th id="no-komponen-get"> <strong> <p align="center">No.</strong></th>
+                                        <th id="palette-komponen-get"> <strong> <p align="center">Palette</strong></th>
+                                        <th id="komponen-komponen-get"> <strong> <p align="center">Komponen</strong></th>
+                                        <th id="nama-komponen-get"> <strong> <p align="center">Nama Komponen</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+										<td>1</td>
+                                        <td>User Interface</td>
+                                        <td>Button</td>
+                                        <td>Button</td>
+                                    </tr>
+									<tr>
+										<td>2</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Header</td>
+                                    </tr>
+									<tr>
+										<td>3</td>
+                                        <td>Connectivity</td>
+                                        <td>Web</td>
+                                        <td>Web1</td>
+                                    </tr>
+								</tbody>
+							</table>
+							
+						<p align="justify">Setelah kita membuat desain aplikasinya, selanjutnya kita program dengan menggunakan code blocks yang tersedia sebagai berikut: </p>	
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center">		<img src="../assets/img/codeblockgetmit.png" alt="codeblockgetmit"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Gambar 7. Code Block Aplikasi Get Data</p>
+							
+							<p align="justify">Setelah kita mendesain dan memprogram aplikasinya, maka kita dapat melihat hasilnya pada aplikasi android yang kita buat tadi. Data yang ditampilkan yaitu data terakhir dari console di ANTARES yang memiliki format JSON. Berikut adalah tampilan hasilnya:</p>	
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center"> <img src="../assets/img/hasilgetdatamit.png" alt="hasilgetdatamit"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Gambar 8. Tampilan Hasil Aplikasi Get Data</p>
+							
+							<h5 id="menerimadatarealtime" class="heading-alt">C. Menerima Data Realtime</h5>
+							<p align="justify">Pada bagian ini, dibuat sebuah aplikasi yang dapat mengambil data dari Antares, menampilkannya pada layar, dan memperbaharui data yang ditampilkan secara otomatis apabila pengguna ingin mendapatkan live measurement. Data yang diambil merupakan data temperatur dan kelembaban yang didapat dengan menggunakan sensor DHT11. UI pada aplikasi ini terdiri dari 3 bagian, yaitu bagian instruksi, bagian hasil, dan bagian preview. Berikut pengaturan user interface yang dibuat pada tab “Designer” MIT App Inventor (AI):</p>
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center"> <img src="../assets/img/desainrealtimemit.png" alt="desainrealtimemit"> </p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Gambar 9. Tampilan Desain Aplikasi Data Realtime</p>
+							
+							<p align="justify">Desain di atas menggunakan beberapa komponen, yaitu: </p>
+							
+							<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="komponen-realtime">
+                                <thead>
+                                    <tr>
+										<th id="no-komponen-realtime"> <strong> <p align="center">No.</strong></th>
+                                        <th id="palette-komponen-realtime"> <strong> <p align="center">Palette</strong></th>
+                                        <th id="komponen-komponen-realtime"> <strong> <p align="center">Komponen</strong></th>
+                                        <th id="nama-komponen-realtime"> <strong> <p align="center">Nama Komponen</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr>
+										<td>1</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label1</td>
+                                    </tr>
+									<tr>
+										<td>2</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement1</td>
+                                    </tr>
+									<tr>
+										<td>3</td>
+                                        <td>User Interface</td>
+                                        <td>Button</td>
+                                        <td>BGet</td>
+                                    </tr>
+									<tr>
+										<td>4</td>
+                                        <td>User Interface</td>
+                                        <td>CheckBox</td>
+                                        <td>CBLiveMeasurement</td>
+                                    </tr>
+									<tr>
+										<td>5</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LRC</td>
+                                    </tr>
+									<tr>
+										<td>6</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label2</td>
+                                    </tr>
+									<tr>
+										<td>7</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement2</td>
+                                    </tr>
+									<tr>
+										<td>8</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label5</td>
+                                    </tr>
+									<tr>
+										<td>9</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LTemp</td>
+                                    </tr>
+									<tr>
+										<td>10</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement3</td>
+                                    </tr>
+									<tr>
+										<td>11</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label6</td>
+                                    </tr>
+									<tr>
+										<td>12</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LHum</td>
+                                    </tr>
+									<tr>
+										<td>13</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label3</td>
+                                    </tr>
+									<tr>
+										<td>14</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LRaw</td>
+                                    </tr>
+									<tr>
+										<td>15</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label4</td>
+                                    </tr>
+									<tr>
+										<td>16</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement4</td>
+                                    </tr>
+									<tr>
+										<td>17</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement5</td>
+                                    </tr>
+									<tr>
+										<td>18</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement6</td>
+                                    </tr>
+									<tr>
+										<td>18</td>
+                                        <td>Layout</td>
+                                        <td>HorizontalArrangement</td>
+                                        <td>HorizontalArrangement6</td>
+                                    </tr>
+									<tr>
+										<td>19</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label7</td>
+                                    </tr>
+									<tr>
+										<td>20</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LJSON1</td>
+                                    </tr>
+									<tr>
+										<td>21</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label9</td>
+                                    </tr>
+									<tr>
+										<td>22</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LJSON2</td>
+                                    </tr>
+									<tr>
+										<td>23</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>Label11</td>
+                                    </tr>
+									<tr>
+										<td>24</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LJSON3</td>
+                                    </tr>
+									<tr>
+										<td>25</td>
+                                        <td>User Interface</td>
+                                        <td>Label</td>
+                                        <td>LParsed</td>
+                                    </tr>
+									<tr>
+										<td>26</td>
+                                        <td>Connectivity</td>
+                                        <td>Web</td>
+                                        <td>Web1</td>
+                                    </tr>
+									<tr>
+										<td>27</td>
+                                        <td>Sensors</td>
+                                        <td>Clock</td>
+                                        <td>Clock1</td>
+                                    </tr>
+								</tbody>
+							</table>
+						
+							<p align="justify">Setelah kita membuat desain aplikasinya, selanjutnya kita program dengan menggunakan code blocks yang tersedia sebagai berikut: </p>	
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<img src="../assets/img/codeblockrealtimemit1.png" alt="codeblockrealtimemit1">
+                                    <img src="../assets/img/codeblockrealtimemit2.png" alt="codeblockrealtimemit2">
+                                    <img src="../assets/img/codeblockrealtimemit3.png" alt="codeblockrealtimemit3">
+                                    <img src="../assets/img/codeblockrealtimemit4.png" alt="codeblockrealtimemit4">
+                                    <img src="../assets/img/codeblockrealtimemit5.png" alt="codeblockrealtimemit5"> 
+                                    <img src="../assets/img/codeblockrealtimemit6.png" alt="codeblockrealtimemit6">
+                                    <img src="../assets/img/codeblockrealtimemit7.png" alt="codeblockrealtimemit7">
+                                    <img src="../assets/img/codeblockrealtimemit8.png" alt="codeblockrealtimemit8">
+                                    <img src="../assets/img/codeblockrealtimemit9.png" alt="codeblockrealtimemit9">
+                                    <img src="../assets/img/codeblockrealtimemit10.png" alt="codeblockrealtimemit10">
+                                    <img src="../assets/img/codeblockrealtimemit11.png" alt="codeblockrealtimemit11">
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Gambar 10. Code Block Aplikasi Data Realtime</p>
+							
+							<p align="justify">Setelah kita mendesain dan memprogram aplikasinya, maka kita dapat melihat hasilnya pada aplikasi android yang kita buat. Data yang ditampilkan yaitu data terakhir dan akan terus merefresh otomatis. Berikut adalah tampilan hasilnya:</p>	
+							<div class="browser shadow-2">
+									<div class="toolbar-web">
+										<div class="controls">
+                                        <div class="btn-web close"></div>
+                                        <div class="btn-web min"></div>
+                                        <div class="btn-web max"></div>
+										</div>
+										<div class="tab"></div>
+									</div>	
+
+                                <!-- <div class="tabbar"></div> -->
+
+									<div class="viewport">
+                                    <!-- Insert your page here -->
+									<p align="center"> <img src="../assets/img/datarealtime1.png" alt="datarealtime1"></p>
+                                    <!-- End of -->
+									</div>
+                            </div>
+							<p align="center">Gambar 11. Tampilan Hasil Aplikasi Data Realtime</p>
+			</section>
+        </main>
+						
+		
+                            <!-- END Main container -->
+
+                            <!--
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              | Footer 5
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              !-->
+
+                              <footer class="site-footer py-70 bg-warning">
+                                <div class="container" id="footer">
+                                </div>
+                              </footer>
+
+
+                            <!-- Scripts -->
+                            <script src="../assets/js/core.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                            <script src="../assets/js/thesaas.min.js"></script>
+                            <script src="../assets/js/affix.js"></script>
+                            <script src="../assets/js/script.js"></script>
+                            <script src="../assets/js/prism.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+
+                                    var realm = 'https';
+                                    var domain = 'platform.ANTARES.id';
+                                    var port = '8443';
+                                    var cseName = 'ANTARES-cse';
+                                    var cseId = 'ANTARES-id';
+
+                                    $('code').each(function () {
+                                        if ($(this).text().indexOf('https://') !== -1) {
+                                            $(this).text($(this).text().replace('https', realm));
+                                            $(this).text($(this).text().replace('platform.ANTARES.id', domain));
+                                            $(this).text($(this).text().replace('8443', port));
+                                            $(this).text($(this).text().replace('ANTARES-cse', cseName));
+                                            $(this).text($(this).text().replace('cseId', cseId));
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+                                });
+                            </script>
+
+                            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments)
+                                }
+                                ;
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-106459395-1');
+
+                            </script>
+
+                            <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+                            </html>

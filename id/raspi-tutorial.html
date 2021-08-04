@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+    <!-- Topbar -->
+    <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+        <!-- <nav class="topbar topbar-sticky"> -->
+      </nav>
+        <!-- END Topbar -->
+        <!-- END Topbar -->
+
+
+
+        <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <h1>Raspberry Pi</h1>
+                        <p class="fs-18 opacity-70">This documentation helps you to install Raspberry Pi (Integrated Development Environment). If you still need any assistance or found any misinformation, don't hesitate to mail us at <a href="mailto:support@antares.id">support@antares.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+        <!-- Main container -->
+        <main class="main-content">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <section class="section bb-3" style="padding-top: 45px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#getting-started" data-scrollto="getting-started">Mengirim Data Menggunakan NodeJS</a></label>
+
+                                            <ul>
+												<li><a class="nav-link" href="#pendahuluan1" data-scrollto="pendahuluan1">Pendahuluan</a></li>
+                                                <li><a class="nav-link" href="#raspios" data-scrollto="raspios">Install Raspberry Pi OS</a></li>
+                                                <li><a class="nav-link" href="#libraryinstall" data-scrollto="libraryinstall">Install Library</a></li>
+                                                <li><a class="nav-link" href="#nodejsreq" data-scrollto="nodejsreq">Membuat NodeJS Request</a></li>
+                                                <li><a class="nav-link" href="#execute" data-scrollto="execute">Execute NodeJS Request</a></li>
+												<li><a class="nav-link" href="#checking" data-scrollto="checking">Cek Data pada Device di ANTARES</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul> <!-- cd-accordion-menu -->
+									<ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#monitoring" data-scrollto="monitoring">Monitoring Suhu dan Kelembaban Menggunakan Sensor DHT11</a></label>
+
+                                            <ul>
+
+                                                <li><a class="nav-link" href="#pendahuluan2" data-scrollto="pendahuluan2">Pendahuluan</a></li>
+                                                <li><a class="nav-link" href="#alatbahan" data-scrollto="alatbahan">Alat dan Bahan</a></li>
+                                                <li><a class="nav-link" href="#rangkaian" data-scrollto="rangkaian">Rangkaian Hardware</a></li>
+                                                <li><a class="nav-link" href="#library" data-scrollto="library">Install Library DHT11</a></li>
+												<li><a class="nav-link" href="#kodeprogram" data-scrollto="kodeprogram">Kode Program</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 pt-25">
+
+                            <!-- <h4 id="iot-platform-architecture">IoT Platform Architecture</h4>
+                            <img class="img-esp" src="../assets/img/iot-platform-architecture.png">
+
+                            <hr>
+
+                            <h4 id="iot-platform-standardization">IoT Platform Standardization</h4>
+                            <p>The Horizontal IoT Platform deployed by Telkom DDS is based on <strong>oneM2M</strong> IoT and M2M standardization.</p>
+
+                            <hr> -->
+							<h4 id="getting-started">Mengirim Data Menggunakan NodeJS</h4>
+                            <h5 id="pendahuluan1">Pendahuluan</h5>
+							<p align="justify">Raspberry Pi adalah mini komputer yg mempunyai input output digital port seperti pada board microcontroller. Kelebihan Rasberry Pi dibanding board microcontroller yg lain diantaranya yaitu mempunyai Port/koneksi untuk display berupa TV atau Monitor PC serta koneksi USB untuk Keyboard serta Mouse. Raspberry Pi dibuat di inggris oleh Raspberry Pi Foundation. Pada awalnya Raspberry Pi ditunjukan untuk modul pembelajaran ilmu komputer disekolah. Untuk dapat menyimpan data pada ANTARES dapat menggunakan NodeJS Request. Berikut adalah langkah-langkanya:</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/raspi.png" alt="raspi">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 1. Raspberry Pi Device</p>
+                            <!--<img class="shadow-2" src="../assets/img/register1.png">-->
+                            <!--<hr>-->
+                            <!-- Register -->
+                            <h5 id="raspios" class="heading-alt">1. Install Raspberry Pi OS</h5>
+                            <p align="justify">Pertama-tama anda harus memiliki Raspberry Pi yang sudah memiliki OS. Jika anda belum memiliki Raspberry Pi yang memiliki OS, anda dapat mengikuti tutorial pada halaman <a href="https://www.raspberrypi.org/documentation/installation/installing-images/">https://www.raspberrypi.org/documentation/installation/installing-images/</a>. Jika anda sudah memiliki Raspberry Pi lengkap dengan OS nya, maka anda bisa langsung melanjutkan ke step berikutnya.</p>
+                            <h5 id="libraryinstall" class="heading-alt" id="req-topic">2. Install Librari</h5>
+                            <p align="justify">Aktifkan Raspberry Pi dan buka jendela terminal. Setelah jendela terminal terbuka, input syntax di bawah ini untuk menginialisasi library npm seperti yang ditunjukkan pada gambar 2.</p>
+							<pre class="text-center"><code>npm init --yes</code></pre>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/raspi1.png" alt="raspi1">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 2. Initial NPM Library on Terminal UI</p>
+                            <p align="justify">Setelah menginputkan syntax diatas, tekan enter dan jika proses inialisasi berhasil maka tampilan jendela terminal akan seperti gambar 3.</p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/raspi2.png" alt="raspi2">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 3. Initial NPM Library on Terminal UI</p>
+                            <p align="justify">Jika sudah berhasil menginiaslisasi NPM library maka selanjutnya install NPM library dengan menggunakan syntax di bawah ini seperti yang ditunjukkan pada gambar 4./p>
+							<pre class="text-center"><code>npm install request --save</code></pre>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/raspi3.png" alt="raspi3">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 4. Install NPM Library on Terminal UI</p>
+							<p align="justify">Setelah menginputkan syntax diatas, tekan enter dan jika proses instalisasi berhasil maka tampilan jendela terminal akan seperti gambar 5.</p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/raspi4.png" alt="raspi4">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 5. Install NPM Library on Terminal UI</p>
+                            <p>Jika tampilan sudah sesuai dengan gambar 5 maka proses instalasi library npm sudah selesai.</p>
+
+
+                            <!--<hr>-->
+                            <!-- End Create your first application -->
+
+                            <!-- Add devices under your application -->
+                            <h5 id="nodejsreq" class="heading-alt" id="req-topic">3. Membuat NodeJS Request</h5>
+                            <p>Setelah berhasil menghinstall library npm, selanjutnya adalah membuat file dengan format NodeJS. Untuk membuat file pada Raspberry Pi, anda dapat menggunakan syntax dibawah ini. File ini digunakan untuk menyimpan data pada Platform ANTARES.</p>
+							<pre class="text-center"><code>sudo nano your-file-name.js</code></pre>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/raspi5.png" alt="raspi5">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 6. Create File Syntax on Terminal UI</p>
+							<p>Jika sudah masuk ke dalam file NodeJS Reqeust yang akan dibuat. Masukkan list di bawah ini dan <strong>jangan lupa inputkan URL Device anda dan juga Access Key anda.</strong></p>
+							<h5> Store Data to ANTARES NodeJS Request Format </h5>
+
+							<br>
+							<div class="text-center pull-right" style="margin-top: -40px">
+                                <ul class="nav nav-outline nav-round">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#json-raspi-tutorial" style="padding: 2px 10px;">JSON</a>
+                                    </li>
+                                    <li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#xml-raspi-tutorial" style="padding: 2px 10px;">XML</a>
+                                    </li>
+                                </ul>
+                            </div>
+							<div>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="json-raspi-tutorial">
+									<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="json-raspi-tutorial-tables">
+			                                <thead>
+			                                    <tr>
+			                                        <th id="field-json-raspi-tutorial"><strong>Field</strong></th>
+			                                        <th id="value-json-raspi-tutorial" colspan="2"><strong>Value</strong></th>
+			                                    </tr>
+			                                </thead>
+			                                <tr>
+			                                    <td>URL</td>
+			                                    <td colspan="2"><code>https://platform.antares.id:8443/~/antares-cse/antares-id/your-application-name/your-device-name</code>
+			                                        <br>
+			                                        or
+			                                        <br>
+			                                        <code>https://platform.antares.id:8443/~/antares-cse/your-device-ID</code>
+			                                        <br>
+			                                        <br>
+			                                        Note: <code>your-device-ID</code> must be starting with <code>CNT</code>. e.g. <code>CNT-842419289</code></td>
+			                                </tr>
+			                                <tr>
+			                                    <td>Method</td>
+			                                    <td colspan="2"><code>POST</code></td>
+			                                </tr>
+			                                <tr>
+			                                    <td rowspan="4">Header</td>
+			                                    <td><strong>Key</strong></td>
+			                                    <td><strong>Value</strong></td>
+			                                </tr>
+			                                <tr>
+			                                    <td>X-M2M-Origin</td>
+			                                    <td><code>access-id:access-password</code></td>
+			                                </tr>
+			                                <tr>
+			                                    <td>Content-Type</td>
+			                                    <td><code>application/json;ty=4</code></td>
+			                                </tr>
+                                            <tr>
+                                                <td>Accept</td>
+                                                <td><code>application/json</code></td>
+                                            </tr>
+			                            </table>
+<pre class="line-numbers"><code class="language-javascript">var request = require("request");
+
+var options = { method: 'POST',
+  url: 'URL',
+  headers:
+   { 'cache-control': 'no-cache',
+     'content-type': 'application/json;ty=4',
+     'x-m2m-origin': 'access-id:access-password' },
+  body: '\r\n{\r\n  "m2m:cin": {\r\n    "cnf": "message",\r\n    "con": "\r\n      {\r\n      \t \\"status\\": \\"0\\",\r\n         \\"dim\\": \\"10\\"\r\n      }\r\n    "\r\n  }\r\n}' };
+
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);
+});</code></pre>
+  							<p>Jika sudah diinputkan, maka tampilan akan sama seperti pada gambar 7.</strong></p>
+                            <p align="justify"></p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/raspi6json.png" alt="raspi6json">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 7. NodeJS File</p>
+							<p>Untuk menyimpan file NodeJS Request anda, anda perlu <strong>menekan Ctrl+X > Enter > Y. </strong></p>
+
+                            <!--<hr>-->
+                            <!-- End Add devices under your application -->
+
+                            <!-- Add devices under your application -->
+                            <h5 id="execute" class="heading-alt">4. Execute NodeJS Request</h5>
+                            <p>Setelah file NodeJS Request disimpan. Selanjutnya anda dapat mengeksekusi file tersebut dengan menggunakan sytanx berikut.</p>
+							<pre class="text-center"><code>sudo node your-file-name.js</code></pre>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/raspi7json.png" alt="raspi7json">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 8. Executed File & Result </p>
+                            <p>Jika anda mendapatkan respon yang mirip dengan gambar 8, Selamat anda telah berhasil menyimpan data pada device anda di ANTARES</p>
+                            </div>
+                                    <div class="tab-pane fade" id="xml-raspi-tutorial">
+									<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="xml-raspi-tutorial-tables">
+			                                <thead>
+			                                    <tr>
+			                                        <th id="field-xml-raspi-tutorial"><strong>Field</strong></th>
+			                                        <th id="value-xml-raspi-tutorial" colspan="2"><strong>Value</strong></th>
+			                                    </tr>
+			                                </thead>
+			                                <tr>
+			                                    <td>URL</td>
+			                                    <td colspan="2"><code>https://platform.antares.id:8443/~/antares-cse/antares-id/your-application-name/your-device-name</code>
+			                                        <br>
+			                                        or
+			                                        <br>
+			                                        <code>https://platform.antares.id:8443/~/antares-cse/your-device-ID</code>
+			                                        <br>
+			                                        <br>
+			                                        Note: <code>your-device-ID</code> must be starting with <code>CNT</code>. e.g. <code>CNT-842419289</code></td>
+			                                </tr>
+			                                <tr>
+			                                    <td>Method</td>
+			                                    <td colspan="2"><code>POST</code></td>
+			                                </tr>
+			                                <tr>
+			                                    <td rowspan="4">Header</td>
+			                                    <td><strong>Key</strong></td>
+			                                    <td><strong>Value</strong></td>
+			                                </tr>
+			                                <tr>
+			                                    <td>X-M2M-Origin</td>
+			                                    <td><code>access-id:access-password</code></td>
+			                                </tr>
+			                                <tr>
+			                                    <td>Content-Type</td>
+			                                    <td><code>application/xml;ty=4</code></td>
+			                                </tr>
+                                            <tr>
+                                                <td>Accept</td>
+                                                <td><code>application/xml</code></td>
+                                            </tr>
+			                            </table>
+                                        <pre class="line-numbers"><code class="language-javascript">var request = require("request");
+var options = { method: 'POST',
+  url: 'URL',
+  headers:
+   { 'Cache-Control': 'no-cache',
+     'Content-Type': 'application/xml;ty=4',
+     'X-M2M-Origin': 'access-id:access-password' },
+  body: '&ltm2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\r\n  &ltcnf>message&lt/cnf>\r\n  &ltcon>\r\n    &amp;lt;obj&amp;gt;\r\n     &amp;lt;int name="data" val="16"/&amp;gt;\r\n      &amp;lt;int name="unit" val="watt"/&amp;gt;\r\n    &amp;lt;obj&amp;gt;\r\n  </con>\r\n</m2m:cin>' };
+
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);</code></pre>
+  							<p>Jika sudah diinputkan, maka tampilan akan sama seperti pada gambar 7.</strong></p>
+                            <p align="justify"></p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/raspi6.png" alt="raspi6">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 7. NodeJS File</p>
+							<p>Untuk menyimpan file NodeJS Request anda, anda perlu <strong>menekan Ctrl+X > Enter > Y. </strong></p>
+
+                            <!--<hr>-->
+                            <!-- End Add devices under your application -->
+
+                            <!-- Add devices under your application -->
+
+                            </div>
+                            </div>
+                            </div>
+                            <h5 id="checking" class="heading-alt">5. Cek Data pada Device di ANTARES</h5>
+                            <p>Anda dapat mengecek data yang anda simpan pada Device pada ANTARES dengan membuka URL device anda.</p>
+                            <p align="justify"></p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/raspi8.png" alt="raspi8">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 9. Tampilan Device pada ANTARES</p>                            <!-- End Add devices under your application -->
+                            <br>
+							<br>
+
+							<h4 id="monitoring">Monitoring Suhu dan Kelembaban Menggunakan Sensor DHT11</h4>
+							<h5 id="pendahuluan2">Pendahuluan</h5>
+                            <p align="justify">Pada tutorial ini, Anda akan membuat suatu sistem monitoring suhu dan kelembaban menggunakan Raspberry Pi, sensor DHT11 dan ANTARES. Sensor DHT11 akan mengukur suhu dan kelembaban di sekitar ruangan, lalu akan mengirimkan data tersebut sehingga dapat dimonitor melalui device pada ANTARES.</p>
+
+							<h5 id="alatbahan" class="heading-alt" id="req-topic">1. Alat dan Bahan</h5>
+                            <p align="justify">Alat dan bahan yang digunakan yaitu:</p>
+							<p align="justify">a. Raspberry Pi</p>
+							<p align="justify">b. Sensor DHT11</p>
+							<p align="justify">c. Resistor 10k ohm</p>
+							<p align="justify">d. Breadboard</p>
+							<p align="justify">e. Kabel jumper</p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/dht1.jpg" alt="dht1">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 10. Alat dan Bahan</p>
+                            <!--<hr>-->
+                            <!-- End Create your first application -->
+
+                            <!-- Add devices under your application -->
+
+							<h5 id="rangkaian" class="heading-alt" id="req-topic">2. Rangkaian Hardware</h5>
+                            <p>Kemudian Anda perlu menghubungkan sensor DHT11 dengan Raspberry Pi. Rangkailah sensor DHT11 dengan Raspberry Pi seperti pada gambar 11 berikut. Gunakan breadboard dan kabel jumper dalam proses merangkai. </p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/dht2.png" alt="dht2">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 11. Rangkaian</p>
+							<p>Hubungkan kaki VCC sensor DHT11 ke pin 3.3V RaspberryPi, kaki GND sensor DHT11 ke pin GND RaspberryPi, kaki data sensor DHT11 ke GPIO 4 RaspberryPi dan pull up resistor seperti pada gambar.</p>
+
+							<div>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="json-raspi-tutorial">
+
+                            <!--<hr>-->
+                            <!-- End Add devices under your application -->
+
+                            <!-- Add devices under your application -->
+
+							<h5 id="library" class="heading-alt" id="req-topic">3. Install Library DHT11</h5>
+                            <p>Sebelum memulai proses pada software, Anda perlu menginstall Library DHT11 pada RaspberryPi yang Anda gunakan. Pada tutorial ini, Anda akan menggunakan Library DHT11 dari Szazo. Buka jendela Terminal lalu ketik kode berikut untuk memulai instalasi.</p>
+							<pre class="text-center"><code>git clone https://github.com/szazo/DHT11_Python.git</code></pre>
+                            <p>Setelah proses instalasi selesai, akan muncul folder DHT11_Python.</p>
+							</div>
+                                    <div class="tab-pane fade" id="xml-raspi-tutorial">
+
+
+
+                            <!--<hr>-->
+                            <!-- End Add devices under your application -->
+
+                            <!-- Add devices under your application -->
+
+                            </div>
+                            </div>
+                            </div>
+                            <h5 id="kodeprogram" class="heading-alt">4. Kode Program</h5>
+                            <p>Setelah proses instalasi library selesai, Anda akan membuat kode program untuk membaca sensor dan mengirimkan data sensor ke Device Antares. Sebelum memulai, pastikan Anda telah membuat Aplikasi serta Device pada console Antares milik Anda.</p>
+                            <p>Selanjutnya, masuk ke direktori folder DHT11_Python lalu buka file dht11_example.py menggunakan Python. Kemudian akan terbuka jendela text editor Python, lalu ketik kode program seperti berikut</p>
+							<pre class="line-numbers"><code class="language-python">import RPi.GPIO as GPIO
+import dht11
+import time
+import datetime
+import request
+import json
+
+#initialize GPIO
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.cleanup()
+
+#read data using pin 4
+instance = dht11.DHT11(pin=4)
+
+while True:
+result = instance.read()
+if result.is_valid():
+print("Last valid input: " + str(datetime.datetime.now()))
+print("Temperature: %d C" % result.temperature)
+print("Humidity: %d %%" % result.humidity)
+data = '\r\n{\r\n  "m2m:cin": {\r\n    "cnf": "message",\r\n    "con": "\r\n      {\r\n      \t \\"Temperature\\": \\"'+str(result.temperature)+'\\",\r\n         \\"Humidity\\": \\"'+str(result.humidity)+'\\"\r\n
+url = 'https://platform.antares.id:8443/~/antares-cse/antares-id/your-application-name/your-device-name'
+headers = {'cache-control':'no-cache','content-type':'application/json;ty=4','x-m2m-origin':'Your-Acces-Key'}
+r = request.post(url,headers=headers,data=data)
+time.sleep(2)
+							</code></pre>
+							<p>Simpan file tersebut, kemudian buka jendela Terminal lalu ketik kode berikut:</p>
+							<pre class="text-center"><code>cd DHT11_Python && python dht11_example.py</code></pre>
+							<p>lalu akan muncul tampilan seperti berikut:</p>
+							<p align="justify"></p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/dht3.png" alt="dht3">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 12. Tampilan pada Terminal</p>
+							<p>Tampilan tersebut menunjukkan bahwa sensor mulai mengukur suhu dan kelmbaban. Selanjutnya silakan periksa data yang masuk pada Device Antares yang telah Anda buat sebelumnya. Jika berhasil maka tampilan pada Device Anda akan seperti berikut ini:</p>
+							<p align="justify"></p>
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/dht4.png" alt="dht4">
+                                <!-- End of -->
+                            </div>
+                            <p align="center">Gambar 13. Tampilan Device pada ANTARES</p>
+                            </section>
+                            </main>
+                            <!-- END Main container -->
+
+                            <!--
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              | Footer 5
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              !-->
+
+                              <footer class="site-footer py-70 bg-warning">
+                                <div class="container" id="footer">
+                                </div>
+                              </footer>
+
+
+                            <!-- Scripts -->
+                            <script src="../assets/js/core.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                            <script src="../assets/js/thesaas.min.js"></script>
+                            <script src="../assets/js/affix.js"></script>
+                            <script src="../assets/js/script.js"></script>
+                            <script src="../assets/js/prism.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+
+                                    var realm = 'https';
+                                    var domain = 'platform.antares.id';
+                                    var port = '8443';
+                                    var cseName = 'antares-cse';
+                                    var cseId = 'antares-id';
+
+                                    $('code').each(function () {
+                                        if ($(this).text().indexOf('https://') !== -1) {
+                                            $(this).text($(this).text().replace('https', realm));
+                                            $(this).text($(this).text().replace('platform.antares.id', domain));
+                                            $(this).text($(this).text().replace('8443', port));
+                                            $(this).text($(this).text().replace('antares-cse', cseName));
+                                            $(this).text($(this).text().replace('cseId', cseId));
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+                                });
+                            </script>
+
+                            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments)
+                                }
+                                ;
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-106459395-1');
+
+                            </script>
+
+                            <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+                            </html>

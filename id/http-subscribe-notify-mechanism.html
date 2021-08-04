@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+        <!-- Topbar -->
+        <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+          <!-- <nav class="topbar topbar-sticky"> -->
+        </nav>
+        <!-- END Topbar -->
+        <!-- END Topbar -->
+
+
+
+        <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-9 offset-lg-2">
+
+                        <h1>HTTP, Subscribe Device dan Mendapatkan Notifikasi</h1>
+                        <p class="fs-18 opacity-70">Dokumentasi ini membantu Anda untuk menjelaskan bagaimana Subscribe pada sebuah Device dan mendapatkan notifikasi dari sebuah Event. Jika Anda memerlukan bantuan atau menemukan informasi yang kurang, jangan ragu untuk menghubungi kami melalui <a href="mailto:support@antares.id">support@antares.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+        <!-- Main container -->
+        <main class="main-content">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <section class="section bb-3" style="padding-top: 45px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <label><a class="nav-link" href="#prasyarat" data-scrollto="prasyarat">Prasyarat</a></label>
+                                        </li>
+
+                                    </ul> <!-- cd-accordion-menu -->
+
+									<ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+										<input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#langkah" data-scrollto="langkah">Langkah-langkah</a></label>
+											<ul>
+                                                <li><a class="nav-link" href="#login" data-scrollto="login">Login ANTARES</a></li>
+                                                <li><a class="nav-link" href="#js" data-scrollto="js">Source Code JS</a></li>
+												<li><a class="nav-link" href="#runjs" data-scrollto="runjs">Run JS di Command Prompt</a></li>
+												<li><a class="nav-link" href="#ngrok" data-scrollto="ngrok">Run NGROK</a></li>
+												<li><a class="nav-link" href="#subscribe" data-scrollto="subscribe">Subscribe Device</a></li>
+                                                <li><a class="nav-link" href="#postman" data-scrollto="postman">Postman</a></li>
+                                            </ul>
+										</li>
+
+                                    </ul> <!-- cd-accordion-menu -->
+								</div>
+                            </div>
+                        </div>
+
+					<div class="col-lg-9 pt-25">
+                        <h3 id="prasyarat" align="center">Prasyarat</h3>
+<ol>
+                <li>Memiliki software NGROK. Jika Anda belum memilikinya, silakan buka link berikut <a href="https://ngrok.com/">link. NGROK</a>.</li>
+                <li>Memiliki Node JS. Jika Anda belum memilikinya, silakan buka link berikut <a href="https://nodejs.org/en/">link. Node JS</a>.</li>
+                <li>Memiliki POSTMAN. Jika Anda belum memilikinya, silakan buka link berikut <a href="https://nodejs.org/en/">link. POSTMAN</a>.</li>
+              </ol>
+
+			  <h3 id="langkah" align="center">Langkah-langkah</h3>
+
+              <ol>
+                <li id="login">Login akun Antares Anda melalui Antares Console <a href="https://console.antares.id">https://console.antares.id</a><img class="shadow-3" src="../assets/img/mqtt-push-data-to-device-1.jpg" alt="..."></li><br>
+                <li>Buat Aplikasi, jika Anda telah memilikinya, abaikan untuk melanjutkan ke proses berikutnya. <img class="shadow-3" src="../assets/img/mqtt-push-data-to-device-3.jpg" alt="..."></li><br>
+                <li>Buat Device, jika Anda telah memilikinya, abaikan untuk melanjutkan ke proses berikutnya. <img class="shadow-3" src="../assets/img/mqtt-push-data-to-device-4.jpg" alt="..."></li><br>
+
+				<li id="js">Mulai dengan menuliskan kode program untuk mendapatkan data dari ANTARES. Anda dapat menggunakan kode program berikut ini:
+
+                  Copy kode program tersebut ke penyimpanan lokal komputer Anda kemudian simpan dalam format <strong>.js extension.</strong> Dalam tutorial ini, kami simpan dengan monitor.js
+                  <pre class="line-numbers"><code class="language-js">var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+var bodyParser = require('body-parser');
+var util = require('util')
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.post('/monitor', function(req, res, next) {
+  console.log(util.inspect(req.body, false, null));
+  res.send('ack');
+});
+
+
+server.listen(9000, function() {
+  console.log('App listening on port 9000');
+});</code></pre>
+                <br>
+                <img class="shadow-3" src="../assets/img/http-subscribe-notify-1.jpg" alt="..."></li><br>
+                <li><p>Buka command prompt (windows) atau terminal (linux)<br><img class="shadow-3" src="../assets/img/http-subscribe-notify-3.jpg" alt="..."></p>
+                <p>Masukkan direktori file kode program yang telah Anda simpan sebelumnya<br><img class="shadow-3" src="../assets/img/http-subscribe-notify-4.jpg" alt="..."></p>
+
+				<li id="runjs"><p>Jalankan kode program dengan melakukan sesuai dengan gambar dibawah ini.<br><img class="shadow-3" src="../assets/img/http-subscribe-notify-5.jpg" alt="..."></p>
+                <p><strong>Kode program yang berhasil</strong> dapat dilihat seperti pada gambar berikut ini.<br>
+                <img class="shadow-3" src="../assets/img/http-subscribe-notify-10.jpg" alt="...">
+                <br>
+                <p>Mendapatkan masalah? Jika ya, eksekusi sintaks berikut ini. <strong>Jika tidak, abaikan proses ini.</strong>
+                <img class="shadow-3" src="../assets/img/http-subscribe-notify-6.jpg" alt="...">
+                <br><br>
+                Install paket yang belum terinstall.
+                <img class="shadow-3" src="../assets/img/http-subscribe-notify-7.jpg" alt="...">
+                <br><br>
+                <img class="shadow-3" src="../assets/img/http-subscribe-notify-8.jpg" alt="...">
+                <br><br>
+                Lakukan Allow Access ketika sedang menjalakan kode program.<br>
+                <img class="shadow-3" src="../assets/img/http-subscribe-notify-9.jpg" alt="..."></p>
+                </li>
+                <li id="ngrok"><p>Mulai menjalankan <strong>NGROK</strong>. <strong>NGROK</strong> akan membantu Anda untuk membuka localhost Anda ke public domain.
+                  <br>Pertama, masuk ke direktori NGROK. <strong>Pastikan Anda sudah mengekstraknya, sehingga sudah dalam format file .exe.</strong>
+                  <pre><code class="language-java">cd download-path/</code></pre>
+                  Jalankan <strong>NGROK</strong> dengan menggunakan port 9000 dengan cara sebagai berikut:
+                  <pre><code class="language-java">ngrok.exe port 9000</code></pre>
+                  <img class="shadow-3" src="../assets/img/http-subscribe-notify-11.jpg" alt="..."></p></li>
+                <li id="subscribe"><p>Buka Device yang telah Anda buat sebelumnya. Klik tombol Subscribe dan akan muncul menu pop up.<img class="shadow-3" src="../assets/img/http-subscribe-notify-2.jpg" alt="..."><br><br>
+                <img class="shadow-3" src="../assets/img/http-subscribe-notify-12.jpg" alt="..."><br><br>
+                <strong>Tambahkan /monitor</strong> pada akhir URL NGROK seperti dibawah ini.
+                <img class="shadow-3" src="../assets/img/http-subscribe-notify-13.jpg" alt="..."><br><br>
+                Ketika Anda telah berhasil mensubscribenya, akan muncul pop up.<br>
+                <img class="shadow-3" src="../assets/img/http-subscribe-notify-14.jpg" alt="...">
+                </p></li>
+                <li id="postman"><p>Mari periksa apakah server Anda mendapatkan notifikasi dengan perangkat emulator menggunakan POSTMAN. Silakan buka POSTMAN, dan isi semua parameter dengan informasi berikut ini.</p>
+                    <table class="table table-bordered table-striped" aria-describedby="postman-parameter">
+                                      <thead>
+                                          <tr>
+                                              <th id="field-postman-parameter"><strong>Field</strong></th>
+                                              <th id="value-postman-parameter" colspan="2"><strong>Value</strong></th>
+                                          </tr>
+                                      </thead>
+                                      <tr>
+                                          <td>URL</td>
+                                          <td colspan="2"><code>https://platform.antares.id:8443/~/antares-cse/antares-id/your-project-name/your-device-name</code>
+                                              <br>
+                                              or
+                                              <br>
+                                              <code>https://platform.antares.id:8443/~/antares-cse/your-device-ID</code>
+                                              <br>
+                                              <br>
+                                              Note: <code>your-device-ID</code> must be starting with <code>CNT</code>. e.g. <code>CNT-842419289</code></td>
+                                      </tr>
+                                      <tr>
+                                          <td>Method</td>
+                                          <td colspan="2"><code>POST</code></td>
+                                      </tr>
+                                      <tr>
+                                          <td rowspan="4">Header</td>
+                                          <td><strong>Key</strong></td>
+                                          <td><strong>Value</strong></td>
+                                      </tr>
+                                      <tr>
+                                          <td>X-M2M-Origin</td>
+                                          <td><code>access-id:access-password</code></td>
+                                      </tr>
+                                      <tr>
+                                          <td>Content-Type</td>
+                                          <td><code>application/json;ty=4</code></td>
+                                      </tr>
+                                            <tr>
+                                                <td>Accept</td>
+                                                <td><code>application/json</code></td>
+                                            </tr>
+                                      <tr>
+                                          <td>Body</td>
+                                          <td colspan="2"><pre class="line-numbers"><code class="language-json">{
+  {
+  "m2m:cin": {
+    "xmlns:m2m": "http://www.onem2m.org/xml/protocols",
+    "cnf": "application/json",
+    "con": "{\"temperature\":30.3, \"humidity\":35.1}"
+  }
+}</code></pre></td>
+                                      </tr>
+                                  </table></li>
+                <li><p>Selama Anda mengirimkan data, aplikasi server monitor Anda akan mendapatkan data yang server dapatkan. Data tersebut dapat dilihat seperti berikut ini.<br><img class="shadow-3" src="../assets/img/http-subscribe-notify-15.jpg" alt="..."></p></li>
+                <p><strong>Selamat!! Anda baru saja mendapatkan notifikasi data.</strong></p>
+              </ol>
+              <!--
+              <p class="lead">Congratulation, Installation is finish!!</p>
+
+              -->
+			</div>
+		</div>
+	</div>
+
+
+							</section>
+                            </main>
+                            <!-- END Main container -->
+
+                            <!--
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              | Footer 5
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              !-->
+
+                              <footer class="site-footer py-70 bg-warning">
+                                <div class="container" id="footer">
+                                </div>
+                              </footer>
+
+
+                            <!-- Scripts -->
+                            <script src="../assets/js/core.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                            <script src="../assets/js/thesaas.min.js"></script>
+                            <script src="../assets/js/affix.js"></script>
+                            <script src="../assets/js/script.js"></script>
+                            <script src="../assets/js/prism.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+
+                                    var realm = 'https';
+                                    var domain = 'platform.antares.id';
+                                    var port = '8443';
+                                    var cseName = 'antares-cse';
+                                    var cseId = 'antares-id';
+
+                                    $('code').each(function () {
+                                        if ($(this).text().indexOf('https://') !== -1) {
+                                            $(this).text($(this).text().replace('https', realm));
+                                            $(this).text($(this).text().replace('platform.antares.id', domain));
+                                            $(this).text($(this).text().replace('8443', port));
+                                            $(this).text($(this).text().replace('antares-cse', cseName));
+                                            $(this).text($(this).text().replace('cseId', cseId));
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+                                });
+                            </script>
+
+                            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments)
+                                }
+                                ;
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-106459395-1');
+
+                            </script>
+
+                            <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+                            </html>

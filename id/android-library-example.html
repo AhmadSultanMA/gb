@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+        <!-- Topbar -->
+        <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+          <!-- <nav class="topbar topbar-sticky"> -->
+        </nav>
+  <!-- END Topbar -->
+
+
+
+    <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+
+                        <h1>Instalasi Library Android</h1>
+                        <p class="fs-18 opacity-70"> Dokumentasi ini membantu Anda untuk memasang Library Android. Jika Anda memerlukan bantuan atau menemukan informasi yang kurang, jangan ragu untuk menghubungi kami melalui <a href="mailto:support@antares.id">support@antares.id</a></p>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+    <!-- Main container -->
+    <main class="main-content">
+		<section class="section bb-3" style="padding-top: 45px;">
+
+	  <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | List
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+										<input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#install" data-scrollto="install">Install dan Buat Application</a></label>
+											<ul>
+												<li><a class="nav-link" href="#prasyarat" data-scrollto="prasyarat">Prasyarat</a></li>
+												<li><a class="nav-link" href="#langkah" data-scrollto="langkah">Langkah-langkah</a></li>
+											</ul>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+									<ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children"> 
+										<input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#codingstuff" data-scrollto="codingstuff">Coding Stuff</a></label>
+											<ul>
+                                                <li><a class="nav-link" href="#manifest" data-scrollto="manifest">AndroidManifest</a></li>
+                                                <li><a class="nav-link" href="#xml" data-scrollto="xml">activity_main.xml</a></li>
+                                                <li><a class="nav-link" href="#java" data-scrollto="java">MainActivity.java</a></li>
+												<li><a class="nav-link" href="#hasil" data-scrollto="hasil">Hasil Tampilan</a></li>
+                                            </ul>
+										</li>
+
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                    <ul class="cd-accordion-menu-animated" style="list-style: none;padding-left: 0">
+                                    <li class="has-children">
+                                        <label><a class="nav-link" href="#setting" data-scrollto="connect_smartphone">Setting Smartphone</a></label>
+                                    </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+								</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 pt-25">
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Description
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+			  <h3 id="install" align="center">Install dan Buat Application</h3>
+
+			  <h4 id="prasyarat" align="justify">Prasyarat</h4>
+              <ul>
+                <li>Java JDK. Belum menginstall? <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Ikuti tutorial ini.</a></li>
+                <li>Android Studio IDE. Belum menginstall? <a href="https://developer.android.com/studio/index.html">Ikuti tutorial ini.</a></li>
+              </ul>
+              <br>
+
+              <h4 id="langkah" align="justify">Langkah-langkah</h4>
+              <ol>
+                <li>Download Antares Library untuk Android dengan klik button di bawah. Simpan .jar library kedalam penyimpanan lokal komputer Anda. <br>
+                  <a class="btn btn-lg btn-warning btn-round" href="../assets/files/libraries/antares-http-api-0.8b.jar">Download</a>
+                  <br><br></li>
+                  <li>Klik "Start a new Android Studio Project". <br><img class="shadow-3" src="../assets/img/android-library-tutorial-1.jpg" alt="..."><br><br></li>
+                  <li>Definisikan Activity Anda. Kami menyarankan Anda untuk memilih "Empty Activity".<img class="shadow-3" src="../assets/img/android-library-tutorial-4.jpg" alt="..."><br><br></li>
+                  <li>Beri nama pada aplikasi Anda<img class="shadow-3" src="../assets/img/android-library-tutorial-5.jpg" alt="..."><br><br></li>
+                  <li>Klik pada bagian "Android" lalu pindah layout ke "Project".<img class="shadow-3" src="../assets/img/android-library-tutorial-6.jpg" alt="..."><br><br></li>
+                   <li>Copy-Paste library jar yang telah didownload ke app -> libs. <img class="shadow-3" src="../assets/img/android-library-tutorial-8.jpg" alt="..."><br><br></li>
+                  <li>Selamat! Anda telah memasukkan library jar.<img class="shadow-3" src="../assets/img/android-library-tutorial-9.jpg" alt="..."><br><br></li>
+              </ol>
+              <h3 id="codingstuff" align="center">Coding Stuff</h3>
+              <h4>Data yang tersimpan di Antares<   /h4>
+              <img class="shadow-3" src="../assets/img/android-library-tutorial-11.png" alt="...">
+              <br><br>
+              <h4>Mendapatkan data terakhir dari device Anda melalui Android</h4>
+              <h5 id="manifest">AndroidManifest.xml</h5>
+              <p>Agar bisa mengeksekusi API Antares, dibutuhkan akses Internet dan agar bisa mengakses Internet di Android, kita harus tambahkan baris berikut di AndroidManifest.xml.</p>
+              <pre class="line-numbers"><code class="language-xml">&lt;!--- IMPORTANT!!!!!!! --->
+&lt;!--- Tambahkan line berikut di AndroidManifest.xml Anda --->
+&lt;!--- Setelah manifest --->
+&lt;uses-permission android:name="android.permission.INTERNET" />
+&lt;!--- Sebelum application ---></code></pre>
+<br>
+              <h5 id="xml">activity_main.xml</h5>
+              <p>Ubah <strong>SEMUA</strong> isi dari activity_main.xml dengan konten berikut ini:</p>
+<pre class="line-numbers"><code class="language-xml">&lt?xml version="1.0" encoding="utf-8"?>
+&ltandroid.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    &ltTextView
+        android:id="@+id/txtData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data"
+        android:textSize="24sp"/>
+
+    &ltButton
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"/>
+
+    &ltButton
+        android:id="@+id/btnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"/>
+
+
+    &ltButton
+        android:id="@+id/btnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"/>
+
+&lt/android.widget.LinearLayout></code></pre>
+<br>
+<h5 id="java">MainActivity.java</h5>
+<pre class="line-numbers"><code class="language-java">// !!!!------ IMPORTANT ---------!!!!//
+// Ubah semua code setelah package nama.package.Anda dengan
+// dengan Code berikut
+
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import id.co.telkom.iot.AntaresHTTPAPI;
+import id.co.telkom.iot.AntaresResponse;
+
+public class MainActivity extends AppCompatActivity implements AntaresHTTPAPI.OnResponseListener{
+
+    private Button btnRefresh;
+    private Button btnOn;
+    private Button btnOff;
+
+    private TextView txtData;
+    private String TAG = "ANTARES-API";
+    private AntaresHTTPAPI antaresAPIHTTP;
+    private String dataDevice;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // --- Inisialisasi UI yang digunakan di aplikasi --- //
+        btnRefresh = (Button) findViewById(R.id.btnRefresh);
+        btnOff = (Button) findViewById(R.id.btnOff);
+        btnOn = (Button) findViewById(R.id.btnOn);
+
+        txtData = (TextView) findViewById(R.id.txtData);
+
+        // --- Inisialisasi API Antares --- //
+        //antaresAPIHTTP = AntaresHTTPAPI.getInstance();
+        antaresAPIHTTP = new AntaresHTTPAPI();
+        antaresAPIHTTP.addListener(this);
+
+        btnRefresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                antaresAPIHTTP.getLatestDataofDevice("your-access-key","your-application-name","your-device-name");
+
+            }
+        });
+
+        btnOn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                antaresAPIHTTP.storeDataofDevice(1,"your-access-key", "your-application-name", "your-device-name", "{\\\"status\\\":\\\"1\\\"}");
+
+            }
+        });
+
+        btnOff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                antaresAPIHTTP.storeDataofDevice(1,"your-access-key", "your-application-name", "your-device-name", "{\\\"status\\\":\\\"0\\\"}");
+            }
+        });
+    }
+
+    @Override
+    public void onResponse(AntaresResponse antaresResponse) {
+        // --- Cetak hasil yang didapat dari ANTARES ke System Log --- //
+        //Log.d(TAG,antaresResponse.toString());
+        Log.d(TAG,Integer.toString(antaresResponse.getRequestCode()));
+        if(antaresResponse.getRequestCode()==0){
+            try {
+                JSONObject body = new JSONObject(antaresResponse.getBody());
+                dataDevice = body.getJSONObject("m2m:cin").getString("con");
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        txtData.setText(dataDevice);
+                    }
+                });
+                Log.d(TAG,dataDevice);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}</code></pre>
+<br>
+<h5 id="hasil">Hasil Logcat</h5>
+<p>Kita dapat melakukan filter terhadap hasil log keluaran di Android. Silahkan isi di bagian seperti gambar berikut. Ketika tombol diklik, maka hasil output yang didapatkan juga bisa dilihat pada gambar di bawah ini.</p>
+<img class="shadow-3" src="../assets/img/android-library-tutorial-13.png" alt="...">
+<br>
+<br>
+<h5>Selamat!! Anda telah membuat Android APP pertama Anda dengan menggunakan Library Antares.</h5>
+<img class="shadow-3" src="../assets/img/android-library-tutorial-14.png" alt="...">
+
+
+        <h3 id="connect_smartphone" align="center">Menghubungkan Smartphone ke Android Studio</h3>
+
+        <h4 id="Setting" align="justify">Atur Setting pada Smartphone</h4>
+        <ol>
+        <li>Masuk pake menu "Setting" di smartphone Anda, lalu klik AboutPhone. Klik tiga kali pada bagian MIUI Version / Nomor Versi Smartphone Anda sampai muncul "you are developer".<br><img class="shadow-3" src="../assets/img/android-library-tutorial-15.jpeg" alt="..."><br><br></li>
+        <li>Masuk ke menu "Developer Options" pada Setting lalu aktifkan USB Debugging.<br><img class="shadow-3" src="../assets/img/android-library-tutorial-16.jpeg" alt="..."><br><br></li>
+        <li>Sambungkan USB Smartphone Anda dengan Laptop/PC, jika ada notifikasi seperti ini maka klik OK dan Smartphone Anda sudah tersambung dengan Android Studio.<br><img claa="shadow-3" src="../assets/img/android-library-tutorial-17.jpeg" alt="..."><br><br></li>
+        </ol>
+
+
+
+			</div>
+		</div>
+	</div>
+      </section>
+
+
+
+    </main>
+    <!-- END Main container -->
+
+
+
+
+
+        <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Footer 5
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+
+          <footer class="site-footer py-70 bg-warning">
+            <div class="container" id="footer">
+            </div>
+          </footer>
+
+
+        <!-- Scripts -->
+        <script src="../assets/js/core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+        <script src="../assets/js/thesaas.min.js"></script>
+        <script src="../assets/js/affix.js"></script>
+        <script src="../assets/js/bootstrap-select.js"></script>
+        <script src="../assets/js/script.js"></script>
+        <script src="../assets/js/prism.js"></script>
+
+
+  <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+  </html>

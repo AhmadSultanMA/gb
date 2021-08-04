@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="theme-color" content="#D96C22">
+
+  <title>Antares | Reliable IoT Platform</title>
+
+  <!-- Styles -->
+  <link href="../assets/css/core.min.css" rel="stylesheet">
+  <link href="../assets/css/thesaas.css" rel="stylesheet">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="60">
+
+
+  <!-- Topbar -->
+  <nav class="navbar topbar topbar-expand-md topbar-sticky" id="navbar">
+    <!-- <nav class="topbar topbar-sticky"> -->
+    <div class="container">
+
+      <div class="topbar-left">
+        <button class="topbar-toggler">&#9776;</button>
+        <a class="topbar-brand hidden-md-down" href="index.html">
+          <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+          <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+        </a>
+      </div>
+
+      <a class="topbar-brand hidden-lg-up" href="index.html">
+        <img class="logo-default" src="../assets/img/logo_antares.svg" style="width: 43%;" alt="logo">
+        <img class="logo-inverse" src="../assets/img/logo-light.png" alt="logo">
+      </a>
+
+
+      <div class="topbar-right">
+        <ul class="topbar-nav nav">
+          <li class="nav-item"><a class="nav-link" href="#home" data-scrollto="home">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services <em class="fa fa-caret-down"></em></a>
+            <div class="nav-submenu">
+              <a class="nav-link" href="#feature" data-scrollto="feature">Features</a>
+              <a class="nav-link" href="#getting-started" data-scrollto="getting-started">Getting Started</a>
+              <a class="nav-link" href="#pricing" data-scrollto="pricing">Pricing</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./docs.html">Documentation</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Community <em class="fa fa-caret-down"></em></a>
+            <div class="nav-submenu">
+              <a class="nav-link" href="https://blog.antares.id/">Blog</a>
+              <a class="nav-link" href="https://forum.antares.id/">Forum</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-scrollto="contact">Contact</a></li>
+        </ul>
+         <a class="btn btn-sm btn-warning btn-round ml-20" title="Sign Up" href="https://console.antares.id/register" style="padding-left: 12px; padding-right: 12px;"><img alt="signup" src="../assets/img/signup.svg" style="width: 15px; height: 15px; margin-top: -3px;" class="hidden-lg-up"> <span class="hidden-md-down">Sign Up</span></a>
+         <a class="btn btn-sm btn-warning btn-round ml-5" title="Login" href="https://console.antares.id" style="padding-left: 12px;padding-right: 12px";><img alt="login" src="../assets/img/login.svg" style="width: 15px; height: 15px; margin-top: -3px;" class="hidden-lg-up"> <span class="hidden-md-down">Login</span></a> 
+      </div>
+
+    </div>
+  </nav>
+  <!-- END Topbar -->
+
+
+
+
+  <!-- Header -->
+  <!-- <header class="header fadeout header-inverse h-fullscreen" style="background: #16222A;background: -webkit-linear-gradient(to top, #3A6073, #16222A);background: linear-gradient(to top, #3A6073, #16222A);
+" id="home"> -->
+  <!-- <header class="header fadeout header-inverse h-fullscreen" style="background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);" id="home"> -->
+    <header class="header h-fullscreen p-0 bb-1 overflow-hidden" style="background-image: url(../assets/img/ww.jpg);" data-overlay-light="3">
+  <!-- <header class="header fadeout header-inverse h-fullscreen" style="background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);"> -->
+    <!-- <canvas class="constellation"></canvas> -->
+
+    <div class="container">
+
+      <div class="row h-full align-items-center text-center text-lg-left">
+
+        <!-- <div class="offset-1 col-10 col-lg-4 offset-lg-1"> -->
+        <div class="col-12 col-lg-5">
+          <h2>IoT Platform for <span class="text-warning" data-type="Smart City, Industry 4.0, Smart Home, Connected Cars"></span></h2>
+          <br>
+          <p class="lead mx-auto">Antares offers you a one-stop IoT platform solution combined with tons of capabilities.</p>
+          <br>
+          <a class="btn btn-lg btn-warning btn-round" href="https://console.antares.id/register" target="_blank" rel="noopener noreferrer">Get Started</a>
+          <p class="pt-8">Already an Antares member? <a class="text-warning" href="https://console.antares.id/" style="text-decoration:underline;">Sign in</a></p>
+        </div>
+
+        <!-- <div class="col-12 col-lg-6 offset-lg-1 hidden-md-down"> -->
+        <div class="col-12 col-lg-7 hidden-md-down">
+          <img src="../assets/img/antares-infographic4.png" alt="...">
+          <!-- <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../assets/img/ss-1.png" alt="..."></div>
+              <div class="swiper-slide"><img src="../assets/img/ss-1.png" alt="..."></div>
+              <div class="swiper-slide"><img src="../assets/img/ss-1.png" alt="..."></div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          </div> -->
+        </div>
+
+      </div>
+    </header>
+    <!-- END Header -->
+
+
+
+
+    <!-- Main container -->
+    <main class="main-content">
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Features
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <!-- <section class="section p-0" id="feature">
+        <div class="container-wide">
+          <div class="row no-gap text-center">
+
+            <div class="col-12 col-md-6 bg-gray p-70">
+              <p><em class="icon-lock text-warning fs-50"></em></p>
+              <h5>Secure</h5>
+              <br>
+              <p>All the communication are served in secured channels. All are reliable, secure, and robust channels on top of Secure Transport Layer.</p>
+            </div>
+
+
+            <div class="col-12 col-md-6 p-70">
+              <p><em class="icon-shield text-warning fs-50"></em></p>
+              <h5>Reliable</h5>
+              <br>
+              <p>No more worries for your service. Let us maintain the server for you 24/7. You can focus on your IoT Application deployment.</p>
+            </div>
+
+
+            <div class="col-12 col-md-6 p-70">
+              <p><em class="icon-layers text-warning fs-50"></em></p>
+              <h5>Libraries for Variety of Devices</h5>
+              <br>
+              <p>Key of IoT is in the diversity. All the things should be accomodated. We support multiple devices environment, such as Arduino, ESP, Android, Raspberry Pi, etc that run diverse programming languages of C, C++, Java, etc. You can pick a library for your particular device.</p>
+            </div>
+
+
+            <div class="col-12 col-md-6 bg-gray p-70">
+              <p><em class="icon-genius text-warning fs-50"></em></p>
+              <h5>Open API</h5>
+              <br>
+              <p>You can manage your application not only through the dashboard, but also through APIs. We provide the API for you to Create, Delete and Update devices, applications, and data. Moreover, we offer subscription feature for data monitoring service.</p>
+            </div>
+
+
+          </div>
+        </div>
+      </section> -->
+
+      <section class="section py-50" id="feature">
+        <div class="container">
+          <header class="section-header">
+            <h2>Features</h2>
+            <!--<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>-->
+          </header>
+          <div class="row gap-y">
+            
+            <div class="col-12 col-lg-3">
+              <div class="card text-center">
+                <div class="card-block shdw">
+                  <p><em class="icon-lock text-warning fs-50"></em></p>
+                  <h4 class="card-title">Secure</h4>
+                  <p class="card-text">All the communication are served in secured channels. All are reliable, secure, and robust channels on top of Secure Transport Layer.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+              <div class="card text-center">
+                <div class="card-block shdw">
+                  <p><em class="icon-shield text-warning fs-50"></em></p>
+                  <h4 class="card-title">Reliable</h4>
+                  <p class="card-text">No more worries for your service. Let us maintain the server for you 24/7. You can focus on your IoT Application deployment.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+              <div class="card text-center">
+                <div class="card-block shdw">
+                  <p><em class="icon-layers text-warning fs-50"></em></p>
+                  <h4 class="card-title">Variety of Devices</h4>
+                  <p class="card-text">We support multiple devices environment, such as Arduino, ESP, Android, Raspberry Pi, etc that run diverse programming languages.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+              <div class="card text-center">
+                <div class="card-block shdw">
+                  <p><em class="icon-genius text-warning fs-50"></em></p>
+                  <h4 class="card-title">Open API</h4>
+                  <p class="card-text">You can manage your application not only through the dashboard, but also through API to manage devices, applications, and data.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | How it Works                                
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section bg-gray" id="getting-started">
+        <div class="container">
+          <header class="section-header">
+            <h2>Getting Started</h2>
+            <p class="lead">Once you signed in, there is only three steps to start your own IoT Application</p>
+          </header>
+
+
+          <div class="row gap-5">
+            
+
+            <div class="col-12 col-md-4">
+              <ul class="nav nav-vertical">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#tab-1">
+                    <h6>Create an Application</h6>
+                    <p>Easily create an application through the dashboard.</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-2">
+                    <h6>Add Your Devices</h6>
+                    <p>Add as much devices under your application as you want. Determine whether that is a sensor or an actuator.</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-3">
+                    <h6>Run Your App Server</h6>
+                    <p>Create your own login on your server. We will notify you for any changes of an application or device.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="col-12 col-md-8 align-self-center">
+              <div class="tab-content text-center">
+                <div class="tab-pane fade show active" id="tab-1">
+                  <img class="shadow-3" src="../assets/img/how-1.jpg" alt="...">
+                </div>
+
+                <div class="tab-pane fade" id="tab-2">
+                  <img class="shadow-3" src="../assets/img/how-2.jpg" alt="...">
+                </div>
+
+                <div class="tab-pane fade" id="tab-3">
+                  <img class="shadow-3" src="../assets/img/how-3.jpg" alt="...">
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </section>
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Supported Multiple Protocols
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Support Multiple Protocols</h2>
+            <p class="lead">There is a bunch of communication protocols that will support your devices. No reason for incompatibility.</p>
+          </header>
+
+
+          
+          <div class="row gap-y">
+
+            <div class="col-12 col-md-6 col-xl-4 feature-1">
+              <p class="feature-icon text-dark"><img alt="http" src="../assets/img/http.png" style="height: 60px; opacity: .3"></p>
+              <h5>HTTP</h5>
+              <p>HTTP is supported by us. As a mature Internet protocol, HTTP is one of the most protocol use nowadays. IoT device and HTTP are two unseparated entities. </p>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 feature-1">
+              <p class="feature-icon text-dark"><img alt="cloud-connection" src="../assets/img/cloud-connection.png" style="height: 60px; opacity: .3"></p>
+              <h5>MQTT</h5>
+              <p>MQTT is a perfect match with IoT devices as it's extremely lightweight. It is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium.</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 feature-1">
+              <p class="feature-icon text-dark"><img alt="transfer" src="../assets/img/transfer.png" style="height: 60px; opacity: .3"></p>
+              <h5>COAP</h5>
+              <p>The Constrained Application Protocol (CoAP) is a specialized web transfer protocol for use with constrained nodes and constrained networks in the IoT.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Pricing
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      
+      <section class="section bg-gray" id="pricing">
+        <div class="container">
+          <header class="section-header">
+            <h2>Unlimited Access Until This Year</h2>
+            <!-- <hr> -->
+            <p class="lead">Pay as your IoT Applications grow.</p>
+          </header>
+
+
+          <div class="row gap-y text-center">
+            
+            <div class="col-12 col-md-4 push-md-1">
+              <div class="pricing-1">
+                <!-- <p class="plan-name">Standard</p> -->
+                <br>
+                <h2 class="price">Free</h2>
+                <br>
+                <ul>
+                  <li><strong>10.000 / day </strong> API access</li>
+                  <li><strong>10 Apps</strong> Storage</li>
+                  <li><strong>20 Sensors</strong> Storage</li>
+                  <li>Real Time Monitoring Interface</li>
+                </ul>
+                
+                <br>
+                <p class="text-center py-3"><a class="btn btn-dark" href="https://console.antares.id">Get started</a></p>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 offset-md-1">
+              <div class="pricing-1">
+                <!-- <p class="plan-name">Extra</p> -->
+                <br>
+                <h2 class="price text-warning">Extra</h2>
+                <br>
+
+                <ul>
+                  <li><strong>> 10.000 / day </strong> API access<a class="btn btn-xs btn-warning ml-10" href="#" style="padding: 2px 8px;line-height: 11px;margin-top: -4px">IDR 0.1/access</a></li>
+                  <li><strong>Unlimited Apps</strong> Storage<a class="btn btn-xs btn-warning ml-10" href="#" style="padding: 2px 8px;line-height: 11px;margin-top: -4px">Setup Billing</a></li>
+                  <li><strong>Unlimited Sensors</strong> Storage<a class="btn btn-xs btn-warning ml-10" href="#" style="padding: 2px 8px;line-height: 11px;margin-top: -4px">Setup Billing</a></li>
+                  <li>Code Your App with Interactive Blocks<a class="btn btn-xs btn-warning ml-10" href="#" style="padding: 2px 8px;line-height: 11px;margin-top: -4px">IDR 50k/month</a></li>
+                </ul>
+                <br>
+                <p class="text-center py-3"><a class="btn btn-warning" href="https://console.antares.id">Get started</a></p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Call to Action
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section section-inverse py-40" style="background-color: #D96C22">
+        <div class="container">
+          <div class="row gap-y align-items-center">
+            <div class="col-12 col-md-9 text-center text-md-left">
+              <h4 class="fw-300 mb-0">Are you building an IoT product? Try ANTARES FREE.</h4>
+            </div>
+
+            <div class="col-12 col-md-3 text-center text-md-right">
+              <a class="btn btn-lg btn-round btn-white" href="#"><strong>Get Started</strong></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Contact form
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <div class="section" id="contact">
+        <div class="container">
+
+          <header class="section-header">
+            <h2>Contact Us</h2>
+            <p class="lead opacity-70"></p>
+          </header>
+
+          <div class="row gap-y">
+            <div class="col-12 col-md-5 offset-md-1">
+              <div class="bg-grey h-full p-20">
+                <p>Please stop by our door anytime, we try to answer all inquiries within 24 hours on business days.</p>
+                <p>We are open from 9am — 5pm week days.</p>
+
+                <hr class="w-80">
+
+                <div class="h-100 shadow-2 mb-20" data-provide="map" data-lat="-6.8729" data-lng="107.5862" data-marker-lat="-6.873501" data-marker-lng="107.586718" data-marker-icon="../assets/img/marker2.svg" data-zoom="15" data-style="light"></div>
+                <p class="lead">Jalan Gegerkalong Hilir No. 47, Kota Bandung<br>Jawa Barat 40152, Indonesia</p>
+
+                <div>
+                  <!--<span class="d-inline-block w-20 text-lighter" title="Email">E:</span>-->
+                  <span class="fs-14">Email: <a href="mailto:support@antares.id">support@antares.id</a></span>
+                </div>
+
+                <!--<div>
+                  <span class="d-inline-block w-20 text-lighter" title="Phone">P:</span>
+                  <span class="fs-14">+1 (123) 456-7890</span>
+                </div>-->
+
+                <!-- <div class="social">
+                  <a class="social-facebook" href="#"><em class="fa fa-facebook"></em></a>
+                  <a class="social-twitter" href="#"><em class="fa fa-twitter"></em></a>
+                </div> -->
+
+              </div>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="alert alert-danger" id="contact-error" style="display: none;"></div>
+              <div class="alert alert-success" id="contact-success" style="display: none;">We received your message and will contact you back soon.</div>
+
+              <form id="myform" method="post">
+
+                  <div class="form-group">
+                      <input class="form-control form-control-lg" type="text" name="from_name" placeholder="Your Full Name">
+                  </div>
+
+                  <div class="form-group">
+                      <input class="form-control form-control-lg" type="email" name="from_email" placeholder="Email Address">
+                  </div>
+
+                  <div class="form-group">
+                      <textarea class="form-control form-control-lg" name="message_html" rows="5" placeholder="Your Message"></textarea>
+                  </div>
+                  <div class="mb-10">
+                    <div class="g-recaptcha" data-sitekey="6LcR51MUAAAAANFpfCAZYvhQzJyWSAUQ3OVvHRCr" data-size="large"></div>
+                  </div>
+                  <button class="btn btn-lg btn-warning btn-block">Send</button>
+              </form>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Map
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <!-- <div class="h-400" data-provide="map" data-lat="-6.8729" data-lng="107.5862" data-marker-lat="-6.873501" data-marker-lng="107.586718" data-marker-icon="../assets/img/marker.svg" data-zoom="15" data-style="light"></div> -->
+
+
+
+
+
+
+
+    </main>
+    <!-- END Main container -->
+
+
+
+
+
+
+    <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Footer 5
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <footer class="site-footer py-70 bg-warning">
+        <div class="container">
+          <div class="row gap-y">
+            <div class="col-12 col-md-12 col-lg-5">
+              <h6 class="heading-alt text-uppercase fs-14 mb-16">
+                <img src="../assets/img/logo_antares.svg" alt="logo" style="width: 200px">
+              </h6>
+              <p class="fs-13">ANTARES is brandmark under PT Telekomunikasi Indonesia that specialized in IoT Platform. It is our pleasure to enable IoT Application all over the globe.</p>
+              <br>
+              <p class="text-light">Copyright © 2017 - <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> <a class="text-light" href="#">Antares</a>. All rights reserved.</p>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="heading-alt text-uppercase fs-14 mb-3">External Link</h6>
+              <div class="nav flex-column">
+                <a class="nav-link" href="#">External Link #1</a>
+                <a class="nav-link" href="#">External Link #2</a>
+                <a class="nav-link" href="#">External Link #3</a>
+                <a class="nav-link" href="#">External Link #4</a>
+                <a class="nav-link" href="#">External Link #5</a>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="heading-alt text-uppercase fs-14 mb-3">Company</h6>
+              <div class="nav flex-column">
+                <a class="nav-link" href="enterprise.html">Enterprise</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Privacy Policy</a>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <h6 class="heading-alt text-uppercase fs-14 mb-3">Language</h6>
+
+              <div class="btn-group dropup btn-block">
+                <button class="btn btn-white btn-block dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-us"></span> English</button>
+                <div class="dropdown-menu">
+                  <h6 class="dropdown-header">Select a language</h6>
+                  <a class="dropdown-item active"  href="../en/index.html"><span class="flag-icon flag-icon-us"></span> English</a>
+                  <a class="dropdown-item" href="../id/index.html"><span class="flag-icon flag-icon-id"></span> Bahasa Indonesia</a>
+                </div>
+              </div>
+
+              <hr style="margin: 1rem auto">
+
+              <div class="social text-center">
+                <a class="social-facebook" href="#"><em class="fa fa-facebook"></em></a>
+                <a class="social-twitter" href="#"><em class="fa fa-twitter"></em></a>
+                <a class="social-gplus" href="#"><em class="fa fa-google-plus"></em></a>
+                <a class="social-instagram" href="#"><em class="fa fa-instagram"></em></a>
+                <a class="social-linkedin" href="#"><em class="fa fa-linkedin"></em></a>
+              </div>
+              <br>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/core.min.js"></script>
+    <script src="../assets/js/thesaas.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+     (function(){
+      emailjs.init("user_2EqxtIxjjvhc5ABTGzCHi");
+      })();
+    </script>
+
+    <script type="text/javascript">
+    var myform = $("form#myform");
+    myform.submit(function(event){
+        event.preventDefault();
+
+            // Change to your service ID, or keep using the default service
+            var service_id = "default_service";
+            var template_id = "contact_email";
+
+            myform.find("button").text("Sending...");
+            emailjs.sendForm(service_id,template_id,"myform")
+            .then(function(){ 
+              alert("Sent!");
+              myform.find("button").text("Send");
+          }, function(err) {
+           alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+           myform.find("button").text("Send");
+       });
+            return false;
+        });
+    </script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments) };
+      gtag('js', new Date());
+      gtag('config', 'UA-106459395-1');
+    </script>
+
+  <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+  </html>

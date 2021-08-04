@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+        <!-- Topbar -->
+        <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+            <!-- <nav class="topbar topbar-sticky"> -->
+          </nav>
+        <!-- END Topbar -->
+        <!-- END Topbar -->
+
+
+
+        <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <h1>Pemanfaatan Orange Pi Zero dalam Komunikasi Data</h1>
+                        <p class="fs-18 opacity-70">Dokumentasi ini berisi mengenai pemanfaatan Orange Pi Zero dalam Komunikasi Data menggunakan HTTP RestFUL API dan pengintegrasian Orange Pi Zero dengan <em>platform</em> Antares. Jika membutuhkan informasi lebih lanjut, jangan ragu hubungi kami melalui <a href="mailto:support@antares.id">support@antares.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+        <!-- Main container -->
+        <main class="main-content">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <section class="section bb-3" style="padding-top: 45px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+
+                                    <ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <label><a class="nav-link" href="#pendahuluan" data-scrollto="pendahuluan">Pendahuluan</a></label>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+									
+									<ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#instalasisistemoperasi" data-scrollto="instalasisistemoperasi">Instalasi Sistem Operasi</a></label>
+
+                                            <ul>
+												<li><a class="nav-link" href="#formatkartu" data-scrollto="formatkartu">Format Kartu</a></li>
+                                                <li><a class="nav-link" href="#menambahkansistemoperasi" data-scrollto="menambahkansistemoperasi">Menambahkan Sistem Operasi</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+									<ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <label><a class="nav-link" href="#konfigurasiawal" data-scrollto="konfigurasiawal">Konfigurasi Awal</a></label>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+									<ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <label><a class="nav-link" href="#progpython" data-scrollto="progpython">Pemograman Python</a></label>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+									
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 pt-25">
+
+                           
+				<!--
+				|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+				| ISI DOC
+				|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+				!-->
+                            <hr>
+							<h3 align="center" id="pendahuluan">Pendahuluan</h3>
+                            <p align="justify">Orange Pi merupakan suatu <em>open source single-board computer</em>. Orange Pi sama sistem kerjanya dengan varian-varian Pi yang lain, seperti Raspberry Pi, Nano Pi, dst. Orange Pi dapat dipasangkan sistem operasi Android, Ubuntu, Debian, dan Raspbian.</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/orange-pi-zero.jpg" alt="orange-pi-zero">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 1. Orange Pi Zero</p>
+							<p align="justify">Pin-Pin di dalam Orange Pi memiliki pengaturan sebagai berikut:</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/pinout.jpg" alt="pinout">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 2. Pin-pin di Orange Pi Zero</p>
+							<h3 align="center" id="instalasisistemoperasi">Instalasi Sistem Operasi</h3>
+							<h4 align="center" id="formatkartu">Format Kartu</h4>
+							<p align="justify">Sediakan kartu microSD yang akan digunakan/dipasang. Sebelumnya, kartu SD tersebut harus diformat. Langkah-langkah format yang dilakukan adalah sebagai berikut:</p>
+							
+														
+							<p align="justify">1. Klik kanan direktori kartu microSD yang akan digunakan, lalu pilih menu format.</p> 
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/formatdisk.png" alt="formatdisk">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 3. Pilihan Format</p>
+							<p align="justify">2. Pastikan menu format seperti gambar di bawah. Kemudian, klik <em>start</em></p> 
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/menuformat.png" alt="menuformat">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 4. Tampilan Menu Format</p>
+							<h4 align="center" id="menambahkansistemoperasi">Menambahkan Sistem Operasi</h4>
+							
+							<p align="justify">Sebelum masuk ke langkah selanjutnya, unduh aplikasi Win32DiskImager, kemudian download file image di <a href="https://www.armbian.com/orange-pi-zero/">https://www.armbian.com/orange-pi-zero/</a> dengan pilihan "bionic" dan <em>extract</em> isinya. Langkah-angkah instalasi sistem operasi adalah sebagai berikut:</p>
+							<p align="justify">1. Buka aplikasi Win32DiskImager</p>
+							<p align="justify">2. Cari file image yang sudah di-extract sebelumnya. Pastikan juga devais yang muncul pada menu Win32DiskImager adalah kartu MicroSD (meskipun biasanya sudah otomatis).</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/diskimager.png" alt="diskimager">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 5. Tampilan di Win32DiskImager</p>
+							<p align="justify">3. Pilih pilihan "Write"</p>
+								
+							<h3 align="center" id="konfigurasiawal">Konfigurasi Awal</h3>
+							<p align="justify">Untuk mengakses Orange Pi Zero, pengguna dapat menghubungkan Orange Pi Zero terlebih dahulu ke komputer (dengan menggunakan USB to TTL atau FTDI, dengan memperhatikan RX, TX, dan GND) serta menggunakan aplikasi PUTTY. Setelah tersambung, langkah-langkah yang harus dilakukan adalah</p>
+							
+							<p align="justify">1. Mengecek port yang digunakan Orange Pi Zero dengan Membuka Device Manager</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/portcom5.png" alt="portcom5">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 6. Tampilan Device Manager</p>
+							<p align="justify">2. Mengatur Konfigurasi dalam aplikasi PUTTY sebagai berikut:</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/putty.png" alt="putty">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 7. Pengaturan PUTTY</p>
+							<p align="justify">3. Ketika sudah dijalankan, maka program akan meminta pengguna untuk memasukkan <em>username</em> dan <em>password</em>. <em>Username</em> yang digunakan adalah “root”, sedangkan <em>password</em> awal yang digunakan adalah 1234. Setelah itu, pengguna akan diminta memasukkan <em>password</em> yang baru.</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/gantipassword.png" alt="gantipassword">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 8. Mengganti <em>Password</em></p>
+							<p align="justify">4. Setelah itu, pengguna akan diminta untuk memasukkan informasi yang diperlukan. Silahkan mengisi informasi yang diperlukan, jika tidak langsung dilewat saja dengan menekan tombol ENTER.</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/username.png" alt="username">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 9. Memasukkan Informasi Yang Diperlukan</p>
+							<p align="justify">5. Tampilan umum Orange Pi yang akan muncul seperti biasanya adalah:</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/tampilanawal.png" alt="tampilanawal">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 10. Tampilan Umum Orange Pi</p>
+							<p align="justify">6. Perbarui versi OS yang ada dengan menggunakan</p>
+							<p><code>sudo apt-get update</code></p>
+							<p><code>sudo apt-get upgrade</code></p>
+							<h3 align="center" id="progpython">Pemograman Python</h3>
+							<p align="justify">Pada bagian ini, akan diberikan tutorial mengenai pembacaan temperatur dan kelembaban ruangan dengan menggunakan sensor DHT22, Orange Pi Zero, Antares, dan HTTP RestFUL API</p>
+							<p align="justify">1. Install terlebih dahulu python dan “pip” dengan menggunakan:</p>
+							<p><code>sudo apt-get install python</code></p>
+							<p><code>sudo apt-get install python-pip</code></p>
+							<p align="justify">2. Setelah itu, pengguna dapat mengambil basis untuk pemograman dengan dengan menggunakan perintah:</p>
+							<p><code>git clone https://github.com/ionutpi/DHT22-Python-library-Orange-PI</code></p>
+							<p align="justify">3. Untuk memudahkan, program yang terdapat di dalam folder yang “dikloning” dapat dipindahkan ke bagian home dengan perintah:</p>
+							<p><code>cp /root/DHT22-Python-library-Orange-PI/dht22.py ~</code></p>
+							<p align="justify">4. Pengecekan apakah program tersebut berjalan dapat dilakukan dengan (pastikan juga sensor terpasang di port yang benar):</p>
+							<p><code>python dht22.py</code></p>
+							<p align="justify">5. Didapatkan hasil sebagai berikut:</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/hasilsensor.png" alt="hasilsensor">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 11. Hasil Pembacaan Sensor</p>
+							<p align="justify">6. Setelah itu, buka aplikasi POSTMAN (Bisa cek kembali tutorial STORE DATA OF A PARTICULAR DEVICE). Setelah mengisi semua yang diperlukan (dalam JSON), klik bagian code.</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/kodepostman.png" alt="kodepostman">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 12. Pilihan "Code" pada Aplikasi POSTMAN</p>
+							<p align="justify">7. Pilih bahasa yang akan digunakan (pastikan jenis Python yang Anda pakai dengan mengetik "python -V"). Bahasa pemograman lain juga dapat digunakan (selama tersedia).</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/kodepostman2.png" alt="kodepostman2">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 13. Pilihan Kode</p>
+
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/kodepostman3.png" alt="kodepostman3">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 14. Kode Mengirimkan Data Dalam Bahasa Python</p>
+							<p align="justify">8. Program yang didapat tersebut kemudian dipindahkan ke dalam suatu file program baru dan diedit. Tujuannya untuk mendapatkan data temperatur dan kelembaban setiap 1 detik lalu mengirimkannya ke Antares. Maka, didapatkan</p>
+							<pre class="line-numbers"><code class="language-Python">
+from pyA20.gpio import gpio
+from pyA20.gpio import port
+ 
+#import RPi.GPIO as GPIO
+import dht22
+import time
+import datetime
+import requests 
+# initialize GPIO
+#gpio.setwarnings(False)
+#gpio.setmode(GPIO.BCM)
+PIN2 = port.PA6
+gpio.init()
+#gpio.cleanup()
+ 
+ 
+# read data using pin 14
+instance = dht22.DHT22(pin=PIN2)
+ 
+while True:
+    result = instance.read()
+    if result.is_valid():
+        print("Last valid input: " + str(datetime.datetime.now()))
+        print("Temperature: %.2f C" % result.temperature)
+        print("Humidity: %.2f %%" % result.humidity)
+ 
+    time.sleep(1)
+	
+	url = "https://platform.antares.id:8443/~/antares-cse/antares-id/SmartCoba/SmartS1"
+
+	payload = "{\r\n  \"m2m:cin\": {\r\n    \"con\": \"{\\\"key1\\\":"+str(datetime.datetime.now())+", \\\"key2\\\":\\\""+str(result.temperature)+"\\\", \\\"keyN\\\":\\\""+str(result.humidity)+"\\\"}\"\r\n  }\r\n}"
+	headers = {
+		'X-M2M-Origin': "access-id:access-password",
+		'Content-Type': "application/json;ty=4",
+		'Accept': "application/json",
+		'Cache-Control': "no-cache",
+		'Postman-Token': "0314aaab-c1bf-4b4c-90c8-7b2865e26965"
+		}
+
+	response = requests.request("POST", url, data=payload, headers=headers)
+
+	print(response.text)
+
+							</code></pre>
+							<p align="justify">Jika ketika program tersebut dieksekusi dan terdapat kekurangan modul (library) Python tertentu, maka pengguna dapat mengunduh library tersebut dengan:</p>
+							<p><code>pip install “module_name”</code></p>
+							<p align="justify">9. Hasil di Orange PI dan di Antares didapatkan sebagai berikut:</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/hasil.png" alt="hasil">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 15. Hasil Pembacaan dan Pengiriman Sensor</p>
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/datadapat.png" alt="datadapat">
+                                <!-- End of -->
+							</div>
+							<p align="center">Gambar 16. Data yang Diterima di Antares</p>
+                            </section>
+                            </main>
+							
+                            <!-- END Main container -->
+
+                            <!--
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              | Footer 5
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              !-->
+
+                              <footer class="site-footer py-70 bg-warning">
+                                <div class="container" id="footer">
+                                </div>
+                              </footer>
+
+
+                            <!-- Scripts -->
+                            <script src="../assets/js/core.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                            <script src="../assets/js/thesaas.min.js"></script>
+                            <script src="../assets/js/affix.js"></script>
+                            <script src="../assets/js/script.js"></script>
+                            <script src="../assets/js/prism.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+
+                                    var realm = 'https';
+                                    var domain = 'platform.antares.id';
+                                    var port = '8443';
+                                    var cseName = 'antares-cse';
+                                    var cseId = 'antares-id';
+
+                                    $('code').each(function () {
+                                        if ($(this).text().indexOf('https://') !== -1) {
+                                            $(this).text($(this).text().replace('https', realm));
+                                            $(this).text($(this).text().replace('platform.antares.id', domain));
+                                            $(this).text($(this).text().replace('8443', port));
+                                            $(this).text($(this).text().replace('antares-cse', cseName));
+                                            $(this).text($(this).text().replace('cseId', cseId));
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+                                });
+                            </script>
+
+                            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments)
+                                }
+                                ;
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-106459395-1');
+
+                            </script>
+
+                            <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+                            </html>

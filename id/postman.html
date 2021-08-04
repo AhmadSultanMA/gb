@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#D96C22">
+
+        <title>Antares | Documentation</title>
+
+        <!-- Styles -->
+        <link href="../assets/css/core.min.css" rel="stylesheet">
+        <link href="../assets/css/thesaas.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/prism.css" rel="stylesheet">
+        <link href="../assets/css/web-browser-container.css" rel="stylesheet">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style type="text/css">
+            .affix {
+                position: fixed;
+                top: 60px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 4px;
+                background-color: #F5F5F5;
+            }
+
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgba(0,0,0,.2);
+            }
+
+            .affix-bottom {
+                position: absolute;
+            }
+
+            #sideb {
+                height: calc(100vh - 60px);
+                overflow-y: hidden;
+            }
+            #sideb:hover {
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+          (function ($, window, document, undefined) {
+
+            $(function () {
+              $("#navbar").load("nav.html #nav");
+              $('#footer').load("nav.html #foot");
+            });
+
+          })(jQuery, window, document);
+        </script>
+    </head>
+
+    <body data-target="#navbar" data-offset="60">
+
+
+        <!-- Topbar -->
+        <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky" id="navbar">
+            <!-- <nav class="topbar topbar-sticky"> -->
+          </nav>
+        <!-- END Topbar -->
+        <!-- END Topbar -->
+
+
+
+        <!-- Header -->
+        <header class="header header-inverse bg-fixed" style="background-image: url(../assets/img/javier-quesada-222120.jpg)" data-overlay="8">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <h1>Postman</h1>
+                        <p class="fs-18 opacity-70">Dokumentasi ini akan menjelaskan cara menggunakan Postman sebagai Virtual Device untuk mengirim data (POST) ke ANTARES dan menerima data (GET) dari ANTARES. Jika anda membutuhkan informasi lebih lanjut, jangan ragu hubungi kami di <a href="mailto:support@antares.id">support@antares.id</a></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- END Header -->
+
+
+
+
+        <!-- Main container -->
+        <main class="main-content">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <section class="section bb-3" style="padding-top: 45px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 hidden-md-down" id="par">
+                            <div class="" data-spy="affix" data-offset-top="400" data-offset-bottom="440" style="border-right: 1px solid rgba(97, 103, 113, 0.07)" id="chl">
+                                <div class="card-block h-fullscreen pl-0" id="sideb">
+
+									<ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+											<input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#pendahuluan" data-scrollto="pendahuluan">Pendahuluan</a></label>
+											<ul>
+                                                <li><a class="nav-link" href="#install" data-scrollto="install">Instalasi Postman</a></li>
+											</ul>
+										</li>
+                                    </ul> <!-- cd-accordion-menu -->
+									
+									<ul class="cd-accordion-menu animated" style="list-style: none;padding-left: 0">
+                                        <li class="has-children">
+                                            <input type="checkbox" checked>
+                                            <label><a class="nav-link" href="#hubungantares" data-scrollto="hubungantares">Hubungkan ke ANTARES</a></label>
+
+                                            <ul>
+                                                <li><a class="nav-link" href="#apicollect" data-scrollto="apicollect">Import ANTARES API Collection</a></li>
+                                                <li><a class="nav-link" href="#postdata" data-scrollto="postdata">Kirim Data (Post)</a></li>
+                                                <li><a class="nav-link" href="#getdata" data-scrollto="getdata">Terima Data (Get)</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> <!-- cd-accordion-menu -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 pt-25">
+
+                 <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | ISI DOC
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->           
+							<h4 align="center" id="pendahuluan">Pendahuluan</h4>
+							<p align="justify">Postman adalah sebuah aplikasi yang berfungsi sebagai <em>REST CLIENT</em> untuk uji coba <em>REST API</em>. Postman biasa digunakan oleh <em></em>developer</em> pembuat API sebagai <em>tools</em> untuk menguji API yang telah mereka buat.</p>
+							
+							<!-- Register -->
+                            <h5 id="install" class="heading-alt">Instalasi Postman</h5>
+                            <p align="justify"><strong>1. Unduh Postman</strong></p>
+							<p align="justify">Hal yang harus dilakukan pertama yaitu <a href="https://www.getPostman.com/apps">Unduh Postman<a>. Pilih sesuai dengan Sistem Operasi laptop/komputer anda.</p> 
+							
+							<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/downloadpostman1.png" alt="downloadpostman1">
+                                <!-- End of -->
+                            </div>
+						    <br>	
+                            
+							<p align="justify"><strong>2. Instalasi Postman</strong></p>
+                            <p align="justify">Setelah selesai mengunduh, jalankan <em>setup</em> instalasi aplikasi Postman. <em>Setup</em> akan menjalankan proses instalasi aplikasi Postman secara otomatis. </p>
+							
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/installpm1.png" alt="installpm1">
+                                <!-- End of -->
+                            </div>
+						    <br>	
+							
+							<p align="justify">Setelah proses instalasi selesai, anda akan diarahkan untuk membuat akun Postman dan <em>sign in</em> menggunakan akun tersebut. Anda juga dapat melakukan <em>sign in</em> menggunakan akun Google.</p>
+							
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/installpm2.png" alt="installpm2">
+                                <!-- End of -->
+                            </div>
+                            <br>
+                            	
+                            <p align="justify"><strong>3. <em>Landing Page</em> Postman</strong></p>
+							<p align="justify">Pada tampilan <em>default</em> <em>landing page</em> Postman, terdapat <em>workspace</em> untuk mengoperasikan fungsi-fungsi Postman. Anda dapat membuat <em>request</em>, <em>collection</em>, <em>environtment</em>, API, dan lainnya pada bagian <em>launchpad</em>. Postman juga memberikan <em>in-app's tutorials</em> yang dapat anda akses dengan mudah pada <em>launchpad</em>. </p>
+							
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/installpm3.png" alt="installpm3">
+                                <!-- End of -->
+                            </div>
+						    <br>	
+							
+							<p align="justify">Anda juga dapat merubah pengaturan aplikasi Postman di <em>File</em> > <em>Settings</em> pada <em>menu bar.</em></p>
+							
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/installpm4.png" alt="installpm4">
+                                <!-- End of -->
+                            </div>
+                            <br>
+                            <p align="justify">Postman memberikan kemudahan bagi anda yang bekerja bersama secara tim, dimana anda dapat menambah rekan anda kedalam bagian <em>workspace</em> anda. Anda hanya perlu meng-<em>invite</em> rekan tim anda melalui <em>e-mail</em>.</p>
+							
+                            <div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/installpm5.png" alt="installpm5">
+                                <!-- End of -->
+                            </div>
+						    <br>
+							
+							<h4 id="hubungantares" align="center" class="heading-alt">Hubungkan ke ANTARES</h4>
+							<p align="justify">Berikut ini tutorial cara menggunakan beberapa API ANTARES melalui Postman</p>
+                            
+                            <h5 id="apicollect" class="heading-alt">A. <em>Import</em> ANTARES API <em>Collection</em></h5>
+                            <p align="justify">ANTARES API Collection merupakan koleksi API yang digunakan ANTARES untuk mengintegrasikan <em>client</em> dan <em>server</em> ANTARES. API <em>collection</em> ini akan memudahkan pengguna dalam menghubungkan ANTARES dengan Postman. Dalam tahap ini, pengguna Postman akan diminta untuk meng-<em>import</em> API ANTARES ke collection Postman.</p>
+                            <ol>
+                                <li>Buka <em>tools</em> <em>import</em> pada <em>toolbar</em> di <em>workspace</em> Postman.</li>
+                                <br>
+							
+								    <div align="center">
+                                        <!-- Insert your page here -->
+                                        <img src="../assets/img/importbuttontab.png" alt="importbuttontab">
+                                        <!-- End of -->
+                                    </div>
+                                    <br>
+                                <p>Lalu akan muncul menu untuk melakukan <em>import</em> <em>collection.</em></p>
+							
+								    <div align="center">
+                                        <!-- Insert your page here -->
+                                        <img src="../assets/img/importmenupost.png" alt="importmenupost">
+                                        <!-- End of -->
+                                    </div>
+                                    <br>
+
+                                <li>Klik pada bagian <em>import from link</em> dan silahkan anda <em>copy-paste</em> link berikut ini kedalam kolom <em>Enter URL</em> pada menu tersebut.</li>
+                                <p align = "center"><Strong>https://www.postman.com/collections/74f280ba4b0714901528</Strong></p>
+                                <br>
+                                
+                                    <div align="center">
+                                        <!-- Insert your page here -->
+                                        <img src="../assets/img/ImportCollection.png" alt="ImportCollection">
+                                        <!-- End of -->
+                                    </div>
+                                    <br>
+
+                                <p align = "justify">Selanjutnya klik <em>button Import</em> dan <em>collection</em> API ANTARES akan muncul pada bagian <em>collection</em> di <em>workspace</em> Postman anda.</p>
+                                <br>
+
+                                    <div align="center">
+                                        <!-- Insert your page here -->
+                                        <img src="../assets/img/collectionmenupost.png" alt="collectionmenupost">
+                                        <!-- End of -->
+                                    </div>
+                                    <br>
+
+                                <li><p align="justify">Langkah selanjutnya adalah menyesuaikan <em>setting</em> pada <em>folder</em> ANTARES API <em>for Public</em> dengan <em>properties</em> dari <em>device</em> anda pada ANTARES.<!--# Anda dapat melewati langkah ini jika ingin menyesuaikan <em>setting</em> dari API ANTARES pada Postman anda secara manual saat akan menggunakan fungsi-fungsi API yang disediakan ANTARES, <strong>namun kami menyarankan anda tetap mengikuti langkah ini agar penggunaan fungsi-fungsi API dapat dilakukan lebih mudah</strong>-->.</p></li>
+                                <br>
+
+                                    <ol type="a">
+
+                                        <li ><p align="justify">Untuk menyesuaikan <em>setting</em> pada <em>folder</em> ANTARES API <em>collection</em> anda perlu membuka menu <em>edit</em> pada <em>folder</em> ANTARES API <em>for Public</em> yang terletak pada <em>action</em> bar dari folder tersebut (<em>button</em> dengan <em>icon</em> tiga titik disamping nama folder <em>collection</em>), lalu buka tab <em>variable</em>.</p></li>
+
+                                            <div align="center">
+                                                <!-- Insert your page here -->
+                                                <img src="../assets/img/editvariablemenupost.png" alt="editvariablemenupost">
+                                                <!-- End of -->
+                                            </div>
+                                            <br>
+                                        
+                                        <li><p align="justify">Pada menu <em>variable</em> terdapat beberapa field yang harus anda sesuaikan dengan <em>properties</em> dari <em>device</em> ANTARES anda. Anda cukup mengganti field <em><strong>Initial-value</strong></em> dan <em><strong>Current-value</strong></em> sesuai <em>properties device</em> anda di ANTARES. <em>Field</em> yang harus anda sesuaikan dipaparkan dalam tabel berikut ini.</p></li>
+                                        <br>
+
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="xml-store">
+                                                <table class="table table-bordered table-striped table-responsive-sm" aria-describedby="variable-postman-tables">
+                                                    <thead>
+                                                        <tr>
+                                                            <th id="field-variable-postman"><strong>Field</strong></th>
+                                                            <th id="iv-variable-postman"><strong>Initial Value</strong></th>
+                                                            <th id="cv-variable-postman"><strong>Current Value</strong></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tr>
+                                                        <td><strong>access-key</strong></td>
+                                                        <td><code>access-id:access-password</code></td>
+                                                        <td><code>access-id:access-password</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>application-name</strong></td>
+                                                        <td><code>your app name in ANTARES</code></td>
+                                                        <td><code>your app name in ANTARES</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>device-name</strong></td>
+                                                        <td><code>your device name in ANTARES</code></td>
+                                                        <td><code>your device name in ANTARES</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>e-mail</strong></td>
+                                                        <td>Your e-mail</td>
+                                                        <td>Your e-mail</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <p align="justify">Application-name dan device-name merupakan nama aplikasi dan device yang anda buat di <em>console</em> ANTARES anda. Sedangkan access-key dapat anda peroleh pada bagian <em>account</em> di <em>console</em> ANTARES anda.</p>
+                                        <br>
+
+                                        <div align="center">
+                                            <!-- Insert your page here -->
+                                            <img src="../assets/img/postdatapm1.png" alt="postdatapm1">
+                                            <!-- End of -->
+                                        </div>
+                                        <br>
+                                        
+                                        <p align="justify">Berikut adalah contoh penyesuain <em>field</em> pada variabel di menu <em>collection</em>.</p>
+                                        <br>
+
+                                        <div align="center">
+                                            <!-- Insert your page here -->
+                                            <img src="../assets/img/editvariablemenupost.png" alt="editvariablemenupost">
+                                            <!-- End of -->
+                                        </div>
+                                        <br>
+
+                                    </ol>
+                            </ol>
+
+                            <h5 id="postdata" class="heading-alt">B. Menyimpan data ke ANTARES (<em>Post</em>)</h5>
+                            
+                            <!--<p align="justify">Jika anda telah melakukan <em>import collection</em> API ANTARES, silahkan ikuti langkah berikut ini untuk menyimpan data di <em>device</em> ANTARES anda.</p>
+                            <br>-->
+
+                            <ol>
+
+                                <li><p align="justify">Buka folder <em>ANTARES API for Public</em> pada tab <em>collection</em> di <em>workspace</em> anda. Dalam folder tersebut terdapat <em>list</em> fungsi-fungsi API. Pilih <em>Store data of a device</em> dengan <em>icon POST</em>. Terdapat dua jenis fungsi API <em>store data</em> yaitu XML dan JSON. Perbedaan keduanya hanya pada jenis format pengiriman konten data, anda dapat menggunakan salah-satu format tersebut.</p></li>
+                                <br>
+							
+								    <div align="center" ">
+                                        <!-- Insert your page here -->
+                                        <img src="../assets/img/postlistdatapost.png" alt="postlistdatapost">
+                                        <!-- End of -->
+								    </div>
+							        <br>
+							
+							    <li><p align="justify">Setelah itu, pada workspace anda akan muncul <em>launchpad store data of a device</em>. Anda tidak perlu menyunting URL maupun <em>value</em> dari <em>header</em> pada <em>launchpad</em> tersebut. Anda hanya perlu mengedit konten data yang akan dikirim ke antares jika dibutuhkan.</p></li>
+                                <br>
+                            
+								    <div align="center" ">
+                                        <!-- Insert your page here -->
+                                        <img src="../assets/img/postlaunchmenu.png" alt="postlaunchmenu">
+                                    </div>
+                                    <br>
+
+                                <li><p align = "justify">Untuk menyunting isi konten dari data yang anda akan kirim, buka tab <em>body</em> dan pilih opsi <em>raw</em>. Anda dapat menyuting isi konten data yang akan dikirim ke <em>device</em> ANTARES anda sesuai kebutuhan.</p></li>
+                                <br>
+
+                                    <div align="center" ">
+								        <img src="../assets/img/bodypostpost.png" alt="bodypostpost">
+                                        <!-- End of -->
+								    </div>
+							        <br>	
+																
+							    <p align="justify">Berikut ini adalah format penyuntingan konten data untuk format XML dan JSON</p>
+							    <br>
+							    <br>
+							
+						<div class="text-center pull-right" style="margin-top: -40px">
+								<ul class="nav nav-outline nav-round">
+									<li class="nav-item">
+										<a class="nav-link active" data-toggle="tab" href="#xml-store1" style="padding: 2px 10px;">XML</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#json-store2" style="padding: 2px 10px;">JSON</a>
+									</li>
+								</ul>
+							</div>
+
+							<div>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="xml-store1">
+										<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="xml-store-tables">
+			                                <thead>
+			                                    <tr>
+			                                        <th id="field-xml-store"><strong>Field</strong></th>
+			                                        <th id="value-xml-store" colspan="2"><strong>Value</strong></th>
+			                                    </tr>
+			                                </thead>
+			                                
+			                                <tr>
+			                                    <td>Body</td>
+			                                    <td colspan="2"><pre class="line-numbers"><code class="language-xml">&lt;m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
+&lt;con>&amp;lt;obj&amp;gt;
+        &amp;lt;num key1="value1"/&amp;gt;
+        &amp;lt;str key2="value2"/&amp;gt;
+        &amp;lt;bool keyN="valueN"/&amp;gt;
+&amp;lt;/obj&amp;gt;&lt;/con>
+&lt;/m2m:cin></code></pre></td>
+			                                </tr>
+			                            </table>
+                                        <!--<strong>Note!!<br>
+                                        Key adalah nama variable sedangkan value adalah nilai dari variable tersebut.</strong>-->
+									</div>
+
+									<div class="tab-pane fade" id="json-store2">
+										<table class="table table-bordered table-striped table-responsive-sm" aria-describedby="json-store-tables">
+			                                <thead>
+			                                    <tr>
+			                                        <th id="field-json-store"><strong>Field</strong></th>
+			                                        <th id="value-json-store" colspan="2"><strong>Value</strong></th>
+			                                    </tr>
+			                                </thead>
+			                               
+			                                <tr>
+			                                    <td>Body</td>
+			                                    <td colspan="2"><pre class="line-numbers"><code class="language-json">{
+  "m2m:cin": {
+    "con": "{\"key1\":integer-value, \"key2\":\"string-value\", \"keyN\":\"valueN\"}"
+  }
+}</code></pre></td>
+			                                </tr>
+			                            </table>
+									</div>
+
+                                </div>
+                            </div>
+                            <p align="justify"><strong>Key</strong> dan <strong>Value</strong> adalah variabel dan nilai yang ada di dalam konten.</p>
+						
+							<br>
+								
+							<li>Setelah konten disunting sesuai yang anda butuhkan, anda tinggal mengirim data tersebut ke ANTARES dengan meng-klik<em> button SEND</em> dan cek data yang masuk di ANTARES.</li>
+								
+								<div align="center" ">
+                                <!-- Insert your page here -->
+                                <img src="../assets/img/postdataantares.png" alt="postdataantares">
+								</div>
+							</ol>
+                            
+							<h5 id="getdata" class="heading-alt">B. Menarik Data dari ANTARES (Get)</h5>
+							<ol> 
+								<li><p align="justify">Buka folder <em>ANTARES API for Public</em> pada tab <em>collection</em> di <em>workspace</em> anda. Dalam folder tersebut terdapat <em>list</em> fungsi-fungsi API. Pilih <em>Get latest data of a device</em> dengan <em>icon GET</em>. Terdapat dua jenis fungsi API <em>get data</em> yaitu XML dan JSON. Perbedaan keduanya hanya pada jenis format penerimaan konten data, anda dapat menggunakan salah-satu format tersebut.</p></li>
+                                <br>
+							
+								    <div align="center" ">
+                                        <!-- Insert your page here -->
+                                        <img src="../assets/img/getlistmenupost.png" alt="getlistmenupost">
+                                        <!-- End of -->
+								    </div>
+							        <br>
+							
+							    <li><p align="justify">Setelah itu, pada workspace anda akan muncul <em>launchpad get latest data of a device</em>. Anda tidak perlu menyunting URL maupun <em>value</em> dari <em>header</em> pada <em>launchpad</em> tersebut. Anda hanya tinggal meng-klik <em>button SEND</em>.</p></li>
+                                <br>
+                            
+								    <div align="center" ">
+                                        <!-- Insert your page here -->
+                                        <img src="../assets/img/getlaunchpost.png" alt="getlaunchpost">
+                                    </div>
+                                    <br>
+								
+							    <li>Setelah itu anda dapat meihat konten data yang diterima Postman dari ANTARES.</li>
+							    <br>	
+								    <div align="center" ">
+                                        <!-- Insert your page here -->
+                                        <img src="../assets/img/getdatafromantares.png" alt="getdatafromantares">
+								    </div>
+								    <br>
+							
+                            </ol>
+						</div>
+						
+							
+							
+							
+                            </section>
+                            </main>
+                            <!-- END Main container -->
+
+                            <!--
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              | Footer 5
+                              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+                              !-->
+
+                              <footer class="site-footer py-70 bg-warning">
+                                <div class="container" id="footer">
+                                </div>
+                              </footer>
+
+
+                            <!-- Scripts -->
+                            <script src="../assets/js/core.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+                            <script src="../assets/js/thesaas.min.js"></script>
+                            <script src="../assets/js/affix.js"></script>
+                            <script src="../assets/js/script.js"></script>
+                            <script src="../assets/js/prism.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+
+                                    var realm = 'https';
+                                    var domain = 'platform.antares.id';
+                                    var port = '8443';
+                                    var cseName = 'antares-cse';
+                                    var cseId = 'antares-id';
+
+                                    $('code').each(function () {
+                                        if ($(this).text().indexOf('https://') !== -1) {
+                                            $(this).text($(this).text().replace('https', realm));
+                                            $(this).text($(this).text().replace('platform.antares.id', domain));
+                                            $(this).text($(this).text().replace('8443', port));
+                                            $(this).text($(this).text().replace('antares-cse', cseName));
+                                            $(this).text($(this).text().replace('cseId', cseId));
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#chl').width($('#par').width());
+                                });
+                            </script>
+
+                            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106459395-1"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() {
+                                    dataLayer.push(arguments)
+                                }
+                                ;
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-106459395-1');
+
+                            </script>
+
+                            <script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+                            </html>

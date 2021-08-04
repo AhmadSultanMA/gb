@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="theme-color" content="#D96C22">
+
+  <title>Antares | Reliable IoT Platform</title>
+
+  <!-- Styles -->
+  <link href="../assets/css/core.min.css" rel="stylesheet">
+  <link href="../assets/css/page.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+  <div style="background-color:#f2f2f2">
+    <div style="margin:0px auto;max-width:600px">
+      <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%" align="center"
+        border="0">
+        <tbody>
+          <tr>
+            <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:5px 0px 5px 0px">
+              <div
+                style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%">
+                <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td style="word-wrap:break-word;font-size:0px;padding:10px 25px" align="center">
+                        <div
+                          style="color:#9b9b9b;font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:11px;font-weight:400;line-height:24px;text-align:center">
+                          <p style="color:#9b9b9b">Pengajuan
+                            menjadi mitra antares </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin:0px auto;max-width:600px;background:#ffffff">
+      <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#ffffff"
+        align="center" border="0">
+        <tbody>
+          <tr>
+            <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 20px 0px 20px">
+              <div
+                style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%">
+                <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td
+                        style="word-wrap:break-word;font-size:0px;padding:10px 25px;padding-top:10px;padding-bottom:0px"
+                        align="center">
+                        <table role="presentation" cellpadding="0" cellspacing="0"
+                          style="border-collapse:collapse;border-spacing:0px" align="center" border="0" aria-describedby="sample">
+                          <tbody>
+                            <tr>
+                              <td style="width:160px"><img alt="OnePage" title="" height="auto"
+                                  src="https://ci4.googleusercontent.com/proxy/1EgIAeDzbwBXnCVRkiaDPpY2nuycks-k34de0ZeokVDOYOMc0d_hQX99-iNxtmtp3jZxEz2HmHXc=s0-d-e1-ft#https://antares.id/assets/img/logo_antares.svg"
+                                  style="border:none;border-radius:0px;display:block;font-size:13px;outline:none;text-decoration:none;width:100%;height:auto"
+                                  width="160"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div'
+      style="margin:0px auto;max-width:600px;background:url(https://ci4.googleusercontent.com/proxy/IR3Yu5m2nRHevNorFRmkXs615BCqDdbLa5ttB9csJWwNuuh5ONUmi61bZv9uYSxuRQMAF7anL8oU=s0-d-e1-ft#https://antares.id/assets/img/1172.jpg) top center/cover no-repeat">
+      <table role="presentation" cellpadding="0" cellspacing="0"
+        style="font-size:0px;width:100%;background:url(https://ci4.googleusercontent.com/proxy/IR3Yu5m2nRHevNorFRmkXs615BCqDdbLa5ttB9csJWwNuuh5ONUmi61bZv9uYSxuRQMAF7anL8oU=s0-d-e1-ft#https://antares.id/assets/img/1172.jpg) top center/cover no-repeat"
+        align="center" border="0"
+        background="https://ci4.googleusercontent.com/proxy/IR3Yu5m2nRHevNorFRmkXs615BCqDdbLa5ttB9csJWwNuuh5ONUmi61bZv9uYSxuRQMAF7anL8oU=s0-d-e1-ft#https://antares.id/assets/img/1172.jpg">
+        <tbody>
+          <tr>
+            <td style="text-align:center;vertical-align:middle;direction:ltr;font-size:0px;padding:0px">
+              <div
+                style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%">
+                <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td style="word-wrap:break-word;font-size:0px;padding:0px" align="center">
+                        <table role="presentation" cellpadding="0" cellspacing="0"
+                          style="border-collapse:collapse;border-spacing:0px" align="center" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="width:600px"><img alt="" title="" height="auto"
+                                  src="https://ci4.googleusercontent.com/proxy/4zs_NHCgYpAhNTyPBoMX-xd_la9Tsq2Vp1go3_pNqHhxQnhs7dc2DpeJMzGUCmizUlWKcD6omwUGRTIUxYfx6g=s0-d-e1-ft#http://nimus.de/share/tpl-card/lineshadow.png"
+                                  style="border:none;border-radius:0px;display:block;font-size:13px;outline:none;text-decoration:none;width:100%;height:auto"
+                                  width="600"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="word-wrap:break-word;font-size:0px;padding:40px 40px 0px 40px" align="left">
+                        <div
+                          style="color:#5b5f65;font-family:Dosis,Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;text-align:left">
+                          Data kontak calon mitra:
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="word-wrap:break-word;padding:10px 40px 10px 40px" align="left">
+                        <table>
+                          <tr>
+                            <td> Nama Perusahaan </td>
+                            <td>' + e.parameters.nama_perusahaan
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> Alamat </td>
+                            <td>' + e.parameters.alamat_perusahaan
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> Provinsi </td>
+                            <td>' + e.parameters.provinsi +
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> Kota </td>
+                            <td>' + e.parameters.kota
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> Kodepos </td>
+                            <td>' + e.parameters.kodepos
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> Website </td>
+                            <td> <a href=' + e.parameters.website +'>'+ e.parameters.website+'</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> Deskripsi Perusahaan </td>
+                            <td>' + e.parameters.desk_perusahaan
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> NPWP Perusahaan </td>
+                            <td>' + e.parameters.npwp_perusahaan
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> Kategori </td>
+                            <td>' + e.parameters['kategori[]']
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> Nama </td>
+                            <td>' + e.parameters.nama_kontak
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> Jabatan </td>
+                            <td>' + e.parameters.jabatan
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> Telepon </td>
+                            <td>' + e.parameters.no_tlpn_kontak
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> Email </td>
+                            <td>' + e.parameters.email_kontak
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="word-wrap:break-word;padding:40px 40px 0px 40px" align="left">
+
+                        <a href="" style=""> Tolak </button>
+                          <button style="background-color: #D96C22;
+              border-color: #D96C22;
+              color: #fff;">Terima</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="word-wrap:break-word;font-size:0px;padding:10px 40px 10px 40px" align="left">
+                        <p><a href='+fileUrl+'>Logo Link</a></p><br />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <div style="margin:0px auto;max-width:600px;background:#ffffff">
+    <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#ffffff"
+      align="center" border="0">
+      <tbody>
+        <tr>
+          <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px 0px 0px 0px">
+            <div
+              style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%">
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td style="word-wrap:break-word;font-size:0px;padding:0px" align="center">
+                      <table role="presentation" cellpadding="0" cellspacing="0"
+                        style="border-collapse:collapse;border-spacing:0px" align="center" border="0">
+                        <tbody>
+                          <tr>
+                            <td style="width:600px"><img alt="bottom border" title="" height="auto"
+                                src="https://ci4.googleusercontent.com/proxy/j5MAY7nN-roy4S6n9poqUXXFomamhaWaOMowtrzoedrws_qbGFh5fsNwfQ3yVpSprYHXtQR7rVkJKs03=s0-d-e1-ft#http://nimus.de/share/tpl-card/bottom.png"
+                                style="border:none;border-radius:0px;display:block;font-size:13px;outline:none;text-decoration:none;width:100%;height:auto"
+                                width="600"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin:0px auto;max-width:600px">
+    <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%" align="center"
+      border="0">
+      <tbody>
+        <tr>
+          <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:10px 0px 20px 0px">
+            <div
+              style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%">
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td style="word-wrap:break-word;font-size:0px;padding:10px 25px" align="center">
+                      <div
+                        style="color:#9b9b9b;font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:11px;font-weight:400;line-height:24px;text-align:center">
+                        Jalan Gegerkalong Hilir No. 47, Kota Bandung, Jawa
+                        Barat 40152, Indonesia<br></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  <p><a href='+fileUrl+'>Logo Link</a></p>
+<script type="text/javascript">
+   _linkedin_partner_id = "3151676";
+   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+   (function (l) {
+      if (!l) {
+         window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+         window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+   })(window.lintrk);
+</script>
+<noscript>
+   <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=3151676&fmt=gif" />
+</noscript>
+</body>
+
+</html>

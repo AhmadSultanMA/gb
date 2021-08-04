@@ -1,0 +1,94 @@
+
+div img.gambarmuter {
+    -moz-transition:all .8s ease-in-out;
+    -ms-transition:all .8s ease-in-out;
+    -o-transition:all .8s ease-in-out;
+    -webkit-transition:all .8s ease-in-out;
+    transition:all .8s ease-in-out
+  }
+  
+  .desk_perusahaan {
+    word-wrap: break-word;
+    max-height: auto;
+    min-height: 150px;
+    padding: 1em;
+  }
+    
+  .card-eco:hover div img.gambarmuter {
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg)
+  }
+
+  .image-base {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      padding: 1em;
+    }
+    
+    .image {
+      max-width: 100%;
+      max-height: 100%;
+    
+    }
+    
+    .grid {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      justify-content: center;
+    }
+    
+    .grid-item {
+      border-radius: 10px;
+      margin: 1rem;
+      padding: 4px;
+      padding-bottom: 24px;
+      width: 100%;
+    }
+  
+    @media(min-width:768px){
+      .grid-item{
+        width: 40%;
+      }
+    }
+  
+    @media(min-width:1024px){
+      .grid-item{
+        width: 30%;
+      }
+    }
+  
+    @media(min-width:1366px){
+      .grid-item{
+        width: 30%;
+      }
+    }
+  
+    @media(min-width:1600px){
+      .grid-item{
+        width: 30%;
+      }
+    }
+  
+    @media(min-width:1920px){
+      .grid-item{
+        width: 30%;
+      }
+    }
+  
+    #app{
+      width: auto !important;
+    }
+  
+    /* ------ */
