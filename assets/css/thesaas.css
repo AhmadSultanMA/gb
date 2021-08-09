@@ -4953,7 +4953,7 @@ ul.flexbox {
   left: 0;
   right: 0;
   background-color: transparent;
-  height: 90px;
+  height: 70px;
   border-radius: 0;
   z-index: 910;
   -webkit-transition: margin-left .5s;
@@ -4992,7 +4992,7 @@ ul.flexbox {
 
 .topbar > .container,
 .topbar > .container-fluid {
-  height: 90px;
+  height: 70px;
 }
 
 .topbar > .container-fluid {
@@ -5042,7 +5042,7 @@ ul.flexbox {
   display: inline-flex;
   font-weight: 600;
   font-size: .75rem;
-  line-height: 90px;
+  line-height: 30px;
   z-index: 910;
 }
 
@@ -5066,19 +5066,19 @@ ul.flexbox {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 600;
-  opacity: .6;
   padding: 0;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-.topbar-nav .nav-link:hover, .topbar-nav .nav-link:focus, .topbar-nav .nav-link.active {
+.topbar-nav .nav-link:hover, .topbar-nav .nav-link:focus {
   opacity: 1;
   color: #D96C22;
 }
 
+
 .topbar-nav .nav-link.active {
-  font-weight: 600;
+  border-bottom: 2px solid #e96413;
 }
 
 .topbar-nav .nav-link i {
